@@ -12,7 +12,7 @@ function App() {
 					<div className="columns is-centered is-multiline">
 						<nav className="column is-full mt-1 mb-1 is-centered has-text-centered">
 								<a href="index.html" rel="noreferrer">
-									<img src="/assets/images/logo.svg" className="is-80wide" alt="RandoMarvel Logo" />
+									<img src="/assets/images/logo.svg" className="is-256wide" alt="RandoMarvel Logo" />
 								</a>
 						</nav>
 						<div className="column is-full has-text-centered">
@@ -40,7 +40,7 @@ function App() {
 						</div>
 						<div className="column is-full has-text-centered mt-6">
 							<div className="buttons is-centered">
-								<button className="button is-primary">Choose a Random Marvel Movie</button>
+								<button className="button is-primary">Random Marvel Movie</button>
 							</div>
 						</div>
 					</div>
