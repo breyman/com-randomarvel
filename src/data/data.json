@@ -3,7 +3,7 @@
     "title": "Iron Man",
     "releaseorder": 1,
     "chronologicalorder": 3,
-    "released": "2008"
+    "released": "2008",
     "disney":"https://www.disneyplus.com/movies/marvel-studios-iron-man/6aM2a8mZATiu", 
     "amazon":"https://tv.apple.com/us/movie/iron-man/umc.cmc.219lnb4s678o8roez3o905h7r", 
     "apple":"https://www.amazon.com/Iron-Man-Robert-Downey-Jr/dp/B001FD5KJM"
@@ -12,7 +12,7 @@
     "title": "Captain America: The First Avenger",
     "releaseorder": 5,
     "chronologicalorder": 1,
-    "released": "2011"
+    "released": "2011",
     "disney":"https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
     "amazon":"https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
     "apple":"https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
@@ -22,7 +22,7 @@
     "title": "Guardians of the Galaxy",
     "releaseorder": 10,
     "chronologicalorder": 11,
-    "released": "2014"
+    "released": "2014",
     "disney":"https://www.disneyplus.com/movies/guardians-of-the-galaxy/1S4WM9h3KRR6", 
     "amazon":"https://www.amazon.com/Guardians-Galaxy-Theatrical-Chris-Pratt/dp/B00QROEI6A", 
     "apple":"https://tv.apple.com/us/movie/guardians-of-the-galaxy/umc.cmc.71igdwen6ko2dlhwaw12vbdh"
@@ -31,7 +31,7 @@
     "title": "Spider Man: Homecoming",
     "releaseorder": 16,
     "chronologicalorder": 16,
-    "released": "2017"
+    "released": "2017",
     "disney":"https://www.disneyplus.com/movies/spider-man-homecoming/4cLMEzWGqQaG", 
     "amazon":"https://www.amazon.com/Spider-Man-Homecoming-Robert-Downey-Jr/dp/B073HKJ1KZ", 
     "apple":"https://tv.apple.com/us/movie/spider-man-homecoming/umc.cmc.2sbgqu6gpbevxnjjhfd4ahuvn"
