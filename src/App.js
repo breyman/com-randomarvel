@@ -1,19 +1,27 @@
 // import logo from './logo.svg';
+// import logo from './assets/images/RandoMarvel_Logo_Red.png';
 import './App.css';
-import './styles.sass';
+import './assets/styles/styles.sass';
 
 function App() {
 	return (
 		<div>
-			<header>
-				<h1 className="has-text-primary">RandoMarvel</h1>
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-					Learn React
-				</a>
-			</header>
+			<div className="main">
+				<div className="section">
+					<div className="columns is-centered">
+						<div className="column is-half has-text-centered">
+							<figure className="image is-128wide is-inline-block">
+								<img src="/assets/images/RandoMarvel_Logo_Red.png" alt="RandoMarvel Logo" />
+							</figure>
+						</div>
+					</div>
+					<div className="columns is-centered">
+						<div className="column is-half has-text-centered">
+							<h1 className="has-text-primary is-size-5">Randomly pick your movie starting soon</h1>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }
