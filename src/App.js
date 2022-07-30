@@ -11,7 +11,7 @@ function App() {
 					<div className="columns is-centered">
 						<div className="column is-half has-text-centered">
 							<figure className="image is-128wide is-inline-block">
-								<img src="/assets/images/RandoMarvel_Logo_Red.png" alt="RandoMarvel Logo" />
+								<img src="/assets/images/logo.svg" alt="RandoMarvel Logo" />
 							</figure>
 						</div>
 					</div>
