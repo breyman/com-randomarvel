@@ -1,10 +1,8 @@
 import './App.css';
 import './assets/styles/styles.sass';
-import myData from './data/data.json';
+import myData from './data/marvel.json';
 
-console.log(myData[0]);
-
-const dataItem = Math.floor(Math.random() * myData.length)
+const dataItem = Math.floor(Math.random() * myData.length);
 
 function App() {
 	return (
