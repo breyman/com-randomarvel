@@ -6,19 +6,14 @@ import './assets/styles/styles.sass';
 function App() {
 	return (
 		<div>
-			<nav className="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
-				<div id="navbarMainNavItems" class="navbar-menu">
-					<div className="navbar-start navbar-move-right"></div>
-					<a className="navbar-item navbar-logo" href="index.html" rel="noreferrer">
-						<img src="/assets/images/logo.svg" width="80px" height="80px" alt="RandoMarvel Logo" />
-					</a>
-					<div className="navbar-end navbar-move-left"></div>
-				</div>
-			</nav>
-
 			<div className="main">
 				<div className="section">
 					<div className="columns is-centered is-multiline">
+						<nav className="column is-full mt-1 mb-1 is-centered has-text-centered">
+								<a href="index.html" rel="noreferrer">
+									<img src="/assets/images/logo.svg" className="is-80wide" alt="RandoMarvel Logo" />
+								</a>
+						</nav>
 						<div className="column is-full has-text-centered">
 							<h2 className="has-text-primary is-size-2 has-text-weight-bold">Iron Man</h2>
 						</div>
@@ -54,16 +49,18 @@ function App() {
 			<footer className="footer has-text-centered">
 				<div clasNames="container">
 					<div className="columns is-centered is-size-7">
-						<div className="mr-3">
-							<a href="index.html" className="has-text-primary">
-								Pick a Movie
-							</a>
-						</div>
-						<div>|</div>
-						<div className="ml-3">
-							<a href="index.html" className="has-text-primary">
-								About
-							</a>
+						<div className="column is-full is-centered has-text-centered">
+							<span className="mr-3">
+								<a href="index.html" className="has-text-primary">
+									Pick a Movie
+								</a>
+							</span>
+							<span className="has-text-grey">|</span>
+							<span className="ml-3">
+								<a href="index.html" className="has-text-primary">
+									About
+								</a>
+							</span>
 						</div>
 					</div>
 				</div>
