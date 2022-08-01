@@ -2,7 +2,10 @@ import './App.css';
 import './assets/styles/styles.sass';
 import myData from './data/marvel.json';
 
+
 const dataItem = Math.floor(Math.random() * myData.length);
+
+const refreshPage = () => window.location.reload(false);
 
 function App() {
 	return (
@@ -40,7 +43,7 @@ function App() {
 						</div>
 						<div className="column is-full has-text-centered mt-6">
 							<div className="buttons is-centered">
-								<button className="button is-primary">Random Marvel Movie</button>
+								<button className="button is-primary" value="Reload Page" onClick={refreshPage}>Random Marvel Movie</button>
 							</div>
 						</div>
 					</div>
