@@ -1,5 +1,5 @@
 import React from 'react';
-import WatchMovie from './WatchMovie';
+import WatchMovie from './../components/WatchMovie';
 
 class RandomMovie extends React.Component{
   constructor(props) {
