@@ -4,8 +4,6 @@ import Nav from './Nav';
 import RandomMovie from './RandomMovie';
 import Footer from './Footer';
 
-const dataItem = Math.floor(Math.random() * myData.length);
-
 function App() {
 	return (
 		<div>
@@ -15,7 +13,7 @@ function App() {
 						
 						<Nav />
 						
-						<RandomMovie movie={myData[dataItem]} />						
+						<RandomMovie movies={myData} />						
 						
 					</div>
 				</div>
