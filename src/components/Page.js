@@ -1,8 +1,8 @@
 import React from 'react';
-import myData from './data/marvel.json';
-import Nav from './Nav';
-import RandomMovie from './RandomMovie';
-import About from './About';
+import myData from './../data/marvel.json';
+import Nav from './../components/Nav';
+import RandomMovie from './../components/RandomMovie';
+import About from './../components/About';
 
 class Page extends React.Component{
   constructor(props) {

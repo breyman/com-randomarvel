@@ -1,4 +1,4 @@
-import brianHeadshot from './assets/images/headshot-brian.png';
+import brianHeadshot from './../assets/images/headshot-brian.png';
 
 function About(){
   return(
