@@ -1,5 +1,5 @@
 import './assets/styles/styles.sass';
-import Page from './Page';
+import Page from './components/Page';
 
 function App() {
 
