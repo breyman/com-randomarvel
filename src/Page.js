@@ -7,7 +7,11 @@ import About from './About';
 class Page extends React.Component{
   constructor(props) {
     super(props);
-    this.state = {page: <RandomMovie movies={myData} />};
+    this.state = {page: <div></div>};
+  }
+  
+  componentDidMount() {
+    this.setPage("movie");
   }
   
   setPage(page){
@@ -42,11 +46,11 @@ class Page extends React.Component{
           <div className="container">
             <div className="columns is-centered is-size-7">
               <div className="column is-full is-centered has-text-centered">
-                <span className="mr-3">
+                <span>
                 <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("movie")}>Pick a Movie</button>
                 </span>
-                <span className="has-text-grey">|</span>
-                <span className="ml-3">
+                <span className="has-text-grey ml-3 mr-3">|</span>
+                <span>
                 <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("about")}>About</button>
                 </span>
               </div>
