@@ -247,8 +247,8 @@
         "releaseorder": 29,
         "chronologicalorder": 29,
         "released": "2022",
-        "disney":"None", 
-        "amazon":"None", 
-        "apple":"None"
+        "disney":null,
+        "amazon":null, 
+        "apple":null
         }
 ]
