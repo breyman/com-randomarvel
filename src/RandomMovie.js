@@ -1,4 +1,5 @@
 import React from 'react';
+import WatchMovie from './WatchMovie';
 
 class RandomMovie extends React.Component{
   constructor(props) {
@@ -8,9 +9,10 @@ class RandomMovie extends React.Component{
   }
   
   newMovie(){
-    // console.log(this.props);
     let number = Math.floor(Math.random() * this.props.movies.length);
+    // let number = this.props.movies.length - 1;
     let myMovie = this.props.movies[number];
+    
     return myMovie;
   }
   
@@ -20,7 +22,6 @@ class RandomMovie extends React.Component{
     this.setState({
       movie: anotherMovie
     });
-    console.log(anotherMovie);
   }
   
   render(){
@@ -31,22 +32,11 @@ class RandomMovie extends React.Component{
         </div>
         <div className="column is-full has-text-centered">
           <p>
-            Watch on
-            <span className="icon ml-2 mr-2">
-              <a href={this.state.movie.disney} className="has-text-primary" target="_blank" rel="noreferrer">
-                <i className="fak fa-dplus"></i>
-              </a>
-            </span>
-            <span className="icon mr-2">
-              <a href={this.state.movie.amazon} className="has-text-primary" target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-amazon"></i>
-              </a>
-            </span>
-            <span className="icon">
-              <a href={this.state.movie.apple} className="has-text-primary" target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-apple"></i>
-              </a>
-            </span>
+            <span className="mr-2">Watch on</span>
+            <WatchMovie link={this.state.movie.disney} streaming="disney" />
+            <WatchMovie link={this.state.movie.amazon} streaming="amazon" />
+            <WatchMovie link={this.state.movie.apple} streaming="apple" />
+            
           </p>
         </div>
         <div className="column is-full has-text-centered mt-6">
