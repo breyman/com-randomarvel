@@ -5,7 +5,7 @@ function WatchMovie(props){
   
   if(props.link === null){
     
-  }else {
+  }else {  
     
     switch(props.streaming) {
       case "disney":
@@ -16,6 +16,8 @@ function WatchMovie(props){
         break;
       case "apple":
         streamingClass = "fa-brands fa-apple";
+        break;
+      default:
         break;
     }
     

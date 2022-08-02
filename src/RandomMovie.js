@@ -4,7 +4,6 @@ import WatchMovie from './WatchMovie';
 class RandomMovie extends React.Component{
   constructor(props) {
     super(props);
-    this.state = {props};
     this.state = {movie: this.newMovie()};
   }
   
