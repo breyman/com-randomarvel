@@ -1,6 +1,5 @@
 import React from 'react';
 import myData from './../data/marvel.json';
-import Nav from './../components/Nav';
 import RandomMovie from './../components/RandomMovie';
 import About from './../components/About';
 import gtag from 'ga-gtag'
@@ -45,7 +44,9 @@ class Page extends React.Component{
           <div className="section">
             <div className="columns is-centered is-multiline">
               
-              <Nav />
+              <nav className="column is-full mt-1 mb-1 is-centered has-text-centered">
+                <img src="/assets/images/logo.svg" className="is-256wide is-link" alt="RandoMarvel Logo" onClick={() => this.setPage("movie")} />
+              </nav>
             
               {this.state.page}
               
