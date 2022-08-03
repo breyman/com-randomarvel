@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ReactGA from "react-ga4";
 
-import ReactGA4 from "react-ga4";
-ReactGA4.initialize("G-27W2KXSBSN");
+ReactGA.initialize("G-27W2KXSBSN");
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
