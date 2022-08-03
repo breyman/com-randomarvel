@@ -6,7 +6,6 @@ function WatchMovie(props){
   if(props.link === null || props.link === undefined){
     
   }else {  
-    console.log("brian");
     switch(props.streaming) {
       case "disney":
         streamingClass = "fak fa-dplus";

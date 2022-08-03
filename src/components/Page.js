@@ -3,9 +3,7 @@ import myData from './../data/marvel.json';
 import Nav from './../components/Nav';
 import RandomMovie from './../components/RandomMovie';
 import About from './../components/About';
-
-
-import ReactGA4 from "react-ga4";
+import gtag from 'ga-gtag'
 
 class Page extends React.Component{
   constructor(props) {
@@ -22,13 +20,21 @@ class Page extends React.Component{
       this.setState({
         page: <About />
       });
-      ReactGA4.event({category:"page", action:"navigate", label:"about"});
+      
+      gtag('event', 'page_load', {
+        page_title: 'about',
+      })  
+    
     }
     if(page === "movie"){
       this.setState({
         page: <RandomMovie movies={myData} />
       });
-      ReactGA4.event({category:"page", action:"navigate", label:"movie"});
+      
+      gtag('event', 'page_load', {
+        page_title: 'movie',
+      })
+      
     }
   }
   

@@ -1,9 +1,11 @@
 import './assets/styles/styles.sass';
 import Page from './components/Page';
+import gtag from 'ga-gtag'
 
 
-import ReactGA4 from "react-ga4";
-ReactGA4.send({ hitType: "pageview", page: window.location.pathname });
+gtag('event', 'page_load', {
+	page_title: 'home',
+})
 
 function App() {
 
