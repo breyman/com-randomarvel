@@ -1,6 +1,6 @@
 import React from 'react';
 import WatchMovie from './../components/WatchMovie';
-import gtag from 'ga-gtag'
+import gtag from 'ga-gtag';
 
 
 class RandomMovie extends React.Component{
@@ -52,7 +52,7 @@ class RandomMovie extends React.Component{
         </div>
         <div className="column is-full has-text-centered mt-6">
           <div className="buttons is-centered">
-            <button className="button is-primary" value="Reload Page" onClick={() => this.refreshMovie()}>Generate Random Marvel Movie</button>
+            <button className="button is-primary" value="Reload Page" onClick={() => this.refreshMovie()}>Random Marvel Movie</button>
           </div>
         </div> 
       </div>   
