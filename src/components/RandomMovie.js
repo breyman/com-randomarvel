@@ -11,7 +11,6 @@ class RandomMovie extends React.Component{
     // this.state = {movie: this.newMovie()};
     this.state = {movie: [null]};
     this.state.watchText = <span></span>;
-    console.log(this.state);
   }
   
   newMovie(){
