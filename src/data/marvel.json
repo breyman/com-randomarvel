@@ -1,6 +1,6 @@
 [
         {
-        "title": "captain marvel",
+        "title": "Captain Marvel",
         "releaseorder": 21,
         "chronologicalorder": 2,
         "released": "2019",
@@ -135,7 +135,7 @@
         "apple":"https://tv.apple.com/us/movie/black-widow/umc.cmc.3tfe3lm0qa0b29a6r84hc8jjy"
         },
         {
-        "title": "Spider Man: Homecoming",
+        "title": "Spider-Man: Homecoming",
         "releaseorder": 16,
         "chronologicalorder": 17,
         "released": "2017",
@@ -207,7 +207,7 @@
         "apple":"https://tv.apple.com/us/movie/shang-chi-and-the-legend-of-the-ten-rings/umc.cmc.1r6h2ku90p1e6jaznhnk0m5hd"
         },
         {
-        "title": "Spider-man: Far From Home",
+        "title": "Spider-Man: Far From Home",
         "releaseorder": 23,
         "chronologicalorder": 25,
         "released": "2019",
@@ -216,7 +216,7 @@
         "apple":"https://tv.apple.com/us/movie/spider-man-far-from-home/umc.cmc.1xnsjqmhn8a93iy2vgj36w3d1"
         },
         {
-        "title": "Spider-man: No Way Home",
+        "title": "Spider-Man: No Way Home",
         "releaseorder": 27,
         "chronologicalorder": 26,
         "released": "2021",
@@ -241,14 +241,5 @@
         "disney":"https://www.disneyplus.com/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH", 
         "amazon":"https://www.amazon.com/Strange-Multiverse-Madness-Benedict-Cumberbatch/dp/B0B3SN4LKR", 
         "apple":"https://tv.apple.com/us/movie/doctor-strange-in-the-multiverse-of-madness/umc.cmc.5f0mydwzevgd47pqxidz6sjf9"
-        },
-        {
-        "title": "Thor: Love and Thunder",
-        "releaseorder": 29,
-        "chronologicalorder": 29,
-        "released": "2022",
-        "disney":null,
-        "amazon":null, 
-        "apple":null
         }
 ]
