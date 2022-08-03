@@ -3,10 +3,10 @@ function WatchMovie(props){
   let streamingClass = "";
   let icon;
   
-  if(props.link === null){
+  if(props.link === null || props.link === undefined){
     
   }else {  
-    
+    console.log("brian");
     switch(props.streaming) {
       case "disney":
         streamingClass = "fak fa-dplus";

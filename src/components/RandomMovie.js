@@ -4,14 +4,17 @@ import WatchMovie from './../components/WatchMovie';
 class RandomMovie extends React.Component{
   constructor(props) {
     super(props);
-    this.state = {movie: this.newMovie()};
+    // this.state = {movie: this.newMovie()};
+    this.state = {movie: [null]};
+    this.state.watchText = <span></span>;
+    console.log(this.state);
   }
   
   newMovie(){
     let number = Math.floor(Math.random() * this.props.movies.length);
     // let number = this.props.movies.length - 1;
     let myMovie = this.props.movies[number];
-    
+    // console.log(myMovie);
     return myMovie;
   }
   
@@ -20,6 +23,9 @@ class RandomMovie extends React.Component{
     
     this.setState({
       movie: anotherMovie
+    });
+    this.setState({
+      watchText: <span className="mr-2">Watch on</span>
     });
   }
   
@@ -31,7 +37,7 @@ class RandomMovie extends React.Component{
         </div>
         <div className="column is-full has-text-centered">
           <p>
-            <span className="mr-2">Watch on</span>
+            {this.state.watchText}
             <WatchMovie link={this.state.movie.disney} streaming="disney" />
             <WatchMovie link={this.state.movie.amazon} streaming="amazon" />
             <WatchMovie link={this.state.movie.apple} streaming="apple" />
@@ -40,7 +46,7 @@ class RandomMovie extends React.Component{
         </div>
         <div className="column is-full has-text-centered mt-6">
           <div className="buttons is-centered">
-            <button className="button is-primary" value="Reload Page" onClick={() => this.refreshMovie()}>Random Marvel Movie</button>
+            <button className="button is-primary" value="Reload Page" onClick={() => this.refreshMovie()}>Generate Random Marvel Movie</button>
           </div>
         </div> 
       </div>   
