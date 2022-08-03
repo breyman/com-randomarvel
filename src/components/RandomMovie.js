@@ -5,8 +5,9 @@ class RandomMovie extends React.Component{
   constructor(props) {
     super(props);
     // this.state = {movie: this.newMovie()};
-    this.state.movie;
-    this.state.watchText;
+    this.state = {movie: [null]};
+    this.state.watchText = <span></span>;
+    console.log(this.state);
   }
   
   newMovie(){
