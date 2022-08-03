@@ -5,8 +5,7 @@ import RandomMovie from './../components/RandomMovie';
 import About from './../components/About';
 
 
-import ReactGA from "react-ga4";
-ReactGA.initialize("G-27W2KXSBSN");
+import ReactGA4 from "react-ga4";
 
 class Page extends React.Component{
   constructor(props) {
@@ -23,13 +22,13 @@ class Page extends React.Component{
       this.setState({
         page: <About />
       });
-      ReactGA.event({category:"page", action:"navigate", label:"about"});
+      ReactGA4.event({category:"page", action:"navigate", label:"about"});
     }
     if(page === "movie"){
       this.setState({
         page: <RandomMovie movies={myData} />
       });
-      ReactGA.event({category:"page", action:"navigate", label:"movie"});
+      ReactGA4.event({category:"page", action:"navigate", label:"movie"});
     }
   }
   
@@ -53,7 +52,7 @@ class Page extends React.Component{
             <div className="columns is-centered is-size-7">
               <div className="column is-full is-centered has-text-centered">
                 <span>
-                <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("movie")}>Generate a Movie</button>
+                <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("movie")}>Random Marvel Movie</button>
                 </span>
                 <span className="has-text-grey ml-3 mr-3">|</span>
                 <span>
