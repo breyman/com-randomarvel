@@ -47,7 +47,7 @@ class Page extends React.Component{
             <div className="columns is-centered is-size-7">
               <div className="column is-full is-centered has-text-centered">
                 <span>
-                <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("movie")}>Pick a Movie</button>
+                <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("movie")}>Generate a Movie</button>
                 </span>
                 <span className="has-text-grey ml-3 mr-3">|</span>
                 <span>
