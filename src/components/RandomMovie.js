@@ -1,6 +1,6 @@
 import React from 'react';
 import WatchMovie from './../components/WatchMovie';
-import ReactGA from "react-ga4";
+import gtag from 'ga-gtag'
 
 
 class RandomMovie extends React.Component{
@@ -28,7 +28,11 @@ class RandomMovie extends React.Component{
     this.setState({
       watchText: <span className="mr-2">Watch on</span>
     });
-    ReactGA.event({category:"action", action:"generate", label:"movie"});
+    
+    gtag('event', 'page_action', {
+      page_title: 'refreshmovie',
+    })
+    
   }
   
   render(){
