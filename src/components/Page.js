@@ -5,8 +5,7 @@ import RandomMovie from './../components/RandomMovie';
 import About from './../components/About';
 
 
-import ReactGA from "react-ga4";
-ReactGA.initialize("G-27W2KXSBSN");
+import ReactGA4 from "react-ga4";
 
 class Page extends React.Component{
   constructor(props) {
@@ -23,13 +22,13 @@ class Page extends React.Component{
       this.setState({
         page: <About />
       });
-      ReactGA.event({category:"page", action:"navigate", label:"about"});
+      ReactGA4.event({category:"page", action:"navigate", label:"about"});
     }
     if(page === "movie"){
       this.setState({
         page: <RandomMovie movies={myData} />
       });
-      ReactGA.event({category:"page", action:"navigate", label:"movie"});
+      ReactGA4.event({category:"page", action:"navigate", label:"movie"});
     }
   }
   

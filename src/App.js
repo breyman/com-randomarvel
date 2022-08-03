@@ -1,10 +1,9 @@
 import './assets/styles/styles.sass';
 import Page from './components/Page';
 
-import ReactGA from "react-ga4";
-ReactGA.initialize("G-27W2KXSBSN");
 
-ReactGA.event({category:"page", action:"load", label:"home"});
+import ReactGA4 from "react-ga4";
+ReactGA4.send({ hitType: "pageview", page: window.location.pathname });
 
 function App() {
 

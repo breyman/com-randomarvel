@@ -1,8 +1,7 @@
 import React from 'react';
 import WatchMovie from './../components/WatchMovie';
 
-import ReactGA from "react-ga4";
-ReactGA.initialize("G-27W2KXSBSN");
+import ReactGA4 from "react-ga4";
 
 
 class RandomMovie extends React.Component{
@@ -30,7 +29,7 @@ class RandomMovie extends React.Component{
     this.setState({
       watchText: <span className="mr-2">Watch on</span>
     });
-    ReactGA.event({category:"action", action:"generate", label:"movie"});
+    ReactGA4.event({category:"action", action:"generate", label:"movie"});
   }
   
   render(){
