@@ -1,8 +1,9 @@
 import React from 'react';
 import myData from './../data/marvel.json';
 import RandomMovie from './../components/RandomMovie';
+import MovieList from './../components/MovieList';
 import About from './../components/About';
-import gtag from 'ga-gtag'
+import gtag from 'ga-gtag';
 
 class Page extends React.Component{
   constructor(props) {
@@ -12,6 +13,7 @@ class Page extends React.Component{
   
   componentDidMount() {
     this.setPage("movie");
+    // this.setPage("list");
   }
   
   setPage(page){
@@ -23,7 +25,6 @@ class Page extends React.Component{
       gtag('event', 'page_load', {
         page_title: 'about',
       })  
-    
     }
     if(page === "movie"){
       this.setState({
@@ -32,6 +33,16 @@ class Page extends React.Component{
       
       gtag('event', 'page_load', {
         page_title: 'movie',
+      })
+      
+    }
+    if(page === "list"){
+      this.setState({
+        page: <MovieList movies={myData} />
+      });
+      
+      gtag('event', 'page_load', {
+        page_title: 'movielist',
       })
       
     }
@@ -60,6 +71,10 @@ class Page extends React.Component{
               <div className="column is-full is-centered has-text-centered">
                 <span>
                 <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("movie")}>Random Marvel Movie</button>
+                </span>
+                <span className="has-text-grey ml-3 mr-3">|</span>
+                <span>
+                <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("list")}>Movie List</button>
                 </span>
                 <span className="has-text-grey ml-3 mr-3">|</span>
                 <span>

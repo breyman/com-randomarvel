@@ -1,6 +1,6 @@
 import './assets/styles/styles.sass';
 import Page from './components/Page';
-import gtag from 'ga-gtag'
+import gtag from 'ga-gtag';
 
 
 gtag('event', 'page_load', {
