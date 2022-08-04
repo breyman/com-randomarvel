@@ -5,12 +5,13 @@ class MovieList extends React.Component{
   constructor(props) {
     super(props);
     this.state = {movies: props.movies};
-    this.state.timelineButtonClass = "button is-small is-primary is-selected";
-    this.state.releaseButtonClass = "button is-small";
+    this.state.order = "";
   }
   
   componentDidMount() {
-    this.swapList("chrono");
+    
+    // start page by showing the list chronologically
+    this.sortList("chrono");
     
   }
   
@@ -24,29 +25,28 @@ class MovieList extends React.Component{
       sortedMovies = this.state.movies.sort((a,b) => (a.releaseorder > b.releaseorder) ? 1 : ((b.releaseorder > a.releaseorder) ? -1 : 0));
     }
 
-    return sortedMovies;
-  }
-  
-  swapList(order){
-    
     this.setState({
-      movie: this.sortList(order)
-    });
-    if(order === "chrono"){
-      this.setState({
-        timelineButtonClass: "button is-small is-primary is-selected",
-        releaseButtonClass: "button is-small"
-      });
-    }
-    if(order === "release"){
-      this.setState({
-        timelineButtonClass: "button is-small",
-        releaseButtonClass: "button is-small is-primary is-selected"
-      });
-    }
+      movie: sortedMovies,
+      order: order
+    }); 
   }
+
   
   render(){
+    const order = this.state.order;
+    
+    let timelineButtonClass = "";
+    let releaseButtonClass = "";
+    
+    if(order === "chrono"){
+      timelineButtonClass = "button is-small is-primary is-selected";
+      releaseButtonClass = "button is-small";
+    }
+    if(order === "release"){
+      timelineButtonClass = "button is-small";
+      releaseButtonClass = "button is-small is-primary is-selected";
+    }
+    
     return(
       <div>
         <div className="column is-full has-text-centered">
@@ -54,8 +54,8 @@ class MovieList extends React.Component{
         </div>
         <div className="column is-full has-text-centered">
           <div className="buttons has-addons has-text-centered is-centered">
-            <button className={this.state.timelineButtonClass} onClick={() => this.swapList("chrono")}>By Timeline</button>
-            <button className={this.state.releaseButtonClass} onClick={() => this.swapList("release")}>By Release</button>
+            <button className={timelineButtonClass} onClick={() => this.sortList("chrono")}>By Timeline</button>
+            <button className={releaseButtonClass} onClick={() => this.sortList("release")}>By Release</button>
           </div>
           <p>
             <table className="table is-bordered is-striped is-fullwidth">       
