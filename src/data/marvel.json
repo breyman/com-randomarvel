@@ -1,8 +1,18 @@
 [
         {
+        "title": "Marvel's Agents of S.H.I.E.L.D.: Season 7",
+        "releaseorder": 46,
+        "chronologicalorder": 1,
+        "released": "2020",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
         "title": "Captain America: The First Avenger",
         "releaseorder": 5,
-        "chronologicalorder": 1,
+        "chronologicalorder": 2,
         "released": "2011",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
@@ -10,9 +20,29 @@
         "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
         },
         {
+        "title": "Marvel's Agent Carter: Season 1",
+        "releaseorder": 13,
+        "chronologicalorder": 3,
+        "released": "2015",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH", 
+        "amazon": "https://www.amazon.com/Strange-Multiverse-Madness-Benedict-Cumberbatch/dp/B0B3SN4LKR", 
+        "apple": "https://tv.apple.com/us/movie/doctor-strange-in-the-multiverse-of-madness/umc.cmc.5f0mydwzevgd47pqxidz6sjf9"
+        },
+        {
+        "title": "Marvel's Agent Carter: Season 2",
+        "releaseorder": 19,
+        "chronologicalorder": 4,
+        "released": "2016",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH", 
+        "amazon": "https://www.amazon.com/Strange-Multiverse-Madness-Benedict-Cumberbatch/dp/B0B3SN4LKR", 
+        "apple": "https://tv.apple.com/us/movie/doctor-strange-in-the-multiverse-of-madness/umc.cmc.5f0mydwzevgd47pqxidz6sjf9"
+        },
+        {
         "title": "Captain Marvel",
-        "releaseorder": 21,
-        "chronologicalorder": 2,
+        "releaseorder": 41,
+        "chronologicalorder": 5,
         "released": "2019",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-captain-marvel/38xJGlLAQy9a", 
@@ -22,7 +52,7 @@
         {
         "title": "Iron Man",
         "releaseorder": 1,
-        "chronologicalorder": 3,
+        "chronologicalorder": 6,
         "released": "2008",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-iron-man/6aM2a8mZATiu", 
@@ -32,7 +62,7 @@
         {
         "title": "Iron Man 2",
         "releaseorder": 3,
-        "chronologicalorder": 4,
+        "chronologicalorder": 7,
         "released": "2010",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/iron-man-2/lXjCr9QmGGQJ", 
@@ -40,19 +70,9 @@
         "apple": "https://tv.apple.com/us/movie/iron-man-2/umc.cmc.1y2bgb9s3j4an0b1bra6ekv3s"
         },
         {
-        "title": "The Incredible Hulk",
-        "releaseorder": 2,
-        "chronologicalorder": 5,
-        "released": "2008",
-        "type": "movie",
-        "disney": null, 
-        "amazon": "https://www.amazon.com/Incredible-Hulk-Edward-Norton/dp/B001IAME78", 
-        "apple": "https://tv.apple.com/us/movie/the-incredible-hulk/umc.cmc.1uldcoh87etoxgugkmqur4pvp"
-        },
-        {
         "title": "Thor",
         "releaseorder": 4,
-        "chronologicalorder": 6,
+        "chronologicalorder": 8,
         "released": "2011",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/thor/1p4vdKzTuhzr", 
@@ -60,9 +80,19 @@
         "apple": "https://tv.apple.com/us/movie/thor/umc.cmc.hgkuacmdh6wxtlwtwpuju43"
         },
         {
+        "title": "The Incredible Hulk",
+        "releaseorder": 2,
+        "chronologicalorder": 9,
+        "released": "2008",
+        "type": "movie",
+        "disney": null, 
+        "amazon": "https://www.amazon.com/Incredible-Hulk-Edward-Norton/dp/B001IAME78", 
+        "apple": "https://tv.apple.com/us/movie/the-incredible-hulk/umc.cmc.1uldcoh87etoxgugkmqur4pvp"
+        },
+        {
         "title": "The Avengers",
         "releaseorder": 6,
-        "chronologicalorder": 7,
+        "chronologicalorder": 10,
         "released": "2012",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-the-avengers/2h6PcHFDbsPy", 
@@ -70,19 +100,9 @@
         "apple": "https://tv.apple.com/us/movie/the-avengers/umc.cmc.7i757ymuvffa02onn3uva0emx"
         },
         {
-        "title": "Thor: The Dark World",
-        "releaseorder": 8,
-        "chronologicalorder": 8,
-        "released": "2013",
-        "type": "movie",
-        "disney": "https://www.disneyplus.com/movies/thor-the-dark-world/ZHk7aM5xTbW7", 
-        "amazon": "https://www.amazon.com/Thor-Dark-World-Chris-Hemsworth/dp/B00IMYS3VO", 
-        "apple": "https://tv.apple.com/us/movie/thor-the-dark-world/umc.cmc.4g07e0agi9p1c2puo15jz89zo"
-        },
-        {
         "title": "Iron Man 3",
         "releaseorder": 7,
-        "chronologicalorder": 9,
+        "chronologicalorder": 11,
         "released": "2013",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/iron-man-3/3s4Ihq7P2c6e", 
@@ -90,9 +110,29 @@
         "apple": "https://tv.apple.com/us/movie/iron-man-3/umc.cmc.330w7tm79l0jupdtwihclt1rh"
         },
         {
-        "title": "Captain America: Winter Soilder",
+        "title": "Thor: The Dark World",
         "releaseorder": 9,
-        "chronologicalorder": 10,
+        "chronologicalorder": 12,
+        "released": "2013",
+        "type": "movie",
+        "disney": "https://www.disneyplus.com/movies/thor-the-dark-world/ZHk7aM5xTbW7", 
+        "amazon": "https://www.amazon.com/Thor-Dark-World-Chris-Hemsworth/dp/B00IMYS3VO", 
+        "apple": "https://tv.apple.com/us/movie/thor-the-dark-world/umc.cmc.4g07e0agi9p1c2puo15jz89zo"
+        },
+        {
+        "title": "Marvel's Agents of S.H.I.E.L.D.: Season 1",
+        "releaseorder": 8,
+        "chronologicalorder": 13,
+        "released": "2013",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Captain America: Winter Soldier",
+        "releaseorder": 10,
+        "chronologicalorder": 14,
         "released": "2014",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/captain-america-the-winter-soldier/TVme5whcowSy", 
@@ -101,8 +141,8 @@
         },
         {
         "title": "Guardians of the Galaxy",
-        "releaseorder": 10,
-        "chronologicalorder": 11,
+        "releaseorder": 11,
+        "chronologicalorder": 15,
         "released": "2014",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/guardians-of-the-galaxy/1S4WM9h3KRR6", 
@@ -111,8 +151,8 @@
         },
         {
         "title": "Guardians of the Galaxy: Vol.2",
-        "releaseorder": 15,
-        "chronologicalorder": 12,
+        "releaseorder": 26,
+        "chronologicalorder": 16,
         "released": "2017",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-guardians-of-the-galaxy-vol-2/ZdRX4mMbp1gM", 
@@ -120,9 +160,29 @@
         "apple": "https://tv.apple.com/us/movie/guardians-of-the-galaxy-vol-2/umc.cmc.7g0gtypmo4kimdjqo0x078kuk"
         },
         {
+        "title": "Daredevil: Season 1",
+        "releaseorder": 14,
+        "chronologicalorder": 17,
+        "released": "2015",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Marvel's Agents of S.H.I.E.L.D.: Season 2",
+        "releaseorder": 12,
+        "chronologicalorder": 18,
+        "released": "2014",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
         "title": "Avengers: Age of Ultron",
-        "releaseorder": 11,
-        "chronologicalorder": 13,
+        "releaseorder": 15,
+        "chronologicalorder": 19,
         "released": "2015",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-avengers-age-of-ultron/76IUxY0rNHzt", 
@@ -130,9 +190,29 @@
         "apple": "https://tv.apple.com/us/movie/avengers-age-of-ultron/umc.cmc.scq1juwtw6cfpo92aot2c5qx"
         },
         {
+        "title": "Jessica Jones: Season 1",
+        "releaseorder": 18,
+        "chronologicalorder": 20,
+        "released": "2015",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Marvel's Agents of S.H.I.E.L.D.: Season 3",
+        "releaseorder": 17,
+        "chronologicalorder": 21,
+        "released": "2015",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
         "title": "Antman",
-        "releaseorder": 12,
-        "chronologicalorder": 14,
+        "releaseorder": 16,
+        "chronologicalorder": 22,
         "released": "2015",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-ant-man/5c92KVf1zgUX", 
@@ -140,9 +220,49 @@
         "apple": "https://tv.apple.com/us/movie/ant-man/umc.cmc.5v0c1mtw53zkyw8a0hf8xglwm"
         },
         {
+        "title": "Daredevil: Season 2",
+        "releaseorder": 20,
+        "chronologicalorder": 23,
+        "released": "2016",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Luke Cage: Season 1",
+        "releaseorder": 23,
+        "chronologicalorder": 24,
+        "released": "2016",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Iron Fist: Season 1",
+        "releaseorder": 25,
+        "chronologicalorder": 25,
+        "released": "2017",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "The Defenders",
+        "releaseorder": 28,
+        "chronologicalorder": 26,
+        "released": "2017",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
         "title": "Captain America: Civil War",
-        "releaseorder": 13,
-        "chronologicalorder": 15,
+        "releaseorder": 21,
+        "chronologicalorder": 27,
         "released": "2016",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-captain-america-civil-war/4ovfyKnnIBCg", 
@@ -150,19 +270,9 @@
         "apple": "https://tv.apple.com/us/movie/captain-america-civil-war/umc.cmc.6gq2ehunu5q6zvh9up3cw2i0d"
         },
         {
-        "title": "Black Widow",
-        "releaseorder": 24,
-        "chronologicalorder": 16,
-        "released": "2021",
-        "type": "movie",
-        "disney": "https://www.disneyplus.com/movies/black-widow/3VfTap90rwZC", 
-        "amazon": "https://www.amazon.com/Black-Widow-Willem-Dafoe/dp/B07DYCPMZP", 
-        "apple": "https://tv.apple.com/us/movie/black-widow/umc.cmc.3tfe3lm0qa0b29a6r84hc8jjy"
-        },
-        {
         "title": "Spider-Man: Homecoming",
-        "releaseorder": 16,
-        "chronologicalorder": 17,
+        "releaseorder": 27,
+        "chronologicalorder": 28,
         "released": "2017",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/spider-man-homecoming/4cLMEzWGqQaG", 
@@ -170,19 +280,49 @@
         "apple": "https://tv.apple.com/us/movie/spider-man-homecoming/umc.cmc.2sbgqu6gpbevxnjjhfd4ahuvn"
         },
         {
-        "title": "Black Panther",
-        "releaseorder": 18,
-        "chronologicalorder": 18,
+        "title": "Punisher: Season 1",
+        "releaseorder": 31,
+        "chronologicalorder": 29,
+        "released": "2017",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Marvel's Agents of S.H.I.E.L.D.: Season 4",
+        "releaseorder": 22,
+        "chronologicalorder": 30,
+        "released": "2016",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Marvel's Inhumans",
+        "releaseorder": 29,
+        "chronologicalorder": 31,
+        "released": "2017",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Jessica Jones: Season 2",
+        "releaseorder": 34,
+        "chronologicalorder": 32,
         "released": "2018",
-        "type": "movie",
-        "disney": "https://www.disneyplus.com/movies/marvel-studios-black-panther/1GuXuYPj99Ke", 
-        "amazon": "https://www.amazon.com/Panther-Theatrical-Version-Chadwick-Boseman/dp/B079NKRK66", 
-        "apple": "https://tv.apple.com/us/movie/black-panther/umc.cmc.53u1tdqk891nlpuvdh8ne00pb"
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
         },
         {
         "title": "Doctor Strange",
-        "releaseorder": 14,
-        "chronologicalorder": 19,
+        "releaseorder": 24,
+        "chronologicalorder": 33,
         "released": "2016",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-doctor-strange/4GgMJ1aHKHA2", 
@@ -190,9 +330,19 @@
         "apple": "https://tv.apple.com/us/movie/doctor-strange/umc.cmc.1pr69aixggljcme3mjh826zj6"
         },
         {
+        "title": "Black Panther",
+        "releaseorder": 33,
+        "chronologicalorder": 34,
+        "released": "2018",
+        "type": "movie",
+        "disney": "https://www.disneyplus.com/movies/marvel-studios-black-panther/1GuXuYPj99Ke", 
+        "amazon": "https://www.amazon.com/Panther-Theatrical-Version-Chadwick-Boseman/dp/B079NKRK66", 
+        "apple": "https://tv.apple.com/us/movie/black-panther/umc.cmc.53u1tdqk891nlpuvdh8ne00pb"
+        },
+        {
         "title": "Thor: Ragnorok",
-        "releaseorder": 17,
-        "chronologicalorder": 20,
+        "releaseorder": 30,
+        "chronologicalorder": 35,
         "released": "2017",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-thor-ragnarok/3XqAT8UV8ojS", 
@@ -200,9 +350,29 @@
         "apple": "https://tv.apple.com/us/movie/thor-ragnarok/umc.cmc.5f4fq6k3njmustywcg5jld7im"
         },
         {
+        "title": "Luke Cage: Season 2",
+        "releaseorder": 36,
+        "chronologicalorder": 36,
+        "released": "2018",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Black Widow",
+        "releaseorder": 50,
+        "chronologicalorder": 37,
+        "released": "2021",
+        "type": "movie",
+        "disney": "https://www.disneyplus.com/movies/black-widow/3VfTap90rwZC", 
+        "amazon": "https://www.amazon.com/Black-Widow-Willem-Dafoe/dp/B07DYCPMZP", 
+        "apple": "https://tv.apple.com/us/movie/black-widow/umc.cmc.3tfe3lm0qa0b29a6r84hc8jjy"
+        },
+        {
         "title": "Antman and The Wasp",
-        "releaseorder": 20,
-        "chronologicalorder": 21,
+        "releaseorder": 37,
+        "chronologicalorder": 38,
         "released": "2018",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-ant-man-and-the-wasp/5D7wkVHmlCKU", 
@@ -210,9 +380,59 @@
         "apple": "https://tv.apple.com/us/movie/ant-man-and-the-wasp/umc.cmc.14uirj9rqpjg8prk3joqzfaif"
         },
         {
+        "title": "Jessica Jones: Season 3",
+        "releaseorder": 44,
+        "chronologicalorder": 39,
+        "released": "2019",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Iron Fist: Season 2",
+        "releaseorder": 38,
+        "chronologicalorder": 40,
+        "released": "2018",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Daredevil: Season 3",
+        "releaseorder": 39,
+        "chronologicalorder": 41,
+        "released": "2018",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Punisher: Season 2",
+        "releaseorder": 40,
+        "chronologicalorder": 42,
+        "released": "2019",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "Marvel's Agents of S.H.I.E.L.D.: Season 5",
+        "releaseorder": 32,
+        "chronologicalorder": 43,
+        "released": "2017",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
         "title": "Avengers: Infinity War",
-        "releaseorder": 19,
-        "chronologicalorder": 22,
+        "releaseorder": 35,
+        "chronologicalorder": 44,
         "released": "2018",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-avengers-infinity-war/1WEuZ7H6y39v", 
@@ -221,8 +441,8 @@
         },
         {
         "title": "Avengers: Endgame",
-        "releaseorder": 22,
-        "chronologicalorder": 23,
+        "releaseorder": 42,
+        "chronologicalorder": 45,
         "released": "2019",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-avengers-endgame/aRbVJUb2h2Rf", 
@@ -230,9 +450,49 @@
         "apple": "https://tv.apple.com/us/movie/avengers-endgame/umc.cmc.4ao9tm6b6rz4sy7yj5v13ltf8"
         },
         {
+        "title": "Loki",
+        "releaseorder": 49,
+        "chronologicalorder": 46,
+        "released": "2021",
+        "type": "movie",
+        "disney": "https://www.disneyplus.com/movies/marvel-studios-avengers-endgame/aRbVJUb2h2Rf", 
+        "amazon": "https://www.amazon.com/Marvel-Studios-Avengers-Robert-Downey/dp/B07QWPSDPR", 
+        "apple": "https://tv.apple.com/us/movie/avengers-endgame/umc.cmc.4ao9tm6b6rz4sy7yj5v13ltf8"
+        },
+        {
+        "title": "Marvel's Agents of S.H.I.E.L.D.: Season 6",
+        "releaseorder": 43,
+        "chronologicalorder": 47,
+        "released": "2019",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "WandaVision",
+        "releaseorder": 47,
+        "chronologicalorder": 48,
+        "released": "2021",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
+        "title": "The Falcon and the Winter Soldier",
+        "releaseorder": 48,
+        "chronologicalorder": 49,
+        "released": "2021",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        },
+        {
         "title": "Shang-Chi and The Legend Of The Ten Rings",
-        "releaseorder": 25,
-        "chronologicalorder": 24,
+        "releaseorder": 51,
+        "chronologicalorder": 50,
         "released": "2021",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/shang-chi-and-the-legend-of-the-ten-rings/5GyV9sf9Y041", 
@@ -240,9 +500,19 @@
         "apple": "https://tv.apple.com/us/movie/shang-chi-and-the-legend-of-the-ten-rings/umc.cmc.1r6h2ku90p1e6jaznhnk0m5hd"
         },
         {
+        "title": "Eternals",
+        "releaseorder": 52,
+        "chronologicalorder": 51,
+        "released": "2021",
+        "type": "movie",
+        "disney": "https://www.disneyplus.com/movies/eternals/5cmhJAtkt6Jk", 
+        "amazon": "https://www.amazon.com/Eternals-Gemma-Chan/dp/B09KK398BZ", 
+        "apple": "https://tv.apple.com/us/movie/eternals/umc.cmc.7gst8rnk6n9w3ac567v4mm687"
+        },
+        {
         "title": "Spider-Man: Far From Home",
-        "releaseorder": 23,
-        "chronologicalorder": 25,
+        "releaseorder": 45,
+        "chronologicalorder": 52,
         "released": "2019",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/spider-man-far-from-home/3PtrmOKmcLb4", 
@@ -251,8 +521,8 @@
         },
         {
         "title": "Spider-Man: No Way Home",
-        "releaseorder": 27,
-        "chronologicalorder": 26,
+        "releaseorder": 54,
+        "chronologicalorder": 53,
         "released": "2021",
         "type": "movie",
         "disney": "None", 
@@ -260,19 +530,19 @@
         "apple": "https://tv.apple.com/us/movie/spider-man-no-way-home/umc.cmc.2qf7xc5hds0m5jgx4roago580"
         },
         {
-        "title": "Eternals",
-        "releaseorder": 26,
-        "chronologicalorder": 27,
-        "released": "2021",
-        "type": "movie",
-        "disney": "https://www.disneyplus.com/movies/eternals/5cmhJAtkt6Jk", 
-        "amazon": "https://www.amazon.com/Eternals-Gemma-Chan/dp/B09KK398BZ", 
-        "apple": "https://tv.apple.com/us/movie/eternals/umc.cmc.7gst8rnk6n9w3ac567v4mm687"
+        "title": "Hawkeye",
+        "releaseorder": 53,
+        "chronologicalorder": 54,
+        "released": "2011",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
         },
         {
         "title": "Doctor Strange In The Multiverse of Madness",
-        "releaseorder": 29,
-        "chronologicalorder": 29,
+        "releaseorder": 56,
+        "chronologicalorder": 55,
         "released": "2022",
         "type": "movie",
         "disney":"https://www.disneyplus.com/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH", 
@@ -281,12 +551,22 @@
         },
         {
         "title": "Moon Knight",
-        "releaseorder": 28,
-        "chronologicalorder": 28,
+        "releaseorder": 55,
+        "chronologicalorder": 56,
         "released": "2022",
         "type": "tv",
         "disney": "https://www.disneyplus.com/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH", 
         "amazon": "https://www.amazon.com/Strange-Multiverse-Madness-Benedict-Cumberbatch/dp/B0B3SN4LKR", 
         "apple": "https://tv.apple.com/us/movie/doctor-strange-in-the-multiverse-of-madness/umc.cmc.5f0mydwzevgd47pqxidz6sjf9"
+        },
+        {
+        "title": "Ms. Marvel",
+        "releaseorder": 57,
+        "chronologicalorder": 57,
+        "released": "2022",
+        "type": "movie",
+        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
+        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
+        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
         }
 ]
