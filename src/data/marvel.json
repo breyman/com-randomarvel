@@ -10,9 +10,19 @@
         "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
         },
         {
-        "title": "Captain Marvel",
-        "releaseorder": 21,
+        "title": "Marvel's Agent Carter",
+        "releaseorder": 12,
         "chronologicalorder": 2,
+        "released": "2015",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/agent-carter/3rh3uclvsNsT", 
+        "amazon": "https://www.amazon.com/Marvels-Agent-Carter-Season-1/dp/B00RWAO4NU", 
+        "apple": "https://tv.apple.com/ai/show/agent-carter/umc.cmc.1ex9ewntv8b99x3cfxjd3q458"
+        },
+        {
+        "title": "Captain Marvel",
+        "releaseorder": 30,
+        "chronologicalorder": 3,
         "released": "2019",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-captain-marvel/38xJGlLAQy9a", 
@@ -22,7 +32,7 @@
         {
         "title": "Iron Man",
         "releaseorder": 1,
-        "chronologicalorder": 3,
+        "chronologicalorder": 4,
         "released": "2008",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-iron-man/6aM2a8mZATiu", 
@@ -32,21 +42,12 @@
         {
         "title": "Iron Man 2",
         "releaseorder": 3,
-        "chronologicalorder": 4,
+        "chronologicalorder": 5,
         "released": "2010",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/iron-man-2/lXjCr9QmGGQJ", 
         "amazon": "https://www.amazon.com/Iron-Man-Robert-Downey-Jr/dp/B0040Z9H5K", 
         "apple": "https://tv.apple.com/us/movie/iron-man-2/umc.cmc.1y2bgb9s3j4an0b1bra6ekv3s"
-        },
-        {
-        "title": "The Incredible Hulk",
-        "releaseorder": 2,
-        "chronologicalorder": 5,
-        "released": "2008",
-        "disney": null, 
-        "amazon": "https://www.amazon.com/Incredible-Hulk-Edward-Norton/dp/B001IAME78", 
-        "apple": "https://tv.apple.com/us/movie/the-incredible-hulk/umc.cmc.1uldcoh87etoxgugkmqur4pvp"
         },
         {
         "title": "Thor",
@@ -59,24 +60,24 @@
         "apple": "https://tv.apple.com/us/movie/thor/umc.cmc.hgkuacmdh6wxtlwtwpuju43"
         },
         {
+        "title": "The Incredible Hulk",
+        "releaseorder": 2,
+        "chronologicalorder": 7,
+        "released": "2008",
+        "type": "movie",
+        "disney": null, 
+        "amazon": "https://www.amazon.com/Incredible-Hulk-Edward-Norton/dp/B001IAME78", 
+        "apple": "https://tv.apple.com/us/movie/the-incredible-hulk/umc.cmc.1uldcoh87etoxgugkmqur4pvp"
+        },
+        {
         "title": "The Avengers",
         "releaseorder": 6,
-        "chronologicalorder": 7,
+        "chronologicalorder": 8,
         "released": "2012",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-the-avengers/2h6PcHFDbsPy", 
         "amazon": "https://www.amazon.com/Marvels-Avengers-Robert-Downey-Jr/dp/B008NCSZQ8", 
         "apple": "https://tv.apple.com/us/movie/the-avengers/umc.cmc.7i757ymuvffa02onn3uva0emx"
-        },
-        {
-        "title": "Thor: The Dark World",
-        "releaseorder": 8,
-        "chronologicalorder": 8,
-        "released": "2013",
-        "type": "movie",
-        "disney": "https://www.disneyplus.com/movies/thor-the-dark-world/ZHk7aM5xTbW7", 
-        "amazon": "https://www.amazon.com/Thor-Dark-World-Chris-Hemsworth/dp/B00IMYS3VO", 
-        "apple": "https://tv.apple.com/us/movie/thor-the-dark-world/umc.cmc.4g07e0agi9p1c2puo15jz89zo"
         },
         {
         "title": "Iron Man 3",
@@ -89,9 +90,29 @@
         "apple": "https://tv.apple.com/us/movie/iron-man-3/umc.cmc.330w7tm79l0jupdtwihclt1rh"
         },
         {
-        "title": "Captain America: Winter Soilder",
+        "title": "Thor: The Dark World",
         "releaseorder": 9,
         "chronologicalorder": 10,
+        "released": "2013",
+        "type": "movie",
+        "disney": "https://www.disneyplus.com/movies/thor-the-dark-world/ZHk7aM5xTbW7", 
+        "amazon": "https://www.amazon.com/Thor-Dark-World-Chris-Hemsworth/dp/B00IMYS3VO", 
+        "apple": "https://tv.apple.com/us/movie/thor-the-dark-world/umc.cmc.4g07e0agi9p1c2puo15jz89zo"
+        },
+        {
+        "title": "Marvel's Agents of S.H.I.E.L.D.",
+        "releaseorder": 8,
+        "chronologicalorder": 11,
+        "released": "2013",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B00EY7LT9Q/ref=atv_dp_season_select_s1", 
+        "apple": "https://tv.apple.com/us/show/marvels-agents-of-shield/umc.cmc.26uur8iqo7k2psyp5l6em6xo0"
+        },
+        {
+        "title": "Captain America: Winter Soldier",
+        "releaseorder": 10,
+        "chronologicalorder": 12,
         "released": "2014",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/captain-america-the-winter-soldier/TVme5whcowSy", 
@@ -100,8 +121,8 @@
         },
         {
         "title": "Guardians of the Galaxy",
-        "releaseorder": 10,
-        "chronologicalorder": 11,
+        "releaseorder": 11,
+        "chronologicalorder": 13,
         "released": "2014",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/guardians-of-the-galaxy/1S4WM9h3KRR6", 
@@ -110,8 +131,8 @@
         },
         {
         "title": "Guardians of the Galaxy: Vol.2",
-        "releaseorder": 15,
-        "chronologicalorder": 12,
+        "releaseorder": 21,
+        "chronologicalorder": 14,
         "released": "2017",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-guardians-of-the-galaxy-vol-2/ZdRX4mMbp1gM", 
@@ -119,9 +140,19 @@
         "apple": "https://tv.apple.com/us/movie/guardians-of-the-galaxy-vol-2/umc.cmc.7g0gtypmo4kimdjqo0x078kuk"
         },
         {
+        "title": "Daredevil",
+        "releaseorder": 13,
+        "chronologicalorder": 15,
+        "released": "2015",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/daredevil/5jKSWL7ZMg50", 
+        "amazon": "https://www.amazon.com/Marvels-Daredevil-Season-1/dp/B01D1WQZMA", 
+        "apple": "https://tv.apple.com/us/show/marvels-daredevil/umc.cmc.1b5xq7ok0kvsa3uelan6roj6v"
+        },
+        {
         "title": "Avengers: Age of Ultron",
-        "releaseorder": 11,
-        "chronologicalorder": 13,
+        "releaseorder": 14,
+        "chronologicalorder": 16,
         "released": "2015",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-avengers-age-of-ultron/76IUxY0rNHzt", 
@@ -129,9 +160,19 @@
         "apple": "https://tv.apple.com/us/movie/avengers-age-of-ultron/umc.cmc.scq1juwtw6cfpo92aot2c5qx"
         },
         {
+        "title": "Jessica Jones",
+        "releaseorder": 16,
+        "chronologicalorder": 17,
+        "released": "2015",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/jessica-jones/4LX4rNmINp5y", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B01MXMZJ1P/ref=atv_dp_season_select_s1",
+        "apple": "https://tv.apple.com/us/show/jessica-jones/umc.cmc.bc1wvcaiig5ifan2chl00aw7"
+        },
+        {
         "title": "Antman",
-        "releaseorder": 12,
-        "chronologicalorder": 14,
+        "releaseorder": 15,
+        "chronologicalorder": 18,
         "released": "2015",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-ant-man/5c92KVf1zgUX", 
@@ -139,9 +180,39 @@
         "apple": "https://tv.apple.com/us/movie/ant-man/umc.cmc.5v0c1mtw53zkyw8a0hf8xglwm"
         },
         {
+        "title": "Luke Cage",
+        "releaseorder": 18,
+        "chronologicalorder": 19,
+        "released": "2016",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/luke-cage/1L458elR85KN", 
+        "amazon": "https://www.amazon.com/Marvels-Luke-Cage-Season-1/dp/B078175PBK", 
+        "apple": "https://tv.apple.com/us/show/luke-cage/umc.cmc.5fzserydb2e7np3wdcxs66hy"
+        },
+        {
+        "title": "Iron Fist",
+        "releaseorder": 20,
+        "chronologicalorder": 20,
+        "released": "2017",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/iron-fist/24YlE6bSZy6E", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B0896YV8WP/ref=atv_dp_season_select_s2", 
+        "apple": "https://tv.apple.com/us/show/iron-fist/umc.cmc.23q4spxehvwbhii7jhonoupu"
+        },
+        {
+        "title": "The Defenders",
+        "releaseorder": 23,
+        "chronologicalorder": 21,
+        "released": "2017",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/the-defenders/1vLuQyD9nTYk", 
+        "amazon": "https://www.amazon.com/Marvels-The-Defenders-Season-1/dp/B099GCW91B", 
+        "apple": "https://tv.apple.com/us/show/marvels-the-defenders/umc.cmc.63yp5lk0ae7s1e4sat665q3at"
+        },
+        {
         "title": "Captain America: Civil War",
-        "releaseorder": 13,
-        "chronologicalorder": 15,
+        "releaseorder": 17,
+        "chronologicalorder": 22,
         "released": "2016",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-captain-america-civil-war/4ovfyKnnIBCg", 
@@ -149,19 +220,9 @@
         "apple": "https://tv.apple.com/us/movie/captain-america-civil-war/umc.cmc.6gq2ehunu5q6zvh9up3cw2i0d"
         },
         {
-        "title": "Black Widow",
-        "releaseorder": 24,
-        "chronologicalorder": 16,
-        "released": "2021",
-        "type": "movie",
-        "disney": "https://www.disneyplus.com/movies/black-widow/3VfTap90rwZC", 
-        "amazon": "https://www.amazon.com/Black-Widow-Willem-Dafoe/dp/B07DYCPMZP", 
-        "apple": "https://tv.apple.com/us/movie/black-widow/umc.cmc.3tfe3lm0qa0b29a6r84hc8jjy"
-        },
-        {
         "title": "Spider-Man: Homecoming",
-        "releaseorder": 16,
-        "chronologicalorder": 17,
+        "releaseorder": 22,
+        "chronologicalorder": 23,
         "released": "2017",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/spider-man-homecoming/4cLMEzWGqQaG", 
@@ -169,19 +230,29 @@
         "apple": "https://tv.apple.com/us/movie/spider-man-homecoming/umc.cmc.2sbgqu6gpbevxnjjhfd4ahuvn"
         },
         {
-        "title": "Black Panther",
-        "releaseorder": 18,
-        "chronologicalorder": 18,
-        "released": "2018",
-        "type": "movie",
-        "disney": "https://www.disneyplus.com/movies/marvel-studios-black-panther/1GuXuYPj99Ke", 
-        "amazon": "https://www.amazon.com/Panther-Theatrical-Version-Chadwick-Boseman/dp/B079NKRK66", 
-        "apple": "https://tv.apple.com/us/movie/black-panther/umc.cmc.53u1tdqk891nlpuvdh8ne00pb"
+        "title": "Punisher",
+        "releaseorder": 26,
+        "chronologicalorder": 24,
+        "released": "2017",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/the-punisher/6JOZHgU6cBS3", 
+        "amazon": "https://www.amazon.com/Marvels-The-Punisher-Season-1/dp/B07M6SFKMJ", 
+        "apple": "https://tv.apple.com/us/show/the-punisher/umc.cmc.js4i73kjg5z4wp6pksqm2eky"
+        },
+        {
+        "title": "Marvel's Inhumans",
+        "releaseorder": 24,
+        "chronologicalorder": 25,
+        "released": "2017",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/inhumans/6VZXWp9jaYsT",
+        "amazon": null,
+        "apple": "https://tv.apple.com/us/show/marvels-inhumans/umc.cmc.77jumqhs1rcdsbqtvc60nikya"
         },
         {
         "title": "Doctor Strange",
-        "releaseorder": 14,
-        "chronologicalorder": 19,
+        "releaseorder": 19,
+        "chronologicalorder": 26,
         "released": "2016",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-doctor-strange/4GgMJ1aHKHA2", 
@@ -189,9 +260,19 @@
         "apple": "https://tv.apple.com/us/movie/doctor-strange/umc.cmc.1pr69aixggljcme3mjh826zj6"
         },
         {
+        "title": "Black Panther",
+        "releaseorder": 27,
+        "chronologicalorder": 27,
+        "released": "2018",
+        "type": "movie",
+        "disney": "https://www.disneyplus.com/movies/marvel-studios-black-panther/1GuXuYPj99Ke", 
+        "amazon": "https://www.amazon.com/Panther-Theatrical-Version-Chadwick-Boseman/dp/B079NKRK66", 
+        "apple": "https://tv.apple.com/us/movie/black-panther/umc.cmc.53u1tdqk891nlpuvdh8ne00pb"
+        },
+        {
         "title": "Thor: Ragnorok",
-        "releaseorder": 17,
-        "chronologicalorder": 20,
+        "releaseorder": 25,
+        "chronologicalorder": 28,
         "released": "2017",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-thor-ragnarok/3XqAT8UV8ojS", 
@@ -199,9 +280,19 @@
         "apple": "https://tv.apple.com/us/movie/thor-ragnarok/umc.cmc.5f4fq6k3njmustywcg5jld7im"
         },
         {
+        "title": "Black Widow",
+        "releaseorder": 36,
+        "chronologicalorder": 29,
+        "released": "2021",
+        "type": "movie",
+        "disney": "https://www.disneyplus.com/movies/black-widow/3VfTap90rwZC", 
+        "amazon": "https://www.amazon.com/Black-Widow-Willem-Dafoe/dp/B07DYCPMZP", 
+        "apple": "https://tv.apple.com/us/movie/black-widow/umc.cmc.3tfe3lm0qa0b29a6r84hc8jjy"
+        },
+        {
         "title": "Antman and The Wasp",
-        "releaseorder": 20,
-        "chronologicalorder": 21,
+        "releaseorder": 29,
+        "chronologicalorder": 30,
         "released": "2018",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-ant-man-and-the-wasp/5D7wkVHmlCKU", 
@@ -210,8 +301,8 @@
         },
         {
         "title": "Avengers: Infinity War",
-        "releaseorder": 19,
-        "chronologicalorder": 22,
+        "releaseorder": 28,
+        "chronologicalorder": 31,
         "released": "2018",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-avengers-infinity-war/1WEuZ7H6y39v", 
@@ -220,8 +311,8 @@
         },
         {
         "title": "Avengers: Endgame",
-        "releaseorder": 22,
-        "chronologicalorder": 23,
+        "releaseorder": 31,
+        "chronologicalorder": 32,
         "released": "2019",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/marvel-studios-avengers-endgame/aRbVJUb2h2Rf", 
@@ -229,9 +320,39 @@
         "apple": "https://tv.apple.com/us/movie/avengers-endgame/umc.cmc.4ao9tm6b6rz4sy7yj5v13ltf8"
         },
         {
+        "title": "Loki",
+        "releaseorder": 35,
+        "chronologicalorder": 33,
+        "released": "2021",
+        "type": "movie",
+        "disney": "https://www.disneyplus.com/movies/marvel-studios-avengers-endgame/aRbVJUb2h2Rf", 
+        "amazon": "https://www.amazon.com/Marvel-Studios-Avengers-Robert-Downey/dp/B07QWPSDPR", 
+        "apple": "https://tv.apple.com/us/movie/avengers-endgame/umc.cmc.4ao9tm6b6rz4sy7yj5v13ltf8"
+        },
+        {
+        "title": "WandaVision",
+        "releaseorder": 33,
+        "chronologicalorder": 34,
+        "released": "2021",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/-/4SrN28ZjDLwH",
+        "amazon": null,
+        "apple": "https://tv.apple.com/us/show/wandavision/umc.cmc.76njao041pigwmmpue272zsbh"
+        },
+        {
+        "title": "The Falcon and the Winter Soldier",
+        "releaseorder": 34,
+        "chronologicalorder": 35,
+        "released": "2021",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/the-falcon-and-the-winter-soldier/4gglDBMx8icA",
+        "amazon": null, 
+        "apple": "https://tv.apple.com/us/show/the-falcon-and-the-winter-soldier/umc.cmc.5r19ka66bi3j736pyndlmz5t2"
+        },
+        {
         "title": "Shang-Chi and The Legend Of The Ten Rings",
-        "releaseorder": 25,
-        "chronologicalorder": 24,
+        "releaseorder": 37,
+        "chronologicalorder": 36,
         "released": "2021",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/shang-chi-and-the-legend-of-the-ten-rings/5GyV9sf9Y041", 
@@ -239,9 +360,19 @@
         "apple": "https://tv.apple.com/us/movie/shang-chi-and-the-legend-of-the-ten-rings/umc.cmc.1r6h2ku90p1e6jaznhnk0m5hd"
         },
         {
+        "title": "Eternals",
+        "releaseorder": 38,
+        "chronologicalorder": 37,
+        "released": "2021",
+        "type": "movie",
+        "disney": "https://www.disneyplus.com/movies/eternals/5cmhJAtkt6Jk", 
+        "amazon": "https://www.amazon.com/Eternals-Gemma-Chan/dp/B09KK398BZ", 
+        "apple": "https://tv.apple.com/us/movie/eternals/umc.cmc.7gst8rnk6n9w3ac567v4mm687"
+        },
+        {
         "title": "Spider-Man: Far From Home",
-        "releaseorder": 23,
-        "chronologicalorder": 25,
+        "releaseorder": 32,
+        "chronologicalorder": 38,
         "released": "2019",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/spider-man-far-from-home/3PtrmOKmcLb4", 
@@ -250,27 +381,28 @@
         },
         {
         "title": "Spider-Man: No Way Home",
-        "releaseorder": 27,
-        "chronologicalorder": 26,
+        "releaseorder": 40,
+        "chronologicalorder": 39,
         "released": "2021",
+        "type": "movie",
         "disney": "None", 
         "amazon": "https://www.amazon.com/Spider-Man-Way-Home-Tom-Holland/dp/B09NMDWYDL", 
         "apple": "https://tv.apple.com/us/movie/spider-man-no-way-home/umc.cmc.2qf7xc5hds0m5jgx4roago580"
         },
         {
-        "title": "Eternals",
-        "releaseorder": 26,
-        "chronologicalorder": 27,
-        "released": "2021",
-        "type": "movie",
-        "disney": "https://www.disneyplus.com/movies/eternals/5cmhJAtkt6Jk", 
-        "amazon": "https://www.amazon.com/Eternals-Gemma-Chan/dp/B09KK398BZ", 
-        "apple": "https://tv.apple.com/us/movie/eternals/umc.cmc.7gst8rnk6n9w3ac567v4mm687"
+        "title": "Hawkeye",
+        "releaseorder": 39,
+        "chronologicalorder": 40,
+        "released": "2011",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l", 
+        "amazon": null, 
+        "apple": "https://tv.apple.com/us/show/hawkeye/umc.cmc.6v5xmzda60wkqkz0ib5twv3i0"
         },
         {
         "title": "Doctor Strange In The Multiverse of Madness",
-        "releaseorder": 29,
-        "chronologicalorder": 29,
+        "releaseorder": 42,
+        "chronologicalorder": 41,
         "released": "2022",
         "type": "movie",
         "disney":"https://www.disneyplus.com/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH", 
@@ -279,12 +411,22 @@
         },
         {
         "title": "Moon Knight",
-        "releaseorder": 28,
-        "chronologicalorder": 28,
+        "releaseorder": 41,
+        "chronologicalorder": 42,
         "released": "2022",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH", 
-        "amazon": "https://www.amazon.com/Strange-Multiverse-Madness-Benedict-Cumberbatch/dp/B0B3SN4LKR", 
-        "apple": "https://tv.apple.com/us/movie/doctor-strange-in-the-multiverse-of-madness/umc.cmc.5f0mydwzevgd47pqxidz6sjf9"
+        "disney": "https://www.disneyplus.com/series/moon-knight/4S3oOF1knocS", 
+        "amazon": null,
+        "apple": "https://tv.apple.com/us/show/moon-knight/umc.cmc.4bawhgra4coweryyf7iyrd2a9"
+        },
+        {
+        "title": "Ms. Marvel",
+        "releaseorder": 43,
+        "chronologicalorder": 43,
+        "released": "2022",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/ms-marvel/45BsikoMcOOo", 
+        "amazon": null, 
+        "apple": "https://tv.apple.com/us/show/ms-marvel/umc.cmc.2c4n7gsyg8u3qjvy3xlcakg3e"
         }
 ]
