@@ -50,7 +50,7 @@ class MediaList extends React.Component{
     return(
       <div>
         <div className="column is-full has-text-centered">
-          <h2 className="has-text-primary is-size-2 has-text-weight-bold">Marvel Movies</h2>
+          <h2 className="has-text-primary is-size-2 has-text-weight-bold">Marvel Movies and TV Shows</h2>
         </div>
         <div className="column is-full has-text-centered">
           <div className="buttons has-addons has-text-centered is-centered">
