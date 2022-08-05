@@ -3,7 +3,7 @@ function WatchMovie(props){
   let streamingClass = "";
   let icon;
   
-  if(props.link === null || props.link === undefined){
+  if(props.link === null || !props.link){
     
   }else {  
     switch(props.streaming) {
