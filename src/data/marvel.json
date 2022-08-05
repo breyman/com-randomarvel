@@ -5,9 +5,9 @@
         "chronologicalorder": 1,
         "released": "2020",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B08998M987/ref=atv_dp_season_select_s7", 
+        "apple": "https://tv.apple.com/us/show/marvels-agents-of-shield/umc.cmc.26uur8iqo7k2psyp5l6em6xo0"
         },
         {
         "title": "Captain America: The First Avenger",
@@ -25,9 +25,9 @@
         "chronologicalorder": 3,
         "released": "2015",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH", 
-        "amazon": "https://www.amazon.com/Strange-Multiverse-Madness-Benedict-Cumberbatch/dp/B0B3SN4LKR", 
-        "apple": "https://tv.apple.com/us/movie/doctor-strange-in-the-multiverse-of-madness/umc.cmc.5f0mydwzevgd47pqxidz6sjf9"
+        "disney": "https://www.disneyplus.com/series/agent-carter/3rh3uclvsNsT", 
+        "amazon": "https://www.amazon.com/Marvels-Agent-Carter-Season-1/dp/B00RWAO4NU", 
+        "apple": "https://tv.apple.com/ai/show/agent-carter/umc.cmc.1ex9ewntv8b99x3cfxjd3q458"
         },
         {
         "title": "Marvel's Agent Carter: Season 2",
@@ -35,9 +35,9 @@
         "chronologicalorder": 4,
         "released": "2016",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH", 
-        "amazon": "https://www.amazon.com/Strange-Multiverse-Madness-Benedict-Cumberbatch/dp/B0B3SN4LKR", 
-        "apple": "https://tv.apple.com/us/movie/doctor-strange-in-the-multiverse-of-madness/umc.cmc.5f0mydwzevgd47pqxidz6sjf9"
+        "disney": "https://www.disneyplus.com/series/agent-carter/3rh3uclvsNsT", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B019ZW6B38/ref=atv_dp_season_select_s2", 
+        "apple": "https://tv.apple.com/ai/show/agent-carter/umc.cmc.1ex9ewntv8b99x3cfxjd3q458"
         },
         {
         "title": "Captain Marvel",
@@ -125,9 +125,9 @@
         "chronologicalorder": 13,
         "released": "2013",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B00EY7LT9Q/ref=atv_dp_season_select_s1", 
+        "apple": "https://tv.apple.com/us/show/marvels-agents-of-shield/umc.cmc.26uur8iqo7k2psyp5l6em6xo0"
         },
         {
         "title": "Captain America: Winter Soldier",
@@ -165,9 +165,9 @@
         "chronologicalorder": 17,
         "released": "2015",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/daredevil/5jKSWL7ZMg50", 
+        "amazon": "https://www.amazon.com/Marvels-Daredevil-Season-1/dp/B01D1WQZMA", 
+        "apple": "https://tv.apple.com/us/show/marvels-daredevil/umc.cmc.1b5xq7ok0kvsa3uelan6roj6v"
         },
         {
         "title": "Marvel's Agents of S.H.I.E.L.D.: Season 2",
@@ -175,9 +175,9 @@
         "chronologicalorder": 18,
         "released": "2014",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B00NUDGHEW/ref=atv_dp_season_select_s2", 
+        "apple": "https://tv.apple.com/us/show/marvels-agents-of-shield/umc.cmc.26uur8iqo7k2psyp5l6em6xo0"
         },
         {
         "title": "Avengers: Age of Ultron",
@@ -195,9 +195,9 @@
         "chronologicalorder": 20,
         "released": "2015",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/jessica-jones/4LX4rNmINp5y", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B01MXMZJ1P/ref=atv_dp_season_select_s1",
+        "apple": "https://tv.apple.com/us/show/jessica-jones/umc.cmc.bc1wvcaiig5ifan2chl00aw7"
         },
         {
         "title": "Marvel's Agents of S.H.I.E.L.D.: Season 3",
@@ -205,9 +205,9 @@
         "chronologicalorder": 21,
         "released": "2015",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B014PCA5NK/ref=atv_dp_season_select_s3", 
+        "apple": "https://tv.apple.com/us/show/marvels-agents-of-shield/umc.cmc.26uur8iqo7k2psyp5l6em6xo0"
         },
         {
         "title": "Antman",
@@ -225,9 +225,9 @@
         "chronologicalorder": 23,
         "released": "2016",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/daredevil/5jKSWL7ZMg50", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B06XTCY5C1/ref=atv_dp_season_select_s2", 
+        "apple": "https://tv.apple.com/us/show/marvels-daredevil/umc.cmc.1b5xq7ok0kvsa3uelan6roj6v"
         },
         {
         "title": "Luke Cage: Season 1",
@@ -235,9 +235,9 @@
         "chronologicalorder": 24,
         "released": "2016",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/luke-cage/1L458elR85KN", 
+        "amazon": "https://www.amazon.com/Marvels-Luke-Cage-Season-1/dp/B078175PBK", 
+        "apple": "https://tv.apple.com/us/show/luke-cage/umc.cmc.5fzserydb2e7np3wdcxs66hy"
         },
         {
         "title": "Iron Fist: Season 1",
@@ -245,9 +245,9 @@
         "chronologicalorder": 25,
         "released": "2017",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/iron-fist/24YlE6bSZy6E", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B0896YV8WP/ref=atv_dp_season_select_s2", 
+        "apple": "https://tv.apple.com/us/show/iron-fist/umc.cmc.23q4spxehvwbhii7jhonoupu"
         },
         {
         "title": "The Defenders",
@@ -255,9 +255,9 @@
         "chronologicalorder": 26,
         "released": "2017",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/the-defenders/1vLuQyD9nTYk", 
+        "amazon": "https://www.amazon.com/Marvels-The-Defenders-Season-1/dp/B099GCW91B", 
+        "apple": "https://tv.apple.com/us/show/marvels-the-defenders/umc.cmc.63yp5lk0ae7s1e4sat665q3at"
         },
         {
         "title": "Captain America: Civil War",
@@ -285,9 +285,9 @@
         "chronologicalorder": 29,
         "released": "2017",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/the-punisher/6JOZHgU6cBS3", 
+        "amazon": "https://www.amazon.com/Marvels-The-Punisher-Season-1/dp/B07M6SFKMJ", 
+        "apple": "https://tv.apple.com/us/show/the-punisher/umc.cmc.js4i73kjg5z4wp6pksqm2eky"
         },
         {
         "title": "Marvel's Agents of S.H.I.E.L.D.: Season 4",
@@ -295,9 +295,9 @@
         "chronologicalorder": 30,
         "released": "2016",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B01LGB20MC/ref=atv_dp_season_select_s4", 
+        "apple": "https://tv.apple.com/us/show/marvels-agents-of-shield/umc.cmc.26uur8iqo7k2psyp5l6em6xo0"
         },
         {
         "title": "Marvel's Inhumans",
@@ -305,9 +305,9 @@
         "chronologicalorder": 31,
         "released": "2017",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/inhumans/6VZXWp9jaYsT",
+        "amazon": null,
+        "apple": "https://tv.apple.com/us/show/marvels-inhumans/umc.cmc.77jumqhs1rcdsbqtvc60nikya"
         },
         {
         "title": "Jessica Jones: Season 2",
@@ -315,9 +315,9 @@
         "chronologicalorder": 32,
         "released": "2018",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/jessica-jones/4LX4rNmINp5y", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B07PDHX1NW/ref=atv_dp_season_select_s2", 
+        "apple": "https://tv.apple.com/us/show/jessica-jones/umc.cmc.bc1wvcaiig5ifan2chl00aw7"
         },
         {
         "title": "Doctor Strange",
@@ -355,9 +355,9 @@
         "chronologicalorder": 36,
         "released": "2018",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/luke-cage/1L458elR85KN", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B07T867H1L/ref=atv_dp_season_select_s2", 
+        "apple": "https://tv.apple.com/us/show/luke-cage/umc.cmc.5fzserydb2e7np3wdcxs66hy"
         },
         {
         "title": "Black Widow",
@@ -385,9 +385,9 @@
         "chronologicalorder": 39,
         "released": "2019",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/jessica-jones/4LX4rNmINp5y", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B08SJ5GKBZ/ref=atv_dp_season_select_s3", 
+        "apple": "https://tv.apple.com/us/show/jessica-jones/umc.cmc.bc1wvcaiig5ifan2chl00aw7"
         },
         {
         "title": "Iron Fist: Season 2",
@@ -395,9 +395,9 @@
         "chronologicalorder": 40,
         "released": "2018",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/iron-fist/24YlE6bSZy6E", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B0896YV8WP/ref=atv_dp_season_select_s2", 
+        "apple": "https://tv.apple.com/us/show/iron-fist/umc.cmc.23q4spxehvwbhii7jhonoupu"
         },
         {
         "title": "Daredevil: Season 3",
@@ -405,9 +405,9 @@
         "chronologicalorder": 41,
         "released": "2018",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/daredevil/5jKSWL7ZMg50", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B0896T372R/ref=atv_dp_season_select_s3", 
+        "apple": "https://tv.apple.com/us/show/marvels-daredevil/umc.cmc.1b5xq7ok0kvsa3uelan6roj6v"
         },
         {
         "title": "Punisher: Season 2",
@@ -415,9 +415,9 @@
         "chronologicalorder": 42,
         "released": "2019",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/the-punisher/6JOZHgU6cBS3", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B08972KRLY/ref=atv_dp_season_select_s2", 
+        "apple": "https://tv.apple.com/us/show/the-punisher/umc.cmc.js4i73kjg5z4wp6pksqm2eky"
         },
         {
         "title": "Marvel's Agents of S.H.I.E.L.D.: Season 5",
@@ -425,9 +425,9 @@
         "chronologicalorder": 43,
         "released": "2017",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi", 
+        "amazon": "https://www.amazon.com/gp/video/detail/B077S78H8S/ref=atv_dp_season_select_s5", 
+        "apple": "https://tv.apple.com/us/show/marvels-agents-of-shield/umc.cmc.26uur8iqo7k2psyp5l6em6xo0"
         },
         {
         "title": "Avengers: Infinity War",
@@ -465,9 +465,9 @@
         "chronologicalorder": 47,
         "released": "2019",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi",
+        "amazon": "https://www.amazon.com/gp/video/detail/B07RGJHS9J/ref=atv_dp_season_select_s6", 
+        "apple": "https://tv.apple.com/us/show/marvels-agents-of-shield/umc.cmc.26uur8iqo7k2psyp5l6em6xo0"
         },
         {
         "title": "WandaVision",
@@ -475,9 +475,9 @@
         "chronologicalorder": 48,
         "released": "2021",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/-/4SrN28ZjDLwH",
+        "amazon": null,
+        "apple": "https://tv.apple.com/us/show/wandavision/umc.cmc.76njao041pigwmmpue272zsbh"
         },
         {
         "title": "The Falcon and the Winter Soldier",
@@ -485,9 +485,9 @@
         "chronologicalorder": 49,
         "released": "2021",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/the-falcon-and-the-winter-soldier/4gglDBMx8icA",
+        "amazon": null, 
+        "apple": "https://tv.apple.com/us/show/the-falcon-and-the-winter-soldier/umc.cmc.5r19ka66bi3j736pyndlmz5t2"
         },
         {
         "title": "Shang-Chi and The Legend Of The Ten Rings",
@@ -535,9 +535,9 @@
         "chronologicalorder": 54,
         "released": "2011",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "disney": "https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l", 
+        "amazon": null, 
+        "apple": "https://tv.apple.com/us/show/hawkeye/umc.cmc.6v5xmzda60wkqkz0ib5twv3i0"
         },
         {
         "title": "Doctor Strange In The Multiverse of Madness",
@@ -555,18 +555,18 @@
         "chronologicalorder": 56,
         "released": "2022",
         "type": "tv",
-        "disney": "https://www.disneyplus.com/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH", 
-        "amazon": "https://www.amazon.com/Strange-Multiverse-Madness-Benedict-Cumberbatch/dp/B0B3SN4LKR", 
-        "apple": "https://tv.apple.com/us/movie/doctor-strange-in-the-multiverse-of-madness/umc.cmc.5f0mydwzevgd47pqxidz6sjf9"
+        "disney": "https://www.disneyplus.com/series/moon-knight/4S3oOF1knocS", 
+        "amazon": null,
+        "apple": "https://tv.apple.com/us/show/moon-knight/umc.cmc.4bawhgra4coweryyf7iyrd2a9"
         },
         {
         "title": "Ms. Marvel",
         "releaseorder": 57,
         "chronologicalorder": 57,
         "released": "2022",
-        "type": "movie",
-        "disney": "https://www.disneyplus.com/movies/captain-america-the-first-avenger/6xvB6xZ4r95O", 
-        "amazon": "https://www.amazon.com/Captain-America-Avenger-Chris-Evans/dp/B005PW3OS8", 
-        "apple": "https://tv.apple.com/us/movie/captain-america-the-first-avenger/umc.cmc.621ts42h8b35wrzkmdlqiozsw"
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/ms-marvel/45BsikoMcOOo", 
+        "amazon": null, 
+        "apple": "https://tv.apple.com/us/show/ms-marvel/umc.cmc.2c4n7gsyg8u3qjvy3xlcakg3e"
         }
 ]
