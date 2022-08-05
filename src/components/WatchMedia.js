@@ -1,9 +1,9 @@
-function WatchMovie(props){
+function WatchMedia(props){
   
   let streamingClass = "";
   let icon;
   
-  if(props.link === null || props.link === undefined){
+  if(props.link === null || !props.link){
     
   }else {  
     switch(props.streaming) {
@@ -36,4 +36,4 @@ function WatchMovie(props){
   )
 }
 
-export default WatchMovie;
+export default WatchMedia;
