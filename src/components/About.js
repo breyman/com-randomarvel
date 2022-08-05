@@ -5,7 +5,7 @@ function About(){
     <div className="column is-two-thirds-tablet is-two-thirds-desktop is-half-widescreen is-one-third-fullhd">
       <div className="columns is-multiline is-desktop">
         <div className="column is-full mb-6">
-          RandoMarvel lets you pick and watch a random Marvel-produced movie to watch. Bored on a Saturday night? Have crippling decision anxiety? Generate a movie now.
+          RandoMarvel lets you pick and watch a random Marvel-produced movie or TV show to watch. Bored on a Saturday night? Have crippling decision anxiety? Generate a movie/tv show now.
         </div>
         <div className="column is-one-third mt-6">
           <figure className="image is-128x128">

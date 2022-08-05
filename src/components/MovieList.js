@@ -57,19 +57,21 @@ class MovieList extends React.Component{
             <button className={timelineButtonClass} onClick={() => this.sortList("chrono")}>By Timeline</button>
             <button className={releaseButtonClass} onClick={() => this.sortList("release")}>By Release</button>
           </div>
-          <p>
+          <div>
             <table className="table is-bordered is-striped is-fullwidth">       
             <thead>
               <tr>
-                <th className="has-text-centered" title="Title">Title</th>
+                <th className="has-text-centered has-no-borders" title="Title"></th>
+                <th className="has-text-centered has-no-borders" title="Type"></th>
                 <th className="has-text-centered" title="Chrono">Timeline Order</th>
                 <th className="has-text-centered" title="Release">Release Order</th>
               </tr>
             </thead>
             <tbody>
                 {this.state.movies.map(movie => (
-                  <tr>
-                    <td key={movie.title}>{movie.title}</td>
+                  <tr key={movie.title}>
+                    <td>{movie.title}</td>
+                    <td>{movie.type === "movie" ? "Movie" : movie.type === "tv" ? "TV Show" : ""}</td>
                     <td>{movie.chronologicalorder}</td>
                     <td>{movie.releaseorder}</td>
                   </tr>
@@ -77,7 +79,7 @@ class MovieList extends React.Component{
             </tbody>
           </table>
             
-          </p>
+          </div>
         </div>
         <div className="column is-full has-text-centered mt-6">
           

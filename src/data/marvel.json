@@ -44,6 +44,7 @@
         "releaseorder": 2,
         "chronologicalorder": 5,
         "released": "2008",
+        "type": "movie",
         "disney": null, 
         "amazon": "https://www.amazon.com/Incredible-Hulk-Edward-Norton/dp/B001IAME78", 
         "apple": "https://tv.apple.com/us/movie/the-incredible-hulk/umc.cmc.1uldcoh87etoxgugkmqur4pvp"
@@ -253,6 +254,7 @@
         "releaseorder": 27,
         "chronologicalorder": 26,
         "released": "2021",
+        "type": "movie",
         "disney": "None", 
         "amazon": "https://www.amazon.com/Spider-Man-Way-Home-Tom-Holland/dp/B09NMDWYDL", 
         "apple": "https://tv.apple.com/us/movie/spider-man-no-way-home/umc.cmc.2qf7xc5hds0m5jgx4roago580"
