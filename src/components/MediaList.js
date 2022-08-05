@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-class MovieList extends React.Component{
+class MediaList extends React.Component{
   constructor(props) {
     super(props);
-    this.state = {movies: props.movies};
+    this.state = {media: props.media};
     this.state.order = "";
   }
   
@@ -16,17 +16,17 @@ class MovieList extends React.Component{
   }
   
   sortList(order){
-    let sortedMovies = null;
+    let sortedMedia = null;
     
     if(order ==="chrono"){
-      sortedMovies = this.state.movies.sort((a,b) => (a.chronologicalorder > b.chronologicalorder) ? 1 : ((b.chronologicalorder > a.chronologicalorder) ? -1 : 0));
+      sortedMedia = this.state.media.sort((a,b) => (a.chronologicalorder > b.chronologicalorder) ? 1 : ((b.chronologicalorder > a.chronologicalorder) ? -1 : 0));
     }
     if(order ==="release"){
-      sortedMovies = this.state.movies.sort((a,b) => (a.releaseorder > b.releaseorder) ? 1 : ((b.releaseorder > a.releaseorder) ? -1 : 0));
+      sortedMedia = this.state.media.sort((a,b) => (a.releaseorder > b.releaseorder) ? 1 : ((b.releaseorder > a.releaseorder) ? -1 : 0));
     }
 
     this.setState({
-      movie: sortedMovies,
+      media: sortedMedia,
       order: order
     }); 
   }
@@ -68,12 +68,12 @@ class MovieList extends React.Component{
               </tr>
             </thead>
             <tbody>
-                {this.state.movies.map(movie => (
-                  <tr key={movie.title}>
-                    <td>{movie.title}</td>
-                    <td>{movie.type === "movie" ? "Movie" : movie.type === "tv" ? "TV Show" : ""}</td>
-                    <td>{movie.chronologicalorder}</td>
-                    <td>{movie.releaseorder}</td>
+                {this.state.media.map(media => (
+                  <tr key={media.title}>
+                    <td>{media.title}</td>
+                    <td>{media.type === "movie" ? "Movie" : media.type === "tv" ? "TV Show" : ""}</td>
+                    <td>{media.chronologicalorder}</td>
+                    <td>{media.releaseorder}</td>
                   </tr>
                 ))}
             </tbody>
@@ -89,4 +89,4 @@ class MovieList extends React.Component{
   }
 }
 
-export default MovieList;
+export default MediaList;

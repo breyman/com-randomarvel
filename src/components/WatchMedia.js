@@ -1,4 +1,4 @@
-function WatchMovie(props){
+function WatchMedia(props){
   
   let streamingClass = "";
   let icon;
@@ -36,4 +36,4 @@ function WatchMovie(props){
   )
 }
 
-export default WatchMovie;
+export default WatchMedia;

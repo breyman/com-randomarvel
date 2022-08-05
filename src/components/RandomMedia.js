@@ -1,15 +1,15 @@
 import React from 'react';
-import WatchMovie from './../components/WatchMovie';
+import WatchMedia from './../components/WatchMedia';
 import gtag from 'ga-gtag';
 
 
-class RandomMovie extends React.Component{
+class RandomMedia extends React.Component{
   constructor(props) {
     super(props);
-    this.state = {movie: [null]};
+    this.state = {media: [null]};
     this.state.listType = "any";
     this.state.watchText = <span></span>;
-    this.state.allMedia = this.props.movies;
+    this.state.allMedia = this.props.media;
     this.state.allMovies = [];
     this.state.allTV = [];
   }
@@ -37,7 +37,7 @@ class RandomMovie extends React.Component{
     
   }
   
-  newMovie(){
+  newMedia(){
     let mediaList = [];
     
     switch(this.state.listType) {
@@ -64,24 +64,24 @@ class RandomMovie extends React.Component{
     this.setState({
       listType: type,
       // clear out the movie since a setting changed
-      movie: [],
+      media: [],
       watchText: <span></span>
     });
     
   }
   
-  refreshMovie(){
-    const anotherMovie = this.newMovie();
+  refreshMedia(){
+    const anotherMedia = this.newMedia();
     
     this.setState({
-      movie: anotherMovie
+      media: anotherMedia
     });
     this.setState({
       watchText: <span className="mr-2">Watch on</span>
     });
     
     gtag('event', 'page_action', {
-      page_title: 'refreshmovie',
+      page_title: 'refreshmarvelmedia',
     })
   }
   
@@ -98,20 +98,20 @@ class RandomMovie extends React.Component{
     return(
       <div>
         <div className="column is-full has-text-centered">
-          <h2 className="has-text-primary is-size-2 has-text-weight-bold">{this.state.movie.title}</h2>
+          <h2 className="has-text-primary is-size-2 has-text-weight-bold">{this.state.media.title}</h2>
         </div>
         <div className="column is-full has-text-centered">
           <p>
             {this.state.watchText}
-            <WatchMovie link={this.state.movie.disney} streaming="disney" />
-            <WatchMovie link={this.state.movie.amazon} streaming="amazon" />
-            <WatchMovie link={this.state.movie.apple} streaming="apple" />
+            <WatchMedia link={this.state.media.disney} streaming="disney" />
+            <WatchMedia link={this.state.media.amazon} streaming="amazon" />
+            <WatchMedia link={this.state.media.apple} streaming="apple" />
             
           </p>
         </div>
         <div className="column is-full has-text-centered mt-6">
           <div className="buttons is-centered">
-            <button className="button is-primary" value="Reload Page" onClick={() => this.refreshMovie()}>Generate Random Marvel</button>
+            <button className="button is-primary" value="Reload Page" onClick={() => this.refreshMedia()}>Generate Random Marvel</button>
           </div>
           <div className="buttons has-addons has-text-centered is-centered">
             <button className={listType === "any" ? "button is-small is-info is-selected" : "button is-small"} onClick={() => this.changeListType("any")}>Any</button>
@@ -124,4 +124,4 @@ class RandomMovie extends React.Component{
   }
 }
 
-export default RandomMovie;
+export default RandomMedia;

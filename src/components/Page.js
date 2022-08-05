@@ -1,7 +1,7 @@
 import React from 'react';
 import myData from './../data/marvel.json';
-import RandomMovie from './../components/RandomMovie';
-import MovieList from './../components/MovieList';
+import RandomMedia from './../components/RandomMedia';
+import MediaList from './../components/MediaList';
 import About from './../components/About';
 import gtag from 'ga-gtag';
 
@@ -14,7 +14,7 @@ class Page extends React.Component{
   componentDidMount() {
     
     // default page should allow movie selection
-    this.setPage("movie");
+    this.setPage("media");
     
   }
   
@@ -28,19 +28,19 @@ class Page extends React.Component{
         page_title: 'about',
       })  
     }
-    if(page === "movie"){
+    if(page === "media"){
       this.setState({
-        page: <RandomMovie movies={myData} />
+        page: <RandomMedia media={myData} />
       });
       
       gtag('event', 'page_load', {
-        page_title: 'movie',
+        page_title: 'marvelmedia',
       })
       
     }
     if(page === "list"){
       this.setState({
-        page: <MovieList movies={myData} />
+        page: <MediaList media={myData} />
       });
       
       gtag('event', 'page_load', {
@@ -58,7 +58,7 @@ class Page extends React.Component{
             <div className="columns is-centered is-multiline">
               
               <nav className="column is-full mt-1 mb-1 is-centered has-text-centered">
-                <img src="/assets/images/logo.svg" className="is-256wide is-link" alt="RandoMarvel Logo" onClick={() => this.setPage("movie")} />
+                <img src="/assets/images/logo.svg" className="is-256wide is-link" alt="RandoMarvel Logo" onClick={() => this.setPage("media")} />
               </nav>
             
               {this.state.page}
@@ -72,7 +72,7 @@ class Page extends React.Component{
             <div className="columns is-centered is-size-7">
               <div className="column is-full is-centered has-text-centered">
                 <span>
-                <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("movie")}>Generate Random Marvel</button>
+                <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("media")}>Generate Random Marvel</button>
                 </span>
                 <span className="has-text-grey ml-3 mr-3">|</span>
                 <span>
