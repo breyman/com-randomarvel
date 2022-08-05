@@ -13,9 +13,8 @@ class RandomMovie extends React.Component{
   
   newMovie(){
     let number = Math.floor(Math.random() * this.props.movies.length);
-    // let number = this.props.movies.length - 1;
     let myMovie = this.props.movies[number];
-    // console.log(myMovie);
+    
     return myMovie;
   }
   

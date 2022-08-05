@@ -12,8 +12,10 @@ class Page extends React.Component{
   }
   
   componentDidMount() {
+    
+    // default page should allow movie selection
     this.setPage("movie");
-    // this.setPage("list");
+    
   }
   
   setPage(page){
