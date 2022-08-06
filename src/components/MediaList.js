@@ -62,7 +62,6 @@ class MediaList extends React.Component{
             <thead>
               <tr>
                 <th className="has-text-centered has-no-borders" title="Title"></th>
-                <th className="has-text-centered has-no-borders" title="Type"></th>
                 <th className="has-text-centered" title="Chrono">Timeline Order</th>
                 <th className="has-text-centered" title="Release">Release Order</th>
               </tr>
@@ -70,8 +69,7 @@ class MediaList extends React.Component{
             <tbody>
                 {this.state.media.map(media => (
                   <tr key={media.title}>
-                    <td>{media.title}</td>
-                    <td>{media.type === "movie" ? "Movie" : media.type === "tv" ? "TV Show" : ""}</td>
+                    <td><a href={media.disney} className = "has-text-primary" target="_blank" rel="noreferrer">{media.title}</a></td>
                     <td>{media.chronologicalorder}</td>
                     <td>{media.releaseorder}</td>
                   </tr>
