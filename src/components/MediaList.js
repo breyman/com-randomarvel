@@ -32,21 +32,7 @@ class MediaList extends React.Component{
   }
 
   
-  render(){
-    const order = this.state.order;
-    
-    let timelineButtonClass = "";
-    let releaseButtonClass = "";
-    
-    if(order === "chrono"){
-      timelineButtonClass = "button is-small is-primary is-selected";
-      releaseButtonClass = "button is-small";
-    }
-    if(order === "release"){
-      timelineButtonClass = "button is-small";
-      releaseButtonClass = "button is-small is-primary is-selected";
-    }
-    
+  render(){    
     return(
       <div>
         <div className="column is-full has-text-centered">
@@ -54,8 +40,8 @@ class MediaList extends React.Component{
         </div>
         <div className="column is-full has-text-centered">
           <div className="buttons has-addons has-text-centered is-centered">
-            <button className={timelineButtonClass} onClick={() => this.sortList("chrono")}>By Timeline</button>
-            <button className={releaseButtonClass} onClick={() => this.sortList("release")}>By Release</button>
+            <button className = {this.state.order === "chrono" ? "button is-small is-primary is-selected" : "button is-small"} onClick={() => this.sortList("chrono")}>By Timeline</button>
+            <button className = {this.state.order === "release" ? "button is-small is-primary is-selected" : "button is-small"} onClick={() => this.sortList("release")}>By Release</button>
           </div>
           <div>
             <table className="table is-bordered is-striped is-fullwidth">       
