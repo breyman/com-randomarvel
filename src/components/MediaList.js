@@ -19,10 +19,10 @@ class MediaList extends React.Component{
     let sortedMedia = null;
     
     if(order ==="chrono"){
-      sortedMedia = this.state.media.sort((a,b) => (a.chronologicalorder > b.chronologicalorder) ? 1 : ((b.chronologicalorder > a.chronologicalorder) ? -1 : 0));
+      sortedMedia = this.state.media.sort((a,b) => (a.chronological_order > b.chronological_order) ? 1 : ((b.chronological_order > a.chronological_order) ? -1 : 0));
     }
     if(order ==="release"){
-      sortedMedia = this.state.media.sort((a,b) => (a.releaseorder > b.releaseorder) ? 1 : ((b.releaseorder > a.releaseorder) ? -1 : 0));
+      sortedMedia = this.state.media.sort((a,b) => (a.release_order > b.release_order) ? 1 : ((b.release_order > a.release_order) ? -1 : 0));
     }
 
     this.setState({
@@ -56,8 +56,8 @@ class MediaList extends React.Component{
                 {this.state.media.map(media => (
                   <tr key={media.title}>
                     <td><a href={media.disney} className = "has-text-primary" target="_blank" rel="noreferrer">{media.title}</a></td>
-                    <td>{media.chronologicalorder}</td>
-                    <td>{media.releaseorder}</td>
+                    <td>{media.chronological_order}</td>
+                    <td>{media.release_order}</td>
                   </tr>
                 ))}
             </tbody>

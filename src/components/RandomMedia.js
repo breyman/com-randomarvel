@@ -22,9 +22,6 @@ class RandomMedia extends React.Component{
     
   }
   
-  componentWillUnmount() {
-  }
-  
   getNewLists(existingList, type){
     
     const newList = existingList.filter(splitMedia, type);
