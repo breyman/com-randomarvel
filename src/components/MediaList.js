@@ -48,8 +48,8 @@ class MediaList extends React.Component{
             <thead>
               <tr>
                 <th className="has-text-centered has-no-borders" title="Title"></th>
-                <th className="has-text-centered" title="Chrono">Timeline Order</th>
-                <th className="has-text-centered" title="Release">Release Order</th>
+                <th className="has-text-centered" title="Chrono">Timeline</th>
+                <th className="has-text-centered" title="Release">Release</th>
               </tr>
             </thead>
             <tbody>
