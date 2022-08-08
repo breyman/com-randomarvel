@@ -67,25 +67,26 @@ class Page extends React.Component{
           </div>
         </div>
         
-        <footer className="footer has-text-centered">
-          <div className="container">
-            <div className="columns is-centered is-size-7">
-              <div className="column is-full is-centered has-text-centered">
-                <span>
-                <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("media")}>Generate Random Marvel</button>
-                </span>
-                <span className="has-text-grey ml-3 mr-3">|</span>
-                <span>
-                <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("list")}>Marvel List</button>
-                </span>
-                <span className="has-text-grey ml-3 mr-3">|</span>
-                <span>
-                <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("about")}>About</button>
-                </span>
-              </div>
+        <div class="column">
+          <footer className="footer">
+            
+              <div className="content columns is-centered is-size-7 has-text-centered">
+                <div className="column is-full is-centered has-text-centered">
+                  <span>
+                  <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("media")}>Generate Random Marvel</button>
+                  </span>
+                  <span className="has-text-grey ml-3 mr-3">|</span>
+                  <span>
+                  <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("list")}>Marvel List</button>
+                  </span>
+                  <span className="has-text-grey ml-3 mr-3">|</span>
+                  <span>
+                  <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("about")}>About</button>
+                  </span>
+                </div>
             </div>
-          </div>
-        </footer>
+          </footer>
+        </div>
         
       </div>
     )
