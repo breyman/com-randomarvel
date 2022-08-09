@@ -2,6 +2,7 @@ import React from 'react';
 import myData from './../data/marvel.json';
 import RandomMedia from './../components/RandomMedia';
 import MediaList from './../components/MediaList';
+import Nav from './../components/Nav';
 import About from './../components/About';
 import gtag from 'ga-gtag';
 
@@ -9,6 +10,7 @@ class Page extends React.Component{
   constructor(props) {
     super(props);
     this.state = {page: <div></div>};
+    this.handlePageChange = this.handlePageChange.bind(this);
   }
   
   componentDidMount() {
@@ -16,6 +18,11 @@ class Page extends React.Component{
     // default page should allow movie selection
     this.setPage("media");
     
+  }
+  
+  handlePageChange(newPage) {
+    // console.log("brian");
+    this.setPage(newPage);
   }
   
   setPage(page){
@@ -51,15 +58,17 @@ class Page extends React.Component{
   }
   
   render(){
+    
+    // console.log(this.handlePageChange);
+    
     return(
       <div>
         <div className="main">
           <div className="section">
             <div className="columns is-centered is-multiline">
               
-              <nav className="column is-full mt-1 mb-1 is-centered has-text-centered">
-                <img src="/assets/images/logo.svg" className="is-256wide is-link" alt="RandoMarvel Logo" onClick={() => this.setPage("media")} />
-              </nav>
+         
+            <Nav handlePageChange={this.handlePageChange} />
             
               {this.state.page}
               
