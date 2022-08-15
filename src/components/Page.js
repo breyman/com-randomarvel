@@ -68,7 +68,7 @@ class Page extends React.Component{
             <div className="columns is-centered is-multiline">
               
          
-            <Nav handlePageChange={this.handlePageChange} />
+            <Nav handlePageChange={(newPage) => this.handlePageChange(newPage)} />
             
               {this.state.page}
               
