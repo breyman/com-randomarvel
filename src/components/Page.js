@@ -2,6 +2,8 @@ import React from 'react';
 import myData from './../data/marvel.json';
 import RandomMedia from './../components/RandomMedia';
 import MediaList from './../components/MediaList';
+import Nav from './../components/Nav';
+import Footer from './../components/Footer'
 import About from './../components/About';
 import gtag from 'ga-gtag';
 
@@ -9,6 +11,7 @@ class Page extends React.Component{
   constructor(props) {
     super(props);
     this.state = {page: <div></div>};
+    this.handlePageChange = this.handlePageChange.bind(this);
   }
   
   componentDidMount() {
@@ -16,6 +19,11 @@ class Page extends React.Component{
     // default page should allow movie selection
     this.setPage("media");
     
+  }
+  
+  handlePageChange(newPage) {
+    // console.log("brian");
+    this.setPage(newPage);
   }
   
   setPage(page){
@@ -51,15 +59,17 @@ class Page extends React.Component{
   }
   
   render(){
+    
+    // console.log(this.handlePageChange);
+    
     return(
       <div>
         <div className="main">
           <div className="section">
             <div className="columns is-centered is-multiline">
               
-              <nav className="column is-full mt-1 mb-1 is-centered has-text-centered">
-                <img src="/assets/images/logo.svg" className="is-256wide is-link" alt="RandoMarvel Logo" onClick={() => this.setPage("media")} />
-              </nav>
+         
+            <Nav handlePageChange={(newPage) => this.handlePageChange(newPage)} />
             
               {this.state.page}
               
@@ -68,24 +78,9 @@ class Page extends React.Component{
         </div>
         
         <div class="column">
-          <footer className="footer">
-            
-              <div className="content columns is-centered is-size-7 has-text-centered">
-                <div className="column is-full is-centered has-text-centered">
-                  <span>
-                  <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("media")}>Generate Random Marvel</button>
-                  </span>
-                  <span className="has-text-grey ml-3 mr-3">|</span>
-                  <span>
-                  <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("list")}>Marvel List</button>
-                  </span>
-                  <span className="has-text-grey ml-3 mr-3">|</span>
-                  <span>
-                  <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("about")}>About</button>
-                  </span>
-                </div>
-            </div>
-          </footer>
+          
+          <Footer handlePageChange={(newPage) => this.handlePageChange(newPage)} />
+          
         </div>
         
       </div>

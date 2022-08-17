@@ -362,7 +362,7 @@
         {
         "title": "Eternals",
         "release_order": 38,
-        "chronological_order": 37,
+        "chronological_order": 38,
         "released": "2021",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/eternals/5cmhJAtkt6Jk", 
@@ -372,7 +372,7 @@
         {
         "title": "Spider-Man: Far From Home",
         "release_order": 32,
-        "chronological_order": 38,
+        "chronological_order": 39,
         "released": "2019",
         "type": "movie",
         "disney": "https://www.disneyplus.com/movies/spider-man-far-from-home/3PtrmOKmcLb4", 
@@ -382,7 +382,7 @@
         {
         "title": "Spider-Man: No Way Home",
         "release_order": 40,
-        "chronological_order": 39,
+        "chronological_order": 40,
         "released": "2021",
         "type": "movie",
         "disney": "None", 
@@ -392,7 +392,7 @@
         {
         "title": "Hawkeye",
         "release_order": 39,
-        "chronological_order": 40,
+        "chronological_order": 41,
         "released": "2011",
         "type": "tv",
         "disney": "https://www.disneyplus.com/series/hawkeye/11Zy8m9Dkj5l", 
@@ -402,7 +402,7 @@
         {
         "title": "Doctor Strange In The Multiverse of Madness",
         "release_order": 42,
-        "chronological_order": 41,
+        "chronological_order": 42,
         "released": "2022",
         "type": "movie",
         "disney":"https://www.disneyplus.com/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH", 
@@ -412,7 +412,7 @@
         {
         "title": "Moon Knight",
         "release_order": 41,
-        "chronological_order": 42,
+        "chronological_order": 43,
         "released": "2022",
         "type": "tv",
         "disney": "https://www.disneyplus.com/series/moon-knight/4S3oOF1knocS", 
@@ -422,11 +422,21 @@
         {
         "title": "Ms. Marvel",
         "release_order": 43,
-        "chronological_order": 43,
+        "chronological_order": 44,
         "released": "2022",
         "type": "tv",
         "disney": "https://www.disneyplus.com/series/ms-marvel/45BsikoMcOOo", 
         "amazon": null, 
         "apple": "https://tv.apple.com/us/show/ms-marvel/umc.cmc.2c4n7gsyg8u3qjvy3xlcakg3e"
+        },
+        {
+        "title": "She Hulk: Attorney at Law",
+        "release_order": 44,
+        "chronological_order": 37,
+        "released": "2022",
+        "type": "tv",
+        "disney": "https://www.disneyplus.com/series/she-hulk-attorney-at-law/gPwaYusKqRQh", 
+        "amazon": null, 
+        "apple": null
         }
-		]
+]
