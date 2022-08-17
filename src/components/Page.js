@@ -3,6 +3,7 @@ import myData from './../data/marvel.json';
 import RandomMedia from './../components/RandomMedia';
 import MediaList from './../components/MediaList';
 import Nav from './../components/Nav';
+import Footer from './../components/Footer'
 import About from './../components/About';
 import gtag from 'ga-gtag';
 
@@ -77,24 +78,9 @@ class Page extends React.Component{
         </div>
         
         <div class="column">
-          <footer className="footer">
-            
-              <div className="content columns is-centered is-size-7 has-text-centered">
-                <div className="column is-full is-centered has-text-centered">
-                  <span>
-                  <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("media")}>Generate Random Marvel</button>
-                  </span>
-                  <span className="has-text-grey ml-3 mr-3">|</span>
-                  <span>
-                  <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("list")}>Marvel List</button>
-                  </span>
-                  <span className="has-text-grey ml-3 mr-3">|</span>
-                  <span>
-                  <button className="is-link has-text-primary is-size-7" value="Reload Page" onClick={() => this.setPage("about")}>About</button>
-                  </span>
-                </div>
-            </div>
-          </footer>
+          
+          <Footer handlePageChange={(newPage) => this.handlePageChange(newPage)} />
+          
         </div>
         
       </div>
