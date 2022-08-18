@@ -101,9 +101,9 @@ class RandomMedia extends React.Component{
         <div className="column is-full has-text-centered">
           <p>
             {this.state.watchText}
-            <WatchMedia link={this.state.media.disney} streaming="disney" />
-            <WatchMedia link={this.state.media.amazon} streaming="amazon" />
-            <WatchMedia link={this.state.media.apple} streaming="apple" />
+            <WatchMedia link={this.state.media.disney} streaming="disney" color={this.state.media.color} />
+            <WatchMedia link={this.state.media.amazon} streaming="amazon" color={this.state.media.color} />
+            <WatchMedia link={this.state.media.apple} streaming="apple" color={this.state.media.color} />
             
           </p>
         </div>
