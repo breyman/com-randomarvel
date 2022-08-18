@@ -77,7 +77,7 @@ class Page extends React.Component{
           </div>
         </div>
         
-        <div class="column">
+        <div className="column">
           
           <Footer handlePageChange={(newPage) => this.handlePageChange(newPage)} />
           
