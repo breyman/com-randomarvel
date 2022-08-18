@@ -22,7 +22,7 @@ function WatchMedia(props){
     
     icon = (
     <span className="icon ml-2">
-      <a href={props.link} className="has-text-primary" target="_blank" rel="noreferrer">
+      <a href={props.link} style={{color: props.color}} target="_blank" rel="noreferrer">
         <i className={streamingClass}></i>
       </a>
     </span>

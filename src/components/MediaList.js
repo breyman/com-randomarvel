@@ -55,9 +55,9 @@ class MediaList extends React.Component{
             <tbody>
                 {this.state.media.map(media => (
                   <tr key={media.title}>
-                    <td><a href={media.disney} className = "has-text-primary" target="_blank" rel="noreferrer">{media.title}</a></td>
-                    <td>{media.chronological_order}</td>
-                    <td>{media.release_order}</td>
+                    <td><a href={media.disney} style={{color: media.color}} target="_blank" rel="noreferrer">{media.title}</a></td>
+                    <td style={{color: media.color}}>{media.chronological_order}</td>
+                    <td style={{color: media.color}}>{media.release_order}</td>
                   </tr>
                 ))}
             </tbody>

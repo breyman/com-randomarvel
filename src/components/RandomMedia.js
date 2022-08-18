@@ -55,7 +55,7 @@ class RandomMedia extends React.Component{
     let myMedia = mediaList[number];
     return myMedia;
   }
-  
+
   changeListType(type){
     
     this.setState({
@@ -80,6 +80,7 @@ class RandomMedia extends React.Component{
     gtag('event', 'page_action', {
       page_title: 'refreshmarvelmedia',
     })
+
   }
   
   setListType(type){
@@ -95,14 +96,14 @@ class RandomMedia extends React.Component{
     return(
       <div>
         <div className="column is-full has-text-centered">
-          <h2 className="has-text-primary is-size-2 has-text-weight-bold">{this.state.media.title}</h2>
+          <h2 className="is-size-2 has-text-weight-bold" id="media-title" style={{color: this.state.media.color}}>{this.state.media.title}</h2>
         </div>
         <div className="column is-full has-text-centered">
           <p>
             {this.state.watchText}
-            <WatchMedia link={this.state.media.disney} streaming="disney" />
-            <WatchMedia link={this.state.media.amazon} streaming="amazon" />
-            <WatchMedia link={this.state.media.apple} streaming="apple" />
+            <WatchMedia link={this.state.media.disney} streaming="disney" color={this.state.media.color} />
+            <WatchMedia link={this.state.media.amazon} streaming="amazon" color={this.state.media.color} />
+            <WatchMedia link={this.state.media.apple} streaming="apple" color={this.state.media.color} />
             
           </p>
         </div>
