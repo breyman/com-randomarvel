@@ -1,6 +1,6 @@
 import React from 'react';
 import WatchMedia from './../components/WatchMedia';
-import gtag from 'ga-gtag';
+// import gtag from 'ga-gtag';
 
 
 class RandomMedia extends React.Component{
@@ -77,9 +77,9 @@ class RandomMedia extends React.Component{
       watchText: <span className="mr-2">Watch on</span>
     });
     
-    gtag('event', 'page_action', {
-      page_title: 'refreshmarvelmedia',
-    })
+    // gtag('event', 'page_action', {
+    //   page_title: 'refreshmarvelmedia',
+    // })
 
   }
   

@@ -5,7 +5,7 @@ import MediaList from './../components/MediaList';
 import Nav from './../components/Nav';
 import Footer from './../components/Footer'
 import About from './../components/About';
-import gtag from 'ga-gtag';
+// import gtag from 'ga-gtag';
 
 class Page extends React.Component{
   constructor(props) {
@@ -32,18 +32,18 @@ class Page extends React.Component{
         page: <About />
       });
       
-      gtag('event', 'page_load', {
-        page_title: 'about',
-      })  
+      // gtag('event', 'page_load', {
+      //   page_title: 'about',
+      // })  
     }
     if(page === "media"){
       this.setState({
         page: <RandomMedia media={myData} />
       });
       
-      gtag('event', 'page_load', {
-        page_title: 'marvelmedia',
-      })
+      // gtag('event', 'page_load', {
+      //   page_title: 'marvelmedia',
+      // })
       
     }
     if(page === "list"){
@@ -51,17 +51,15 @@ class Page extends React.Component{
         page: <MediaList media={myData} />
       });
       
-      gtag('event', 'page_load', {
-        page_title: 'movielist',
-      })
+      // gtag('event', 'page_load', {
+      //   page_title: 'movielist',
+      // })
       
     }
   }
   
   render(){
-    
-    // console.log(this.handlePageChange);
-    
+  
     return(
       <div>
         <div className="main">

@@ -1,11 +1,11 @@
 import './assets/styles/styles.sass';
 import Page from './components/Page';
-import gtag from 'ga-gtag';
+// import gtag from 'ga-gtag';
 
 
-gtag('event', 'page_load', {
-	page_title: 'home',
-})
+// gtag('event', 'page_load', {
+// 	page_title: 'home',
+// })
 
 function App() {
 
