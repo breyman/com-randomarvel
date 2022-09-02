@@ -96,7 +96,7 @@ class RandomMedia extends React.Component{
     return(
       <div>
         <div className="column is-full has-text-centered">
-          <h2 className="is-size-2 has-text-weight-bold" id="media-title" style={{color: this.state.media.color}}>{this.state.media.title}</h2>
+          <h2 className="is-size-2 has-text-weight-bold" data-testid="title-display" id="media-title" style={{color: this.state.media.color}}>{this.state.media.title}</h2>
         </div>
         <div className="column is-full has-text-centered">
           <p>
@@ -109,7 +109,7 @@ class RandomMedia extends React.Component{
         </div>
         <div className="column is-full has-text-centered mt-6">
           <div className="buttons is-centered">
-            <button className="button is-primary" value="Reload Page" onClick={() => this.refreshMedia()}>Generate Random Marvel</button>
+            <button className="button is-primary" value="Reload Page" onClick={() => this.refreshMedia()} data-testid="generate-random-marvel-button">Generate Random Marvel</button>
           </div>
           <div className="buttons has-addons has-text-centered is-centered">
             <button className={listType === "any" ? "button is-small is-info is-selected" : "button is-small"} onClick={() => this.changeListType("any")}>Any</button>

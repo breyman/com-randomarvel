@@ -15,7 +15,6 @@ class Page extends React.Component{
   }
   
   componentDidMount() {
-    
     // default page should allow movie selection
     this.setPage("media");
     
