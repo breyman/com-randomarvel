@@ -1,12 +1,19 @@
-function WatchMedia(props){
-  
-  let streamingClass = "";
-  let icon;
-  
-  if(props.link === null || !props.link){
+import React from 'react';
+
+class WatchMedia extends React.Component{
+  constructor(props) {
+    super(props);
     
-  }else {  
-    switch(props.streaming) {
+    this.myStreaming = props.streaming;
+    this.myColor = props.color;
+    this.myLink = props.link;
+  }
+  
+  render(){
+    let streamingClass = "";
+
+    // set the right icon for the service
+    switch(this.myStreaming) {
       case "disney":
         streamingClass = "fak fa-dplus";
         break;
@@ -19,21 +26,15 @@ function WatchMedia(props){
       default:
         break;
     }
-    
-    icon = (
-    <span className="icon ml-2">
-      <a href={props.link} style={{color: props.color}} target="_blank" rel="noreferrer">
-        <i className={streamingClass}></i>
-      </a>
-    </span>
-    )
+
+    return(
+        <span className="icon ml-2">
+          <a href={this.myLink} style={{color: this.myColor}} data-testid="media-icon-link" target="_blank" rel="noreferrer">
+            <i className={streamingClass} data-testid="media-icon"></i>
+          </a>
+        </span>
+    );
   }
-  
-  return(
-    <span>
-      {icon}
-    </span>
-  )
 }
 
 export default WatchMedia;
