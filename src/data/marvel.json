@@ -358,9 +358,9 @@
         "released": "2021",
         "type": "movie",
         "color": "#436228",
-        "disney": "https://www.disneyplus.com/movies/marvel-studios-avengers-endgame/aRbVJUb2h2Rf", 
-        "amazon": "https://www.amazon.com/Marvel-Studios-Avengers-Robert-Downey/dp/B07QWPSDPR", 
-        "apple": "https://tv.apple.com/us/movie/avengers-endgame/umc.cmc.4ao9tm6b6rz4sy7yj5v13ltf8"
+        "disney": "https://www.disneyplus.com/series/loki/6pARMvILBGzF", 
+        "amazon": null, 
+        "apple": null
         },
         {
         "title": "WandaVision",
