@@ -2,7 +2,6 @@ import React from 'react';
 import WatchMedia from './../components/WatchMedia';
 // import gtag from 'ga-gtag';
 
-
 class RandomMedia extends React.Component{
   constructor(props) {
     super(props);
@@ -93,6 +92,21 @@ class RandomMedia extends React.Component{
     
     let listType = this.state.listType;
     
+    // conditionally render the watch mdeia icons depending on if a link exists in the data
+    let watchDisney = "";
+    let watchAmazon = "";
+    let watchApple = "";
+    
+    if(this.state.media.disney && this.state.media.disney !== null){
+      watchDisney = <WatchMedia link={this.state.media.disney} streaming="disney" color={this.state.media.color} />;
+    }
+    if(this.state.media.amazon && this.state.media.amazon !== null){
+      watchAmazon = <WatchMedia link={this.state.media.amazon} streaming="amazon" color={this.state.media.color} />;
+    }
+    if(this.state.media.apple && this.state.media.apple !== null){
+      watchApple = <WatchMedia link={this.state.media.apple} streaming="apple" color={this.state.media.color} />;
+    }
+
     return(
       <div>
         <div className="column is-full has-text-centered">
@@ -101,10 +115,9 @@ class RandomMedia extends React.Component{
         <div className="column is-full has-text-centered">
           <p>
             {this.state.watchText}
-            <WatchMedia link={this.state.media.disney} streaming="disney" color={this.state.media.color} />
-            <WatchMedia link={this.state.media.amazon} streaming="amazon" color={this.state.media.color} />
-            <WatchMedia link={this.state.media.apple} streaming="apple" color={this.state.media.color} />
-            
+            {watchDisney}
+            {watchAmazon}
+            {watchApple}
           </p>
         </div>
         <div className="column is-full has-text-centered mt-6">
@@ -112,9 +125,9 @@ class RandomMedia extends React.Component{
             <button className="button is-primary" value="Reload Page" onClick={() => this.refreshMedia()} data-testid="generate-random-marvel-button">Generate Random Marvel</button>
           </div>
           <div className="buttons has-addons has-text-centered is-centered">
-            <button className={listType === "any" ? "button is-small is-info is-selected" : "button is-small"} onClick={() => this.changeListType("any")}>Any</button>
-            <button className={listType === "movie" ? "button is-small is-info is-selected" : "button is-small"} onClick={() => this.changeListType("movie")}>Movie</button>
-            <button className={listType === "tv" ? "button is-small is-info is-selected" : "button is-small"} onClick={() => this.changeListType("tv")}>TV Show</button>
+            <button data-testid="media-toggle-selector-all" className={listType === "any" ? "button is-small is-info is-selected" : "button is-small"} onClick={() => this.changeListType("any")}>Any</button>
+            <button data-testid="media-toggle-selector-movie" className={listType === "movie" ? "button is-small is-info is-selected" : "button is-small"} onClick={() => this.changeListType("movie")}>Movie</button>
+            <button data-testid="media-toggle-selector-tv" className={listType === "tv" ? "button is-small is-info is-selected" : "button is-small"} onClick={() => this.changeListType("tv")}>TV Show</button>
           </div>
         </div> 
       </div>   
