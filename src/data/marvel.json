@@ -474,12 +474,23 @@
         },
         {
         "title": "She Hulk: Attorney at Law",
-        "release_order": 44,
+        "release_order": 45,
         "chronological_order": 37,
         "released": "2022",
         "type": "tv",
         "color": "#46b344",
         "disney": "https://www.disneyplus.com/series/she-hulk-attorney-at-law/gPwaYusKqRQh", 
+        "amazon": null, 
+        "apple": null
+        },
+        {
+        "title": "Thor: Love and Thunder",
+        "release_order": 44,
+        "chronological_order": 45,
+        "released": "2022",
+        "type": "movie",
+        "color": "#31abbf",
+        "disney": "https://www.disneyplus.com/movies/thor-love-and-thunder/3htR8mRAZMoT", 
         "amazon": null, 
         "apple": null
         }
