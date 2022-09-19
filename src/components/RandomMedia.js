@@ -11,16 +11,24 @@ class RandomMedia extends React.Component{
     this.state.allMedia = this.props.media;
     this.state.allMovies = [];
     this.state.allTV = [];
+    // console.log(this.props.media);
   }
   
   componentDidMount() {
-    this.setState({
-      allMovies: this.getNewLists(this.state.allMedia, "movie"),
-      allTV: this.getNewLists(this.state.allMedia, "tv")
-    })
+    this.updateComponentData();
+    // console.log("mount");
+    // console.log(this.props.media);
     
   }
   
+  updateComponentData(){
+    this.setState({
+      allMovies: this.getNewLists(this.props.media, "movie"),
+      allTV: this.getNewLists(this.props.media, "tv")
+    })
+
+  }
+
   getNewLists(existingList, type){
     
     const newList = existingList.filter(splitMedia, type);
@@ -34,6 +42,13 @@ class RandomMedia extends React.Component{
   }
   
   newMedia(){
+    
+    this.setState({
+      allMovies: this.getNewLists(this.props.media, "movie"),
+      allTV: this.getNewLists(this.props.media, "tv")
+    })
+    console.log(this.state.listType);
+
     let mediaList = [];
     
     switch(this.state.listType) {
@@ -51,7 +66,8 @@ class RandomMedia extends React.Component{
     }
         
     let number = Math.floor(Math.random() * mediaList.length);
-    let myMedia = mediaList[number];
+    // let myMedia = mediaList[number];
+    let myMedia = this.getNewLists(this.props.media, "tv");
     return myMedia;
   }
 
@@ -68,7 +84,7 @@ class RandomMedia extends React.Component{
   
   refreshMedia(){
     const anotherMedia = this.newMedia();
-    
+
     this.setState({
       media: anotherMedia
     });
@@ -89,7 +105,7 @@ class RandomMedia extends React.Component{
   }
   
   render(){
-    
+
     let listType = this.state.listType;
     
     // conditionally render the watch mdeia icons depending on if a link exists in the data
