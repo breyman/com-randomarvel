@@ -1,8 +1,8 @@
-function WatchMedia(props){  
+function WatchMedia({streaming, link, color}){  
     let streamingClass = "";
 
     // set the right icon for the service
-    switch(props.streaming) {
+    switch(streaming) {
       case "disney":
         streamingClass = "fak fa-dplus";
         break;
@@ -17,7 +17,7 @@ function WatchMedia(props){
     }
     return(
         <span className="icon ml-2">
-          <a href={props.link} style={{color: props.color}} data-testid="media-icon-link" target="_blank" rel="noreferrer">
+          <a href={link} style={{color: color}} data-testid="media-icon-link" target="_blank" rel="noreferrer">
             <i className={streamingClass} data-testid="media-icon"></i>
           </a>
         </span>
