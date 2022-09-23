@@ -7,82 +7,37 @@ import Footer from './../components/Footer'
 import About from './../components/About';
 // import gtag from 'ga-gtag';
 
-class Page extends React.Component{
-  constructor(props) {
-    super(props);
-    this.state = {page: <div></div>};
-    this.handlePageChange = this.handlePageChange.bind(this);
+function Page(){
+  const [page, setPage] = React.useState("media");
+
+  let displayPage;
+  
+  if(page === "about"){
+    displayPage = <About />
   }
-  
-  componentDidMount() {
-    // default page should allow movie selection
-    this.setPage("media");
-    
+  if(page === "media"){
+    displayPage = <RandomMedia media={myData} />
   }
-  
-  handlePageChange(newPage) {
-    // console.log("brian");
-    this.setPage(newPage);
+  if(page === "list"){
+    displayPage = <MediaList media={myData} />
   }
-  
-  setPage(page){
-    if(page === "about"){
-      this.setState({
-        page: <About />
-      });
-      
-      // gtag('event', 'page_load', {
-      //   page_title: 'about',
-      // })  
-    }
-    if(page === "media"){
-      this.setState({
-        page: <RandomMedia media={myData} />
-      });
-      
-      // gtag('event', 'page_load', {
-      //   page_title: 'marvelmedia',
-      // })
-      
-    }
-    if(page === "list"){
-      this.setState({
-        page: <MediaList media={myData} />
-      });
-      
-      // gtag('event', 'page_load', {
-      //   page_title: 'movielist',
-      // })
-      
-    }
-  }
-  
-  render(){
-  
-    return(
-      <div>
-        <div className="main">
-          <div className="section">
-            <div className="columns is-centered is-multiline">
-              
-         
-            <Nav handlePageChange={(newPage) => this.handlePageChange(newPage)} />
-            
-              {this.state.page}
-              
-            </div>
+
+  return(
+    <div>
+      <div className="main">
+        <div className="section">
+          <div className="columns is-centered is-multiline">
+          <Nav handlePageChange={event => setPage(event.target.title)} />
+            {displayPage}
           </div>
         </div>
-        
-        <div className="column">
-          
-          <Footer handlePageChange={(newPage) => this.handlePageChange(newPage)} />
-          
-        </div>
-        
       </div>
-    )
-  }
+      
+      <div className="column">
+        <Footer handlePageChange={event => setPage(event.target.title)} />
+      </div>
+    </div>
+  )
 }
 
 export default Page;
