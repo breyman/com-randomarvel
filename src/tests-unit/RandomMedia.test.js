@@ -2,7 +2,6 @@ import { render, screen, act } from '@testing-library/react';
 import RandomMedia from '../components/RandomMedia';
 import testData from '../data/marvel-test.json';
 
-
 beforeEach(() => {
     render(<RandomMedia media={testData} />);
 });
