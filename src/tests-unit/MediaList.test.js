@@ -8,6 +8,6 @@ beforeEach(() => {
 
 // test for the correct icon class, color and link
 it('displays table', () => {
-    const generateTable = screen.getByText(/Captain America: The First Man on the Moon/i);
+    const generateTable = screen.getByText(/Captain America: The First Avenger/i);
     expect(generateTable).toBeInTheDocument();
 });
