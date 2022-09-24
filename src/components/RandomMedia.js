@@ -2,50 +2,52 @@ import React from 'react';
 import WatchMedia from './../components/WatchMedia';
 
 function RandomMedia({media}){
-  const [allMedia , setAllMedia] = React.useState(media);
-  // const [watchText, setWatchText] = React.useState(<span></span>);
   const [listType, setListType] = React.useState("any");
+  const [myMedia, setMyMedia] = React.useState(null);
 
+  const allMedia = media;
   let mediaList = [];
-    
-  switch(listType) {
-    case "any":
-      console.log("any");
-      mediaList = allMedia;
-      break;
-    case "tv":
-      console.log("tv");
-      mediaList = allMedia.filter((e) => e.type === "tv");
-      break;
-    case "movie":
-      console.log("movie");
-      mediaList = allMedia.filter((e) => e.type === "movie");
-      break;
-    default:
-      break;
+  let disney ="";
+  let apple = "";
+  let amazon ="";
+  let title = "";
+  let color = "";
+  let watchText = <span></span>;
+
+  function handleShowMedia(){
+    switch(listType) {
+      case "any":
+        mediaList = allMedia;
+        break;
+      case "tv":
+        mediaList = allMedia.filter((e) => e.type === "tv");
+        break;
+      case "movie":
+        mediaList = allMedia.filter((e) => e.type === "movie");
+        break;
+      default:
+        break;
+    }
+    if (mediaList.length > 0){
+      let number = Math.floor(Math.random() * mediaList.length);
+      setMyMedia(mediaList[number]);
+    }
   }
   
-  let number = Math.floor(Math.random() * mediaList.length);
-  let myMedia = mediaList[number];
-
-  let watchText = <span></span>;
-    
-  watchText = <span className="mr-2">Watch on</span>;
-
-  function handleRandomMarvel(){
-    setListType("any");
-    console.log("handling random marvel");
-  }
-
   function handleTypeChange(e){
     setListType(e.target.title);
+    setMyMedia(null);
   }
   
-  const disney = myMedia.disney;
-  const apple = myMedia.apple;
-  const amazon = myMedia.amazon;
-  const title = myMedia.title;
-  const color = myMedia.color;
+  // conditionally show stuff if it's time
+  if(myMedia){
+    watchText = <span className="mr-2">Watch on</span>;
+    disney = myMedia.disney;
+    apple = myMedia.apple;
+    amazon = myMedia.amazon;
+    title = myMedia.title;
+    color = myMedia.color;
+  }
 
   // conditionally render the watch mdeia icons depending on if a link exists in the data
   let watchDisney = "";
@@ -77,10 +79,10 @@ function RandomMedia({media}){
       </div>
       <div className="column is-full has-text-centered mt-6">
         <div className="buttons is-centered">
-          <button className="button is-primary" value="Reload Page" onClick={handleRandomMarvel} data-testid="generate-random-marvel-button">Generate Random Marvel</button>
+          <button className="button is-primary" value="Reload Page" onClick={handleShowMedia} data-testid="generate-random-marvel-button">Generate Random Marvel</button>
         </div>
         <div className="buttons has-addons has-text-centered is-centered">
-          <button title="any" data-testid="media-toggle-selector-all" className={listType === "any" ? "button is-small is-info is-selected" : "button is-small"} onClick={handleTypeChange}>Any</button>
+          <button title="any" data-testid="media-toggle-selector-all" className={listType === "any" || listType === "none" ? "button is-small is-info is-selected" : "button is-small"} onClick={handleTypeChange}>Any</button>
           <button title="movie" data-testid="media-toggle-selector-movie" className={listType === "movie" ? "button is-small is-info is-selected" : "button is-small"} onClick={handleTypeChange}>Movie</button>
           <button title="tv" data-testid="media-toggle-selector-tv" className={listType === "tv" ? "button is-small is-info is-selected" : "button is-small"} onClick={handleTypeChange}>TV Show</button>
         </div>
