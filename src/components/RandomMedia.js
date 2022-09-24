@@ -15,10 +15,10 @@ function RandomMedia({media}){
         mediaList = allMedia;
         break;
       case "tv":
-        mediaList = allMedia.filter((e) => e.type === "tv");
+        mediaList = allMedia.filter((myObject) => myObject.type === "tv");
         break;
       case "movie":
-        mediaList = allMedia.filter((e) => e.type === "movie");
+        mediaList = allMedia.filter((myObject) => myObject.type === "movie");
         break;
       default:
         break;
@@ -29,10 +29,12 @@ function RandomMedia({media}){
     }
   }
   
+  // if a category is changed, update things and reset to not display any media
   function handleTypeChange(e){
     setListType(e.target.title);
     setMyMedia(null);
   }
+
   // conditionally show stuff if it's time
   if(myMedia){
     watchText = <span className="mr-2">Watch on</span>;
