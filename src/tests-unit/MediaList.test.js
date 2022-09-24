@@ -7,7 +7,7 @@ beforeEach(() => {
   });
 
 // test for the correct icon class, color and link
-it('displays nav image', () => {
-    const generateImage = screen.getByAltText("RandoMarvel Logo");
-    expect(generateImage).toBeInTheDocument();
+it('displays table', () => {
+    const generateTable = screen.getByText(/Captain America: The First Avenger/i);
+    expect(generateTable).toBeInTheDocument();
 });
