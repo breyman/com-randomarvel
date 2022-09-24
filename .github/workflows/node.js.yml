@@ -4,7 +4,7 @@ name: RandoMarvel Deploy CI
 
 on:
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ main ]
   push:
     branches:
       - 'feature/**'
