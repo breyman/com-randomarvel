@@ -12,14 +12,18 @@ function Page(){
 
   let displayPage;
   
-  if(page === "about"){
-    displayPage = <About />
-  }
-  if(page === "media"){
-    displayPage = <RandomMedia media={myData} />
-  }
-  if(page === "list"){
-    displayPage = <MediaList media={myData} />
+  switch(page) {
+    case "media":
+      displayPage = <RandomMedia media={myData} />;
+      break;
+    case "list":
+      displayPage = <MediaList media={myData} />
+      break;
+    case "about":
+      displayPage = <About />
+      break;
+    default:
+      break;
   }
 
   return(

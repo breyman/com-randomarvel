@@ -3,7 +3,6 @@ import React from 'react';
 function Footer({handlePageChange}){
     return(
       <footer className="footer">
-        
           <div className="content columns is-centered is-size-7 has-text-centered">
             <div className="column is-full is-centered has-text-centered">
               <span>

@@ -1,138 +1,84 @@
 import React from 'react';
 import WatchMedia from './../components/WatchMedia';
-// import gtag from 'ga-gtag';
 
-class RandomMedia extends React.Component{
-  constructor(props) {
-    super(props);
-    this.state = {media: [null]};
-    this.state.listType = "any";
-    this.state.watchText = <span></span>;
-    this.state.allMedia = this.props.media;
-    this.state.allMovies = [];
-    this.state.allTV = [];
-  }
-  
-  componentDidMount() {
-    this.setState({
-      allMovies: this.getNewLists(this.state.allMedia, "movie"),
-      allTV: this.getNewLists(this.state.allMedia, "tv")
-    })
-    
-  }
-  
-  getNewLists(existingList, type){
-    
-    const newList = existingList.filter(splitMedia, type);
-    
-    return newList;
-    
-    function splitMedia(item) {
-      return item.type === this;
-    }
-    
-  }
-  
-  newMedia(){
-    let mediaList = [];
-    
-    switch(this.state.listType) {
+function RandomMedia({media}){
+  const [listType, setListType] = React.useState("any");
+  const [myMedia, setMyMedia] = React.useState(null);
+
+  const allMedia = media;
+  let mediaList = [];
+  let disney, apple, amazon, title, color, watchText;
+
+  function handleShowMedia(){
+    switch(listType) {
       case "any":
-        mediaList = this.state.allMedia;
+        mediaList = allMedia;
         break;
       case "tv":
-        mediaList = this.state.allTV;
+        mediaList = allMedia.filter((myObject) => myObject.type === "tv");
         break;
       case "movie":
-        mediaList = this.state.allMovies;
+        mediaList = allMedia.filter((myObject) => myObject.type === "movie");
         break;
       default:
         break;
     }
-        
-    let number = Math.floor(Math.random() * mediaList.length);
-    let myMedia = mediaList[number];
-    return myMedia;
-  }
-
-  changeListType(type){
-    
-    this.setState({
-      listType: type,
-      // clear out the movie since a setting changed
-      media: [],
-      watchText: <span></span>
-    });
-    
+    if (mediaList.length > 0){
+      let number = Math.floor(Math.random() * mediaList.length);
+      setMyMedia(mediaList[number]);
+    }
   }
   
-  refreshMedia(){
-    const anotherMedia = this.newMedia();
-    
-    this.setState({
-      media: anotherMedia
-    });
-    this.setState({
-      watchText: <span className="mr-2">Watch on</span>
-    });
-    
-    // gtag('event', 'page_action', {
-    //   page_title: 'refreshmarvelmedia',
-    // })
-
+  // if a category is changed, update things and reset to not display any media
+  function handleTypeChange(e){
+    setListType(e.target.title);
+    setMyMedia(null);
   }
-  
-  setListType(type){
-    this.setState({
-      listType: type
-    });
-  }
-  
-  render(){
-    
-    let listType = this.state.listType;
-    
-    // conditionally render the watch mdeia icons depending on if a link exists in the data
-    let watchDisney = "";
-    let watchAmazon = "";
-    let watchApple = "";
-    
-    if(this.state.media.disney && this.state.media.disney !== null){
-      watchDisney = <WatchMedia link={this.state.media.disney} streaming="disney" color={this.state.media.color} />;
-    }
-    if(this.state.media.amazon && this.state.media.amazon !== null){
-      watchAmazon = <WatchMedia link={this.state.media.amazon} streaming="amazon" color={this.state.media.color} />;
-    }
-    if(this.state.media.apple && this.state.media.apple !== null){
-      watchApple = <WatchMedia link={this.state.media.apple} streaming="apple" color={this.state.media.color} />;
-    }
 
-    return(
-      <div>
-        <div className="column is-full has-text-centered">
-          <h2 className="is-size-2 has-text-weight-bold" data-testid="title-display" id="media-title" style={{color: this.state.media.color}}>{this.state.media.title}</h2>
+  // conditionally show stuff if it's time
+  if(myMedia){
+    watchText = <span className="mr-2">Watch on</span>;
+    ({disney, apple, amazon, title, color} = myMedia);
+  }
+
+  // conditionally render the watch mdeia icons depending on if a link exists in the data
+  let watchDisney, watchApple, watchAmazon;
+    
+  if(disney && disney !== null){
+    watchDisney = <WatchMedia link={disney} streaming="disney" color={color} />;
+  }
+  if(amazon && amazon !== null){
+    watchAmazon = <WatchMedia link={amazon} streaming="amazon" color={color} />;
+  }
+  if(apple && apple !== null){
+    watchApple = <WatchMedia link={apple} streaming="apple" color={color} />;
+  }
+
+  return(
+    <div>
+      <div className="column is-full has-text-centered">
+        <h2 className="is-size-2 has-text-weight-bold" data-testid="title-display" id="media-title" style={{color: color}}>{title}</h2>
+      </div>
+      <div className="column is-full has-text-centered">
+        <p>
+          {watchText}
+          {watchDisney}
+          {watchAmazon}
+          {watchApple}
+        </p>
+      </div>
+      <div className="column is-full has-text-centered mt-6">
+        <div className="buttons is-centered">
+          <button className="button is-primary" value="Reload Page" onClick={handleShowMedia} data-testid="generate-random-marvel-button">Generate Random Marvel</button>
         </div>
-        <div className="column is-full has-text-centered">
-          <p>
-            {this.state.watchText}
-            {watchDisney}
-            {watchAmazon}
-            {watchApple}
-          </p>
+        <div className="buttons has-addons has-text-centered is-centered">
+          <button title="any" data-testid="media-toggle-selector-all" className={listType === "any" || listType === "none" ? "button is-small is-info is-selected" : "button is-small"} onClick={handleTypeChange}>Any</button>
+          <button title="movie" data-testid="media-toggle-selector-movie" className={listType === "movie" ? "button is-small is-info is-selected" : "button is-small"} onClick={handleTypeChange}>Movie</button>
+          <button title="tv" data-testid="media-toggle-selector-tv" className={listType === "tv" ? "button is-small is-info is-selected" : "button is-small"} onClick={handleTypeChange}>TV Show</button>
         </div>
-        <div className="column is-full has-text-centered mt-6">
-          <div className="buttons is-centered">
-            <button className="button is-primary" value="Reload Page" onClick={() => this.refreshMedia()} data-testid="generate-random-marvel-button">Generate Random Marvel</button>
-          </div>
-          <div className="buttons has-addons has-text-centered is-centered">
-            <button data-testid="media-toggle-selector-all" className={listType === "any" ? "button is-small is-info is-selected" : "button is-small"} onClick={() => this.changeListType("any")}>Any</button>
-            <button data-testid="media-toggle-selector-movie" className={listType === "movie" ? "button is-small is-info is-selected" : "button is-small"} onClick={() => this.changeListType("movie")}>Movie</button>
-            <button data-testid="media-toggle-selector-tv" className={listType === "tv" ? "button is-small is-info is-selected" : "button is-small"} onClick={() => this.changeListType("tv")}>TV Show</button>
-          </div>
-        </div> 
-      </div>   
-    )
-  }
+      </div> 
+    </div>   
+  )
 }
 
 export default RandomMedia;
