@@ -7,12 +7,7 @@ function RandomMedia({media}){
 
   const allMedia = media;
   let mediaList = [];
-  let disney ="";
-  let apple = "";
-  let amazon ="";
-  let title = "";
-  let color = "";
-  let watchText = <span></span>;
+  let disney, apple, amazon, title, color, watchText;
 
   function handleShowMedia(){
     switch(listType) {
@@ -38,21 +33,14 @@ function RandomMedia({media}){
     setListType(e.target.title);
     setMyMedia(null);
   }
-  
   // conditionally show stuff if it's time
   if(myMedia){
     watchText = <span className="mr-2">Watch on</span>;
-    disney = myMedia.disney;
-    apple = myMedia.apple;
-    amazon = myMedia.amazon;
-    title = myMedia.title;
-    color = myMedia.color;
+    ({disney, apple, amazon, title, color} = myMedia);
   }
 
   // conditionally render the watch mdeia icons depending on if a link exists in the data
-  let watchDisney = "";
-  let watchAmazon = "";
-  let watchApple = "";
+  let watchDisney, watchApple, watchAmazon;
     
   if(disney && disney !== null){
     watchDisney = <WatchMedia link={disney} streaming="disney" color={color} />;
