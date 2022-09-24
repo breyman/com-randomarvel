@@ -11,7 +11,7 @@ on:
       - 'workflows/randomarvel-deploy-ci/*'
 
 jobs:
-  build:
+  test:
 
     runs-on: ubuntu-latest
 
