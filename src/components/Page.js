@@ -1,16 +1,40 @@
 import React from 'react';
-import myData from './../data/marvel.json';
+// import myDataFile from './../data/marvel.json'; // get the data from a local file
 import RandomMedia from './../components/RandomMedia';
 import MediaList from './../components/MediaList';
 import Nav from './../components/Nav';
 import Footer from './../components/Footer'
 import About from './../components/About';
-// import gtag from 'ga-gtag';
 
 function Page(){
+  // const myData = myDataFile; // for use if you want to use the local file
+  
+  // code to grab the data from the API
+  function getList(){
+    return fetch('https://api.disneydata.io/marvel/')
+    // return fetch('http://localhost:3000/marvel/') // for local testing
+      .then(data => data.json())
+  }
+
+  const [myData, setMyData] = React.useState([]);
+
+  React.useEffect(() => {
+    let mounted = true;
+    getList()
+      .then(items => {
+        if(mounted) {
+          // dataRef.current = items;
+          setMyData(items);
+        }
+      })
+    return () => mounted = false;
+  }, [])
+  // end of code to grab the data from the API
+
   const [page, setPage] = React.useState("media");
 
   let displayPage;
+
   
   switch(page) {
     case "media":
