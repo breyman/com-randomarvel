@@ -1,5 +1,5 @@
 import React from 'react';
-// import myDataFile from './../data/marvel.json'; // get the data from a local file
+import myDataFile from './../data/marvel.json'; // get the data from a local file
 import RandomMedia from './../components/RandomMedia';
 import MediaList from './../components/MediaList';
 import Nav from './../components/Nav';
@@ -7,28 +7,32 @@ import Footer from './../components/Footer'
 import About from './../components/About';
 
 function Page(){
-  // const myData = myDataFile; // for use if you want to use the local file
-  
-  // code to grab the data from the API
-  function getList(){
-    return fetch('https://api.disneydata.io/marvel/')
-    // return fetch('http://localhost:3000/marvel/') // for local testing
-      .then(data => data.json())
-  }
 
   const [myData, setMyData] = React.useState([]);
 
   React.useEffect(() => {
-    let mounted = true;
-    getList()
-      .then(items => {
-        if(mounted) {
-          // dataRef.current = items;
-          setMyData(items);
-        }
-      })
-    return () => mounted = false;
+    getResponse().then(items => {
+     setMyData(items);
+    }, (issue) => {setMyData(myDataFile)}).catch((error) => {}); // fall back to a local file if getting the api data isn't working properly
   }, [])
+
+
+  async function getResponse() {
+    const response = await fetch(
+      'https://api.disneydata.io/marvel/'
+    );
+
+    if (!response.ok) {
+      const message = `An error has occured: ${response.status}`;
+      throw new Error(message);
+    }else{
+      const data = await response.json(); // Extracting data as a JSON Object from the response
+      return data;
+    }   
+  }
+  getResponse().catch((error) => {
+  })
+
   // end of code to grab the data from the API
 
   const [page, setPage] = React.useState("media");
