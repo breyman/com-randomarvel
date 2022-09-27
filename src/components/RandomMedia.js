@@ -4,7 +4,6 @@ import WatchMedia from './../components/WatchMedia';
 function RandomMedia({media, dataLoading}){
   // console.log(`data loading in component: ${dataLoading}`);
   const [listType, setListType] = React.useState("any");
-  const [waitToShowMedia, setWaitToShowMedia] = React.useState(false);
   const [myMedia, setMyMedia] = React.useState(null);
 
   const allMedia = media;
@@ -15,6 +14,7 @@ function RandomMedia({media, dataLoading}){
     e.target.disabled = true;
     e.target.classList.add('is-loading');
 
+    // pause to show loading animation
     setTimeout(() => {
       switch(listType) {
         case "any":
@@ -36,7 +36,7 @@ function RandomMedia({media, dataLoading}){
 
       e.target.disabled = false;
       e.target.classList.remove('is-loading');
-    }, "550")
+    }, "450")
 
   }
   
@@ -66,7 +66,7 @@ function RandomMedia({media, dataLoading}){
   }
 
   let generateMarvelButton;
-  if(dataLoading || waitToShowMedia){
+  if(dataLoading){
     generateMarvelButton = <button className="button is-primary is-loading" value="Reload Page" onClick={handleShowMedia} data-testid="generate-random-marvel-button" disabled>Generate Random Marvel</button>
   } else {
     generateMarvelButton = <button className="button is-primary" value="Reload Page" onClick={handleShowMedia} data-testid="generate-random-marvel-button">Generate Random Marvel</button>
