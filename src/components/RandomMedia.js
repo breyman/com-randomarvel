@@ -2,7 +2,6 @@ import React from 'react';
 import WatchMedia from './../components/WatchMedia';
 
 function RandomMedia({media, dataLoading}){
-  // console.log(`data loading in component: ${dataLoading}`);
   const [listType, setListType] = React.useState("any");
   const [myMedia, setMyMedia] = React.useState(null);
 
