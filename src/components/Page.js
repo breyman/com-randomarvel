@@ -9,18 +9,26 @@ import About from './../components/About';
 function Page(){
 
   const [myData, setMyData] = React.useState([]);
+  const [apiIsLoading, setApiIsLoading] = React.useState(true);
 
   React.useEffect(() => {
     getResponse().then(items => {
-     setMyData(items);
-    }, (issue) => {setMyData(myDataFile)}).catch((error) => {}); // fall back to a local file if getting the api data isn't working properly
-  }, [])
+     setMyData(items); setApiIsLoading(false);
+    }, (issue) => {setMyData(myDataFile); setApiIsLoading(true);}).catch((error) => {}); // fall back to a local file if getting the api data isn't working properly
+  }, []);
 
+  // function delay(time) {
+  //   return new Promise(resolve => setTimeout(resolve, time));
+  // }
 
   async function getResponse() {
     const response = await fetch(
       'https://api.disneydata.io/marvel/'
     );
+
+    // console.log("before delay");
+    // await delay(1000);
+    // console.log("after delay");
 
     if (!response.ok) {
       const message = `An error has occured: ${response.status}`;
@@ -42,7 +50,8 @@ function Page(){
   
   switch(page) {
     case "media":
-      displayPage = <RandomMedia media={myData} />;
+      // console.log(`apiIsLoading: ${apiIsLoading}`);
+      displayPage = <RandomMedia media={myData} dataLoading={apiIsLoading} />;
       break;
     case "list":
       displayPage = <MediaList media={myData} />
