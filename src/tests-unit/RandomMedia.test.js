@@ -11,12 +11,14 @@ it('loads without media selected', () => {
     expect(mediaTitleDisplay).toHaveTextContent('');
 });
 
-it('displays the title when the generate button is clicked', () => {
+it('displays the title when the generate button is clicked', async() => {
 
     act(() => {
         screen.getByTestId('generate-random-marvel-button').click();
     });
 
+    // wait for the title to display
+    await new Promise((r) => setTimeout(r, 2000));
     const mediaTitleDisplay = screen.getByTestId('title-display');
     expect(mediaTitleDisplay).toHaveTextContent('Captain America: The First Avenger');
 });
