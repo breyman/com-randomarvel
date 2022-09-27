@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Data
 
-The data was manually collected and is currently stored locally in a project JSON file.
+The data was drawn from a disneydata.io API, also maintained by Brian.
 
 ## Workflows
 
