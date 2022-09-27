@@ -1,32 +1,43 @@
 import React from 'react';
 import WatchMedia from './../components/WatchMedia';
 
-function RandomMedia({media}){
+function RandomMedia({media, dataLoading}){
+  // console.log(`data loading in component: ${dataLoading}`);
   const [listType, setListType] = React.useState("any");
+  const [waitToShowMedia, setWaitToShowMedia] = React.useState(false);
   const [myMedia, setMyMedia] = React.useState(null);
 
   const allMedia = media;
   let mediaList = [];
   let disney, apple, amazon, title, color, watchText;
 
-  function handleShowMedia(){
-    switch(listType) {
-      case "any":
-        mediaList = allMedia;
-        break;
-      case "tv":
-        mediaList = allMedia.filter((myObject) => myObject.type === "tv");
-        break;
-      case "movie":
-        mediaList = allMedia.filter((myObject) => myObject.type === "movie");
-        break;
-      default:
-        break;
-    }
-    if (mediaList.length > 0){
-      let number = Math.floor(Math.random() * mediaList.length);
-      setMyMedia(mediaList[number]);
-    }
+  function handleShowMedia(e){
+    e.target.disabled = true;
+    e.target.classList.add('is-loading');
+
+    setTimeout(() => {
+      switch(listType) {
+        case "any":
+          mediaList = allMedia;
+          break;
+        case "tv":
+          mediaList = allMedia.filter((myObject) => myObject.type === "tv");
+          break;
+        case "movie":
+          mediaList = allMedia.filter((myObject) => myObject.type === "movie");
+          break;
+        default:
+          break;
+      }
+      if (mediaList.length > 0){
+        let number = Math.floor(Math.random() * mediaList.length);
+        setMyMedia(mediaList[number]);
+      }
+
+      e.target.disabled = false;
+      e.target.classList.remove('is-loading');
+    }, "550")
+
   }
   
   // if a category is changed, update things and reset to not display any media
@@ -54,10 +65,17 @@ function RandomMedia({media}){
     watchApple = <WatchMedia link={apple} streaming="apple" color={color} />;
   }
 
+  let generateMarvelButton;
+  if(dataLoading || waitToShowMedia){
+    generateMarvelButton = <button className="button is-primary is-loading" value="Reload Page" onClick={handleShowMedia} data-testid="generate-random-marvel-button" disabled>Generate Random Marvel</button>
+  } else {
+    generateMarvelButton = <button className="button is-primary" value="Reload Page" onClick={handleShowMedia} data-testid="generate-random-marvel-button">Generate Random Marvel</button>
+  }
+
   return(
     <div>
       <div className="column is-full has-text-centered">
-        <h2 className="is-size-2 has-text-weight-bold" data-testid="title-display" id="media-title" style={{color: color}}>{title}</h2>
+        <h2 className="is-size-2 has-text-weight-bold is-fade-in" key={title} data-testid="title-display" id="media-title" style={{color: color}}>{title}</h2>
       </div>
       <div className="column is-full has-text-centered">
         <p>
@@ -69,7 +87,7 @@ function RandomMedia({media}){
       </div>
       <div className="column is-full has-text-centered mt-6">
         <div className="buttons is-centered">
-          <button className="button is-primary" value="Reload Page" onClick={handleShowMedia} data-testid="generate-random-marvel-button">Generate Random Marvel</button>
+          {generateMarvelButton}
         </div>
         <div className="buttons has-addons has-text-centered is-centered">
           <button title="any" data-testid="media-toggle-selector-all" className={listType === "any" || listType === "none" ? "button is-small is-info is-selected" : "button is-small"} onClick={handleTypeChange}>Any</button>
