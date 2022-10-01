@@ -11,11 +11,20 @@ function Page(){
   const [myData, setMyData] = React.useState([]);
   const [apiIsLoading, setApiIsLoading] = React.useState(true);
 
+  const usingDataFile = React.useRef(false);
+
   // begin API/data load
   React.useEffect(() => {
     getResponse().then(items => {
-     setMyData(items); setApiIsLoading(false);
-    }, (issue) => {setMyData(myDataFile); setApiIsLoading(true);}).catch((error) => {}); // fall back to a local file if getting the api data isn't working properly
+        setMyData(items); 
+        setApiIsLoading(false); 
+        usingDataFile.current = false;
+    }, (issue) => {
+        console.log(issue);
+        setMyData(myDataFile); 
+        setApiIsLoading(false); 
+        usingDataFile.current = true;
+      }).catch((error) => {}); // fall back to a local file if getting the api data isn't working properly
   }, []);
 
   async function getResponse() {
@@ -66,7 +75,7 @@ function Page(){
       </div>
       
       <div className="column">
-        <Footer handlePageChange={event => setPage(event.target.title)} />
+        <Footer handlePageChange={event => setPage(event.target.title)} usingLocalDataFile={usingDataFile.current} />
       </div>
     </div>
   )
