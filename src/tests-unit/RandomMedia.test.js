@@ -19,6 +19,7 @@ it('displays the title when the generate button is clicked', async() => {
 
     // wait for the title to display
     await new Promise((r) => setTimeout(r, 2000));
+
     const mediaTitleDisplay = screen.getByTestId('title-display');
     expect(mediaTitleDisplay).toHaveTextContent('Captain America: The First Avenger');
 });

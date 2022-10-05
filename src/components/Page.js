@@ -29,7 +29,8 @@ function Page(){
 
   async function getResponse() {
     const response = await fetch(
-      'https://api.disneydata.io/marvel/'
+      'https://api.disneydata.io/marvel/' //production url
+      // 'http://localhost:5000/marvel/' //development url
     );
 
     if (!response.ok) {

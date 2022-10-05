@@ -7,7 +7,8 @@ function RandomMedia({media, dataLoading}){
 
   const allMedia = media;
   let mediaList = [];
-  let disney, apple, amazon, title, color, watchText;
+  let streaming = []
+  let title, color, watchText;
 
   function handleShowMedia(e){
     e.target.disabled = true;
@@ -47,21 +48,8 @@ function RandomMedia({media, dataLoading}){
 
   // conditionally show stuff if it's time
   if(myMedia){
-    watchText = <span className="mr-2">Watch on</span>;
-    ({disney, apple, amazon, title, color} = myMedia);
-  }
-
-  // conditionally render the watch mdeia icons depending on if a link exists in the data
-  let watchDisney, watchApple, watchAmazon;
-    
-  if(disney && disney !== null){
-    watchDisney = <WatchMedia link={disney} streaming="disney" color={color} />;
-  }
-  if(amazon && amazon !== null){
-    watchAmazon = <WatchMedia link={amazon} streaming="amazon" color={color} />;
-  }
-  if(apple && apple !== null){
-    watchApple = <WatchMedia link={apple} streaming="apple" color={color} />;
+    watchText = <span className="mr-1">Watch on</span>;
+    ({title, color, streaming} = myMedia);
   }
 
   let generateMarvelButton;
@@ -79,9 +67,9 @@ function RandomMedia({media, dataLoading}){
       <div className="column is-full has-text-centered">
         <p>
           {watchText}
-          {watchDisney}
-          {watchAmazon}
-          {watchApple}
+          {streaming.map(listOfStreams => (
+            <WatchMedia key={listOfStreams.service} link={listOfStreams.link} streaming={listOfStreams.service} color={color} />
+           ))}
         </p>
       </div>
       <div className="column is-full has-text-centered mt-6">

@@ -3,7 +3,7 @@ function WatchMedia({streaming, link, color}){
 
     // set the right icon for the service
     switch(streaming) {
-      case "disney":
+      case "disney+":
         streamingClass = "fak fa-dplus";
         break;
       case "amazon":
