@@ -15,7 +15,6 @@ function MediaList({media = []}){
       if(order ==="release"){
         sortedMedia = passedMedia.sort((a,b) => (a.release_order > b.release_order) ? 1 : ((b.release_order > a.release_order) ? -1 : 0));
       }
-    
   
   return(
     <div>
@@ -39,7 +38,7 @@ function MediaList({media = []}){
           <tbody>
               {sortedMedia.map(listOfMedia => (
                 <tr key={listOfMedia.title}>
-                  <td><a href={listOfMedia.disney} style={{color: listOfMedia.color}} target="_blank" rel="noreferrer">{listOfMedia.title}</a></td>
+                  <td><a href={listOfMedia.streaming[0].link} style={{color: listOfMedia.color}} target="_blank" rel="noreferrer" data-testid="title-link">{listOfMedia.title}</a></td>
                   <td style={{color: listOfMedia.color}}>{listOfMedia.chronological_order}</td>
                   <td style={{color: listOfMedia.color}}>{listOfMedia.release_order}</td>
                 </tr>
