@@ -30,6 +30,7 @@ function Page(){
   async function getResponse() {
     const response = await fetch(
       'https://api.disneydata.io/marvel/' //production url
+      // 'https://api.isneydata.io/marvel/' //broken url
       // 'http://localhost:5000/marvel/' //development url
     );
 
