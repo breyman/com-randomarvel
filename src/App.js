@@ -1,21 +1,13 @@
-import './assets/styles/styles.sass';
-import Page from './components/Page';
-// import gtag from 'ga-gtag';
-
-
-// gtag('event', 'page_load', {
-// 	page_title: 'home',
-// })
+import "./assets/styles/styles.sass";
+import "./styles/app.css";
+import Page from "./components/Page";
 
 function App() {
-
-	return (
-		<div>
-			
-			<Page />
-			
-		</div>
-	);
+  return (
+    <>
+      <Page />
+    </>
+  );
 }
 
 export default App;
