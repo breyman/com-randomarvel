@@ -14,17 +14,16 @@ function Footer({ handlePageChange, usingLocalDataFile = false }) {
   }
 
   return (
-    <div className="">
+    <footer className="bg-slate-100 py-9 mt-10">
       <div className="column is-full is-centered has-text-centered">
-        <span>
-          <button
-            className="is-link has-text-primary is-size-7"
-            title="media"
-            onClick={handlePageChange}
-          >
-            Generate Random Marvel
-          </button>
-        </span>
+        <button
+          className="is-link has-text-primary is-size-7"
+          title="media"
+          onClick={handlePageChange}
+        >
+          Generate Random Marvel
+        </button>
+
         <span className="has-text-grey ml-3 mr-3">|</span>
         <span>
           <button
@@ -47,7 +46,7 @@ function Footer({ handlePageChange, usingLocalDataFile = false }) {
         </span>
       </div>
       {dataFileMessage}
-    </div>
+    </footer>
   );
 }
 export default Footer;
