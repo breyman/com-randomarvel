@@ -1,32 +1,52 @@
-import brianHeadshot from './../assets/images/headshot-brian.jpg';
+import brianHeadshot from "./../assets/images/headshot-brian.jpg";
 
-function About(){
-  return(
-    <div className="column is-two-thirds-tablet is-two-thirds-desktop is-half-widescreen is-one-third-fullhd">
-      <div className="columns is-multiline is-desktop">
-        <div className="column is-full mb-6">
-          RandoMarvel lets you pick and watch a random Marvel-produced movie or TV show to watch. Bored on a Saturday night? Have crippling decision anxiety? Generate a movie/tv show now.
+function About() {
+  return (
+    <div className="flex flex-col px-20">
+      <div className="max-w-xl self-center">
+        <p className="font-librefranklin">
+          RandoMarvel lets you pick and watch a random Marvel-produced movie or
+          TV show to watch. Bored on a Saturday night? Have crippling decision
+          anxiety? Generate a movie/tv show now.
+        </p>
+      </div>
+      <div className="mt-8 flex max-w-xl self-center">
+        <div className="mr-10">
+          <img
+            src={brianHeadshot}
+            className="h-40 w-40 rounded-full"
+            alt="Brian's Headshot"
+          />
         </div>
-        <div className="column is-one-third mt-6">
-          <figure className="image is-128x128">
-            <img src={brianHeadshot} className="is-rounded" alt="Brian's Headshot" />
-          </figure>
-        </div>
-        <div className="column mt-6">
-          <p className="mb-3">Brian wrote this small app. Check out more about him at <a href="https://www.brianreyman.com/" className="has-text-primary" target="_blank" rel="noreferrer">BrianReyman.com</a>.</p>
-          <p>
-            View this app's <a href="https://github.com/breyman/com-randomarvel" className="has-text-primary" target="_blank" rel="noreferrer">source code on
-            <span className="icon-text">
-              <span className="icon">
-                <i className="fa-brands fa-github"></i>
-              </span>
-              <span>GitHub</span>
-            </span></a>.
+        <div className=" flex-1">
+          <p className=" font-librefranklin">
+            Brian wrote this small app. Check out more about him at{" "}
+            <a
+              href="https://www.brianreyman.com/"
+              className=" text-marvel-500 hover:underline"
+              target="_blank"
+              rel="noreferrer"
+            >
+              BrianReyman.com
+            </a>
+            .
+          </p>
+          <p className=" mt-8 font-librefranklin">
+            View this app's{" "}
+            <a
+              href="https://github.com/breyman/com-randomarvel"
+              className="text-marvel-500 hover:underline"
+              target="_blank"
+              rel="noreferrer"
+            >
+              source code on GitHub
+              <i className="fa-brands fa-github pl-1"></i>
+            </a>
           </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default About;
