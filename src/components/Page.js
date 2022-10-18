@@ -28,7 +28,7 @@ function Page() {
           usingDataFile.current = true;
         }
       )
-      .catch((error) => {}); // fall back to a local file if getting the api data isn't working properly
+      .catch(() => {}); // fall back to a local file if getting the api data isn't working properly
   }, []);
 
   async function getResponse() {
@@ -46,7 +46,7 @@ function Page() {
       return data;
     }
   }
-  getResponse().catch((error) => {});
+  getResponse().catch(() => {});
   // end API/data load
 
   const [page, setPage] = React.useState("media");
@@ -69,7 +69,7 @@ function Page() {
 
   return (
     <>
-      <div className="flex flex-col min-w-[300px]">
+      <div className="flex min-w-[300px] flex-col">
         <Nav handlePageChange={(event) => setPage(event.target.title)} />
         <div>{displayPage}</div>
         <Footer

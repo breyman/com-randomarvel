@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         novecento: ["novecento-sans-narrow, sans-serif", "sans-serif"],
+        librefranklin: ["libre-franklin, sans-serif", "sans-serif"],
       },
     },
   },

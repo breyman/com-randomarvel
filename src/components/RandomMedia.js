@@ -55,7 +55,7 @@ function RandomMedia({ media, dataLoading }) {
   if (dataLoading) {
     generateMarvelButton = (
       <button
-        className=" is-loading absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 text-white hover:bg-marvel-600"
+        className=" is-loading absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 font-librefranklin text-white hover:bg-marvel-600"
         type="button"
         value="Reload Page"
         onClick={handleShowMedia}
@@ -68,7 +68,7 @@ function RandomMedia({ media, dataLoading }) {
   } else {
     generateMarvelButton = (
       <button
-        className="absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 text-white hover:bg-marvel-600"
+        className="absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 font-librefranklin text-white hover:bg-marvel-600"
         type="button"
         value="Reload Page"
         onClick={handleShowMedia}
@@ -91,6 +91,7 @@ function RandomMedia({ media, dataLoading }) {
     "px-4",
     "py-2",
     "text-xs",
+    "font-librefranklin",
     "font-medium",
     listType === "any" ? "text-white" : "text-gray-700",
     listType === "any" ? "hover:bg-gray-600" : "hover:bg-gray-50",
@@ -112,6 +113,7 @@ function RandomMedia({ media, dataLoading }) {
     "px-4",
     "py-2",
     "text-xs",
+    "font-librefranklin",
     "font-medium",
     listType === "movie" ? "text-white" : "text-gray-700",
     listType === "movie" ? "hover:bg-gray-600" : "hover:bg-gray-50",
@@ -134,7 +136,8 @@ function RandomMedia({ media, dataLoading }) {
     "px-4",
     "py-2",
     "text-xs",
-    "font-sm",
+    "font-librefranklin",
+    "font-medium",
     listType === "tv" ? "text-white" : "text-gray-700",
     listType === "tv" ? "hover:bg-gray-600" : "hover:bg-gray-50",
     "focus:z-10",
@@ -147,7 +150,7 @@ function RandomMedia({ media, dataLoading }) {
   return (
     <>
       <h2
-        className=" text-xxl is-fade-in my-4 px-9 text-center text-4xl font-bold"
+        className=" text-xxl is-fade-in my-4 px-9 text-center font-librefranklin text-4xl font-bold"
         key={title}
         data-testid="title-display"
         id="media-title"
