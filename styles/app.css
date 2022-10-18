@@ -13,8 +13,10 @@ button.is-loading::after {
   content: "";
   display: block;
   height: 1em;
-  position: relative;
   width: 1em;
+  position: absolute;
+  left: calc(50% - (1em * 0.5));
+  top: calc(50% - (1em * 0.5));
 }
 
 button.is-loading {
@@ -23,11 +25,37 @@ button.is-loading {
   opacity: 0.6;
 }
 
-button.is-loading::after {
-  position: absolute;
-  left: calc(50% - (1em * 0.5));
-  top: calc(50% - (1em * 0.5));
-  position: absolute !important;
+@-webkit-keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 /* end button loader spinner */
+
+/* fade text in */
+#media-title.is-fade-in {
+  animation: fadeIn 0.65s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* end fade text in */

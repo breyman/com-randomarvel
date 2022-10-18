@@ -79,75 +79,128 @@ function RandomMedia({ media, dataLoading }) {
     );
   }
 
+  // generate the appropriate media selection button styles
+  const leftButtonClasses = [
+    "relative",
+    "inline-flex",
+    "items-center",
+    "rounded-l-md",
+    "border",
+    listType === "any" ? "border-gray-500" : "border-gray-300",
+    listType === "any" ? "bg-gray-500" : "bg-white",
+    "px-4",
+    "py-2",
+    "text-xs",
+    "font-medium",
+    listType === "any" ? "text-white" : "text-gray-700",
+    listType === "any" ? "hover:bg-gray-600" : "hover:bg-gray-50",
+    "focus:z-10",
+    "focus:border-marvel-500",
+    "focus:outline-none",
+    "focus:ring-1",
+    "focus:ring-marvel-500",
+  ].join(" ");
+
+  const middleButtonClasses = [
+    "relative",
+    "-ml-px",
+    "inline-flex",
+    "items-center",
+    "border",
+    listType === "movie" ? "border-gray-500" : "border-gray-300",
+    listType === "movie" ? "bg-gray-500" : "bg-white",
+    "px-4",
+    "py-2",
+    "text-xs",
+    "font-medium",
+    listType === "movie" ? "text-white" : "text-gray-700",
+    listType === "movie" ? "hover:bg-gray-600" : "hover:bg-gray-50",
+    "focus:z-10",
+    "focus:border-marvel-500",
+    "focus:outline-none",
+    "focus:ring-1",
+    "focus:ring-marvel-500",
+  ].join(" ");
+
+  const rightButtonClasses = [
+    "relative",
+    "-ml-px",
+    "inline-flex",
+    "items-center",
+    "rounded-r-md",
+    "border",
+    listType === "tv" ? "border-gray-500" : "border-gray-300",
+    listType === "tv" ? "bg-gray-500" : "bg-white",
+    "px-4",
+    "py-2",
+    "text-xs",
+    "font-sm",
+    listType === "tv" ? "text-white" : "text-gray-700",
+    listType === "tv" ? "hover:bg-gray-600" : "hover:bg-gray-50",
+    "focus:z-10",
+    "focus:border-marvel-500",
+    "focus:outline-none",
+    "focus:ring-1",
+    "focus:ring-marvel-500",
+  ].join(" ");
+
   return (
-    <div>
-      <div className="column is-full has-text-centered">
-        <h2
-          className="is-size-2 has-text-weight-bold is-fade-in"
-          key={title}
-          data-testid="title-display"
-          id="media-title"
-          style={{ color: color }}
-        >
-          {title}
-        </h2>
+    <>
+      <h2
+        className=" text-xxl text-4xl my-4 is-fade-in text-center font-bold px-9"
+        key={title}
+        data-testid="title-display"
+        id="media-title"
+        style={{ color: color }}
+      >
+        {title}
+      </h2>
+      <div className="text-center mt-5">
+        <span>{watchText}</span>
+        {streaming.map((listOfStreams) => (
+          <WatchMedia
+            key={listOfStreams.service}
+            link={listOfStreams.link}
+            streaming={listOfStreams.service}
+            color={color}
+          />
+        ))}
       </div>
-      <div className="column is-full has-text-centered">
-        <p>
-          {watchText}
-          {streaming.map((listOfStreams) => (
-            <WatchMedia
-              key={listOfStreams.service}
-              link={listOfStreams.link}
-              streaming={listOfStreams.service}
-              color={color}
-            />
-          ))}
-        </p>
+      <div className="flex mt-16 mb-28 justify-center">
+        {generateMarvelButton}
       </div>
-      <div className="column is-full has-text-centered mt-6">
-        <div className="buttons is-centered">{generateMarvelButton}</div>
-        <div className="my-5">&nbsp;</div>
-        <div className="buttons has-addons has-text-centered is-centered">
+      <div className="flex justify-center pt-7">
+        <span className="isolate inline-flex rounded-md shadow-sm">
           <button
+            type="button"
             title="any"
             data-testid="media-toggle-selector-all"
-            className={
-              listType === "any" || listType === "none"
-                ? "button is-small is-info is-selected"
-                : "button is-small"
-            }
             onClick={handleTypeChange}
+            className={leftButtonClasses}
           >
             Any
           </button>
           <button
+            type="button"
             title="movie"
             data-testid="media-toggle-selector-movie"
-            className={
-              listType === "movie"
-                ? "button is-small is-info is-selected"
-                : "button is-small"
-            }
             onClick={handleTypeChange}
+            className={middleButtonClasses}
           >
             Movie
           </button>
           <button
+            type="button"
             title="tv"
             data-testid="media-toggle-selector-tv"
-            className={
-              listType === "tv"
-                ? "button is-small is-info is-selected"
-                : "button is-small"
-            }
             onClick={handleTypeChange}
+            className={rightButtonClasses}
           >
             TV Show
           </button>
-        </div>
+        </span>
       </div>
-    </div>
+    </>
   );
 }
 

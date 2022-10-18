@@ -71,8 +71,7 @@ function Page() {
     <>
       <div className="flex flex-col">
         <Nav handlePageChange={(event) => setPage(event.target.title)} />
-        {displayPage}
-
+        <div>{displayPage}</div>
         <Footer
           handlePageChange={(event) => setPage(event.target.title)}
           usingLocalDataFile={usingDataFile.current}
