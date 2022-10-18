@@ -28,7 +28,7 @@ function Footer({ handlePageChange, usingLocalDataFile = false }) {
 
   return (
     <footer className="bg-slate-100 pt-9 pb-12 mt-10 text-center">
-      <div>
+      <div className="px-6">
         <button
           className=" text-marvel-500 text-sm hover:text-marvel-700"
           title="media"

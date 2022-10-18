@@ -55,7 +55,7 @@ function RandomMedia({ media, dataLoading }) {
   if (dataLoading) {
     generateMarvelButton = (
       <button
-        className=" bg-marvel-500 text-white border-none px-4 py-2 rounded-md mb-3 hover:bg-marvel-600 absolute is-loading"
+        className=" is-loading absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 text-white hover:bg-marvel-600"
         type="button"
         value="Reload Page"
         onClick={handleShowMedia}
@@ -68,7 +68,7 @@ function RandomMedia({ media, dataLoading }) {
   } else {
     generateMarvelButton = (
       <button
-        className=" bg-marvel-500 text-white border-none px-4 py-2 rounded-md mb-3 hover:bg-marvel-600 absolute"
+        className="absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 text-white hover:bg-marvel-600"
         type="button"
         value="Reload Page"
         onClick={handleShowMedia}
@@ -147,7 +147,7 @@ function RandomMedia({ media, dataLoading }) {
   return (
     <>
       <h2
-        className=" text-xxl text-4xl my-4 is-fade-in text-center font-bold px-9"
+        className=" text-xxl is-fade-in my-4 px-9 text-center text-4xl font-bold"
         key={title}
         data-testid="title-display"
         id="media-title"
@@ -155,7 +155,7 @@ function RandomMedia({ media, dataLoading }) {
       >
         {title}
       </h2>
-      <div className="text-center mt-5">
+      <div className="mt-5 text-center">
         <span>{watchText}</span>
         {streaming.map((listOfStreams) => (
           <WatchMedia
@@ -166,7 +166,7 @@ function RandomMedia({ media, dataLoading }) {
           />
         ))}
       </div>
-      <div className="flex mt-16 mb-28 justify-center">
+      <div className="mt-16 mb-28 flex justify-center">
         {generateMarvelButton}
       </div>
       <div className="flex justify-center pt-7">

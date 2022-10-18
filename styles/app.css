@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.is-minwidth {
+  min-width: 300px;
+}
+
 /* button loader spinner */
 button.is-loading::after {
   -webkit-animation: spinAround 500ms infinite linear;

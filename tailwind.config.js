@@ -16,6 +16,9 @@ module.exports = {
           900: "#1a0000",
         },
       },
+      fontFamily: {
+        novecento: ["novecento-sans-narrow, sans-serif", "sans-serif"],
+      },
     },
   },
   plugins: [],

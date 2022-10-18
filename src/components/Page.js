@@ -69,7 +69,7 @@ function Page() {
 
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col min-w-[300px]">
         <Nav handlePageChange={(event) => setPage(event.target.title)} />
         <div>{displayPage}</div>
         <Footer
