@@ -76,7 +76,7 @@ function MediaList({ media = [] }) {
   return (
     <>
       <div className="mar flex flex-col">
-        <h2 className="mb-10 self-center font-librefranklin text-3xl font-bold text-marvel-500 dark:text-white">
+        <h2 className="mb-10 self-center text-center font-librefranklin text-3xl font-bold text-marvel-500 dark:text-white">
           Marvel Movies and TV Shows
         </h2>
 
@@ -107,17 +107,17 @@ function MediaList({ media = [] }) {
           </span>
         </div>
 
-        <div className=" max-w-3xl self-center px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl self-center px-7 md:px-6 lg:px-8">
           <div className="mt-8 flex flex-col">
-            <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
-              <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-                <table className="min-w-full divide-y divide-gray-300">
+            <div className="-my-2 lg:-mx-8">
+              <div className="inline-block py-2 align-middle md:px-6 lg:px-8">
+                <table className="divide-y divide-gray-300">
                   <thead>
                     <tr>
                       <th
                         title="title"
                         scope="col"
-                        className="py-3.5 pl-4 pr-3 text-left font-librefranklin text-sm font-semibold text-gray-900 dark:text-white sm:pl-6 md:pl-0"
+                        className="py-3.5 pr-3 text-left font-librefranklin text-sm font-semibold text-gray-900 dark:text-white"
                       ></th>
                       <th
                         scope="col"
@@ -138,7 +138,7 @@ function MediaList({ media = [] }) {
                   <tbody className="divide-y divide-gray-200">
                     {sortedMedia.map((listOfMedia) => (
                       <tr key={listOfMedia.title}>
-                        <td className="whitespace-nowrap py-3 pl-4 pr-3 font-librefranklin text-sm font-medium text-gray-900 sm:pl-6 md:pl-0">
+                        <td className="py-3 px-1 font-librefranklin text-sm font-medium text-gray-900">
                           <a
                             href={listOfMedia.streaming[0].link}
                             className="dark:is-white"
@@ -151,13 +151,13 @@ function MediaList({ media = [] }) {
                           </a>
                         </td>
                         <td
-                          className="dark:is-white whitespace-nowrap py-3 px-3 text-center font-librefranklin text-sm font-normal"
+                          className="dark:is-white py-3 px-1 text-center font-librefranklin text-sm font-normal"
                           style={{ color: listOfMedia.color }}
                         >
                           {listOfMedia.chronological_order}
                         </td>
                         <td
-                          className="dark:is-white whitespace-nowrap py-3 px-3 text-center font-librefranklin text-sm font-normal"
+                          className="dark:is-white py-3 px-1 text-center font-librefranklin text-sm font-normal"
                           style={{ color: listOfMedia.color }}
                         >
                           {listOfMedia.release_order}
