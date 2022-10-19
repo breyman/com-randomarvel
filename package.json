@@ -15,9 +15,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "npm run dev:css && react-scripts start",
+    "dev": "react-scripts start",
     "start": "react-scripts start && dev:css",
-    "build": "react-scripts build && build:css",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "tailwindcss -m -i ./styles/app.css -o src/styles/app.css",
