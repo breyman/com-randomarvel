@@ -111,10 +111,6 @@ function MoonIcon(props) {
 }
 
 function Nav({ handlePageChange }) {
-  // handle dark/light mode toggle
-  let localStorageColorTheme = window.localStorage.colortheme;
-  console.log(localStorageColorTheme);
-
   function toggleMode() {
     let darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     let isSystemDarkMode = darkModeMediaQuery.matches;
@@ -122,16 +118,22 @@ function Nav({ handlePageChange }) {
 
     if (isDarkMode === isSystemDarkMode) {
       delete window.localStorage.colortheme;
+      document
+        .querySelector('meta[name="theme-color"]')
+        .setAttribute("content", "#1e293b");
     } else {
       window.localStorage.colortheme = "dark";
+      document
+        .querySelector('meta[name="theme-color"]')
+        .setAttribute("content", "#CC0300");
     }
   }
 
   return (
     <>
-      <div className="flex items-center">
-        <div className="flex-1 px-32"></div>
-        <div className="flex-3 self-center pt-11 pb-8">
+      <div className="flex flex-col-reverse items-center pt-6 md:flex-row md:pt-0">
+        <div className="flex-1 lg:px-32"></div>
+        <div className="flex-3 self-center pt-11 pb-2 md:pb-8">
           <nav>
             <button
               type="button"
@@ -143,16 +145,16 @@ function Nav({ handlePageChange }) {
             </button>
           </nav>
         </div>
-        <div className="ml-auto flex-1 px-32 text-right">
+        <div className="flex-1 self-center md:ml-auto md:text-right lg:px-32">
           <button
             type="button"
             aria-label="Toggle dark mode"
             className="rounded-full border border-solid bg-white/90 px-2 py-2 ring-1 ring-zinc-900/5 transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
             onClick={toggleMode}
           >
-            <SunIcon className="[@media(prefers-color-scheme:dark)]:fill-marvel-50 [@media(prefers-color-scheme:dark)]:group-hover:fill-marvel-50 h-4 w-4 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-100 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:stroke-marvel-300 [@media(prefers-color-scheme:dark)]:group-hover:stroke-marvel-400" />
-            <br />
-            <MoonIcon className="hidden h-4 w-4 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-marvel-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-marvel-300" />
+            <SunIcon className="[@media(prefers-color-scheme:dark)]:fill-marvel-50 [@media(prefers-color-scheme:dark)]:group-hover:fill-marvel-50 h-4 w-4 fill-zinc-100 stroke-zinc-500 transition ease-in-out group-hover:fill-zinc-100 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:stroke-marvel-300 [@media(prefers-color-scheme:dark)]:group-hover:stroke-marvel-400" />
+            <br className="hidden md:block" />
+            <MoonIcon className="hidden h-4 w-4 fill-zinc-700 stroke-zinc-500 transition ease-in-out dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-marvel-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-marvel-300" />
           </button>
         </div>
       </div>

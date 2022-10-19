@@ -412,6 +412,12 @@ html {
   font-family: libre-franklin, sans-serif, sans-serif;
 }
 
+.root {
+  padding-left: env(safe-area-inset-left);
+  /* Apply safe area */
+  padding-right: env(safe-area-inset-right);
+}
+
 p a {
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
@@ -674,10 +680,6 @@ footer button:hover {
   margin-bottom: 2.5rem !important;
 }
 
-.ml-auto {
-  margin-left: auto !important;
-}
-
 .mr-1 {
   margin-right: 0.25rem !important;
 }
@@ -780,6 +782,10 @@ footer button:hover {
 
 .flex-col {
   flex-direction: column !important;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse !important;
 }
 
 .flex-wrap {
@@ -947,11 +953,6 @@ footer button:hover {
   padding-bottom: 0.875rem !important;
 }
 
-.px-32 {
-  padding-left: 8rem !important;
-  padding-right: 8rem !important;
-}
-
 .px-2 {
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
@@ -960,6 +961,14 @@ footer button:hover {
 .px-9 {
   padding-left: 2.25rem !important;
   padding-right: 2.25rem !important;
+}
+
+.pt-0 {
+  padding-top: 0px !important;
+}
+
+.pt-10 {
+  padding-top: 2.5rem !important;
 }
 
 .pl-1 {
@@ -982,12 +991,16 @@ footer button:hover {
   padding-right: 0.75rem !important;
 }
 
+.pt-6 {
+  padding-top: 1.5rem !important;
+}
+
 .pt-11 {
   padding-top: 2.75rem !important;
 }
 
-.pb-8 {
-  padding-bottom: 2rem !important;
+.pb-2 {
+  padding-bottom: 0.5rem !important;
 }
 
 .pb-14 {
@@ -1004,10 +1017,6 @@ footer button:hover {
 
 .text-center {
   text-align: center !important;
-}
-
-.text-right {
-  text-align: right !important;
 }
 
 .align-middle {
@@ -1116,6 +1125,10 @@ footer button:hover {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-transform, -webkit-filter, -webkit-backdrop-filter !important;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
   transition-duration: 150ms !important;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 /* button loader spinner */
@@ -1251,7 +1264,7 @@ button.is-loading {
 
 .dark .dark\:is-white {
   --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+  color: rgb(244 244 245 / var(--tw-text-opacity)) !important;
 }
 
 .dark .dark\:block {
@@ -1315,12 +1328,28 @@ button.is-loading {
 }
 
 @media (min-width: 768px) {
+  .md\:ml-auto {
+    margin-left: auto !important;
+  }
+
+  .md\:block {
+    display: block !important;
+  }
+
   .md\:inline {
     display: inline !important;
   }
 
+  .md\:flex {
+    display: flex !important;
+  }
+
   .md\:hidden {
     display: none !important;
+  }
+
+  .md\:flex-row {
+    flex-direction: row !important;
   }
 
   .md\:px-6 {
@@ -1331,6 +1360,18 @@ button.is-loading {
   .md\:pl-0 {
     padding-left: 0px !important;
   }
+
+  .md\:pt-0 {
+    padding-top: 0px !important;
+  }
+
+  .md\:pb-8 {
+    padding-bottom: 2rem !important;
+  }
+
+  .md\:text-right {
+    text-align: right !important;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1339,9 +1380,26 @@ button.is-loading {
     margin-right: -2rem !important;
   }
 
+  .lg\:mt-36 {
+    margin-top: 9rem !important;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
+  }
+
+  .lg\:px-32 {
+    padding-left: 8rem !important;
+    padding-right: 8rem !important;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px !important;
+  }
+
+  .lg\:pt-16 {
+    padding-top: 4rem !important;
   }
 }
 

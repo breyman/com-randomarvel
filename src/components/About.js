@@ -10,7 +10,7 @@ function About() {
           anxiety? Generate a movie/tv show now.
         </p>
       </div>
-      <div className="mt-8 flex max-w-xl self-center dark:text-zinc-100">
+      <div className="mt-8 max-w-xl self-center dark:text-zinc-100 md:flex">
         <div className="mr-10">
           <img
             src={brianHeadshot}
@@ -18,7 +18,7 @@ function About() {
             alt="Brian's Headshot"
           />
         </div>
-        <div className=" flex-1">
+        <div className="flex-1 pt-0 pt-10 lg:pt-0">
           <p className=" font-librefranklin dark:text-zinc-100">
             Brian wrote this small app. Check out more about him at{" "}
             <a
@@ -30,7 +30,7 @@ function About() {
             </a>
             .
           </p>
-          <p className=" mt-8 font-librefranklin">
+          <p className="mt-8 font-librefranklin">
             View this app's{" "}
             <a
               href="https://github.com/breyman/com-randomarvel"

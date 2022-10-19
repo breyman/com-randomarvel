@@ -10,6 +10,10 @@
   html {
     @apply font-librefranklin;
   }
+  .root {
+    padding-left: env(safe-area-inset-left); /* Apply safe area */
+    padding-right: env(safe-area-inset-right);
+  }
   p a {
     @apply border-b-[1px] border-b-marvel-500 pb-[2px] text-slate-700;
   }
@@ -23,7 +27,7 @@
   }
 
   .is-white {
-    @apply text-white !important;
+    @apply text-zinc-100 !important;
   }
 
   footer button {

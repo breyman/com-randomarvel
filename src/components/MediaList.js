@@ -151,13 +151,13 @@ function MediaList({ media = [] }) {
                           </a>
                         </td>
                         <td
-                          className="dark:is-white whitespace-nowrap py-3 px-3 font-librefranklin text-sm font-normal"
+                          className="dark:is-white whitespace-nowrap py-3 px-3 text-center font-librefranklin text-sm font-normal"
                           style={{ color: listOfMedia.color }}
                         >
                           {listOfMedia.chronological_order}
                         </td>
                         <td
-                          className="dark:is-white whitespace-nowrap py-3 px-3 font-librefranklin text-sm font-normal"
+                          className="dark:is-white whitespace-nowrap py-3 px-3 text-center font-librefranklin text-sm font-normal"
                           style={{ color: listOfMedia.color }}
                         >
                           {listOfMedia.release_order}

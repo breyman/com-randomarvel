@@ -154,7 +154,7 @@ function RandomMedia({ media, dataLoading }) {
   return (
     <>
       <h2
-        className=" text-xxl is-fade-in my-4 px-9 text-center font-librefranklin text-4xl font-bold dark:text-zinc-100"
+        className=" text-xxl is-fade-in dark:is-white my-4 px-9 text-center font-librefranklin text-4xl font-bold"
         key={title}
         data-testid="title-display"
         id="media-title"
@@ -173,10 +173,10 @@ function RandomMedia({ media, dataLoading }) {
           />
         ))}
       </div>
-      <div className="mt-16 mb-28 flex justify-center">
+      <div className="mt-16 mb-28 flex justify-center lg:mt-36">
         {generateMarvelButton}
       </div>
-      <div className="flex justify-center pt-7">
+      <div className="flex justify-center pt-7 lg:pt-16">
         <span className="isolate inline-flex rounded-md shadow-sm">
           <button
             type="button"
