@@ -71,7 +71,7 @@ function Page() {
     <>
       <div className="flex min-w-[300px] flex-col">
         <Nav handlePageChange={(event) => setPage(event.target.title)} />
-        <div>{displayPage}</div>
+        <div className="dark:bg-marvel-100">{displayPage}</div>
         <Footer
           handlePageChange={(event) => setPage(event.target.title)}
           usingLocalDataFile={usingDataFile.current}

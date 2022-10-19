@@ -117,19 +117,19 @@ function MediaList({ media = [] }) {
                       <th
                         title="title"
                         scope="col"
-                        className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6 md:pl-0"
+                        className="py-3.5 pl-4 pr-3 text-left font-librefranklin text-sm font-semibold text-gray-900 sm:pl-6 md:pl-0"
                       ></th>
                       <th
                         scope="col"
                         title="chrono"
-                        className="py-3.5 px-3 text-left text-sm font-semibold text-gray-900"
+                        className="py-3.5 px-3 text-left font-librefranklin text-sm font-semibold text-gray-900"
                       >
                         Timeline
                       </th>
                       <th
                         scope="col"
                         title="release"
-                        className="py-3.5 px-3 text-left text-sm font-semibold text-gray-900"
+                        className="py-3.5 px-3 text-left font-librefranklin text-sm font-semibold text-gray-900"
                       >
                         Release
                       </th>
@@ -138,7 +138,7 @@ function MediaList({ media = [] }) {
                   <tbody className="divide-y divide-gray-200">
                     {sortedMedia.map((listOfMedia) => (
                       <tr key={listOfMedia.title}>
-                        <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6 md:pl-0">
+                        <td className="whitespace-nowrap py-3 pl-4 pr-3 font-librefranklin text-sm font-medium text-gray-900 sm:pl-6 md:pl-0">
                           <a
                             href={listOfMedia.streaming[0].link}
                             style={{ color: listOfMedia.color }}
@@ -150,13 +150,13 @@ function MediaList({ media = [] }) {
                           </a>
                         </td>
                         <td
-                          className="whitespace-nowrap py-4 px-3 text-sm"
+                          className="whitespace-nowrap py-3 px-3 font-librefranklin text-sm font-normal"
                           style={{ color: listOfMedia.color }}
                         >
                           {listOfMedia.chronological_order}
                         </td>
                         <td
-                          className="whitespace-nowrap py-4 px-3 text-sm"
+                          className="whitespace-nowrap py-3 px-3 font-librefranklin text-sm font-normal"
                           style={{ color: listOfMedia.color }}
                         >
                           {listOfMedia.release_order}
