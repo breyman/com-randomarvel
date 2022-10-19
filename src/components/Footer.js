@@ -29,31 +29,19 @@ function Footer({ handlePageChange, usingLocalDataFile = false }) {
   return (
     <footer className=" bg-slate-100 pt-9 pb-12 text-center dark:bg-slate-900">
       <div className="px-6">
-        <button
-          className=" font-librefranklin text-sm text-marvel-500 hover:text-marvel-700 hover:underline dark:text-marvel-100 dark:hover:text-gray-300"
-          title="media"
-          onClick={handlePageChange}
-        >
+        <button title="media" onClick={handlePageChange}>
           Generate Random Marvel
         </button>
 
         <span className=" mx-3 text-gray-400">|</span>
 
-        <button
-          className=" font-librefranklin text-sm text-marvel-500 hover:text-marvel-700 hover:underline dark:text-marvel-100 dark:hover:text-gray-300"
-          title="list"
-          onClick={handlePageChange}
-        >
+        <button title="list" onClick={handlePageChange}>
           Marvel List
         </button>
 
         <span className="mx-3 text-gray-400">|</span>
 
-        <button
-          className=" font-librefranklin text-sm text-marvel-500 hover:text-marvel-700 hover:underline dark:text-marvel-100 dark:hover:text-gray-300"
-          title="about"
-          onClick={handlePageChange}
-        >
+        <button title="about" onClick={handlePageChange}>
           About
         </button>
       </div>

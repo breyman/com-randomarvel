@@ -75,7 +75,7 @@ function MediaList({ media = [] }) {
 
   return (
     <>
-      <div className="flex flex-col">
+      <div className="mar flex flex-col">
         <h2 className="mb-10 self-center font-librefranklin text-3xl font-bold text-marvel-500 dark:text-white">
           Marvel Movies and TV Shows
         </h2>
@@ -141,6 +141,7 @@ function MediaList({ media = [] }) {
                         <td className="whitespace-nowrap py-3 pl-4 pr-3 font-librefranklin text-sm font-medium text-gray-900 sm:pl-6 md:pl-0">
                           <a
                             href={listOfMedia.streaming[0].link}
+                            className="dark:is-white"
                             style={{ color: listOfMedia.color }}
                             target="_blank"
                             rel="noreferrer"
@@ -150,13 +151,13 @@ function MediaList({ media = [] }) {
                           </a>
                         </td>
                         <td
-                          className="whitespace-nowrap py-3 px-3 font-librefranklin text-sm font-normal"
+                          className="dark:is-white whitespace-nowrap py-3 px-3 font-librefranklin text-sm font-normal"
                           style={{ color: listOfMedia.color }}
                         >
                           {listOfMedia.chronological_order}
                         </td>
                         <td
-                          className="whitespace-nowrap py-3 px-3 font-librefranklin text-sm font-normal"
+                          className="dark:is-white whitespace-nowrap py-3 px-3 font-librefranklin text-sm font-normal"
                           style={{ color: listOfMedia.color }}
                         >
                           {listOfMedia.release_order}

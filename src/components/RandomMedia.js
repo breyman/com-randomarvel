@@ -47,7 +47,11 @@ function RandomMedia({ media, dataLoading }) {
 
   // conditionally show stuff if it's time
   if (myMedia) {
-    watchText = <span className="mr-1">Watch on</span>;
+    watchText = (
+      <span className="mr-1 font-librefranklin text-gray-800 dark:text-zinc-100">
+        Watch on
+      </span>
+    );
     ({ title, color, streaming } = myMedia);
   }
 
@@ -150,7 +154,7 @@ function RandomMedia({ media, dataLoading }) {
   return (
     <>
       <h2
-        className=" text-xxl is-fade-in my-4 px-9 text-center font-librefranklin text-4xl font-bold"
+        className=" text-xxl is-fade-in my-4 px-9 text-center font-librefranklin text-4xl font-bold dark:text-zinc-100"
         key={title}
         data-testid="title-display"
         id="media-title"

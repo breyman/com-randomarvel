@@ -23,7 +23,6 @@ function About() {
             Brian wrote this small app. Check out more about him at{" "}
             <a
               href="https://www.brianreyman.com/"
-              className=" text-marvel-500 hover:underline dark:text-marvel-100"
               target="_blank"
               rel="noreferrer"
             >
@@ -35,7 +34,6 @@ function About() {
             View this app's{" "}
             <a
               href="https://github.com/breyman/com-randomarvel"
-              className="text-marvel-500 hover:underline dark:text-marvel-100"
               target="_blank"
               rel="noreferrer"
             >

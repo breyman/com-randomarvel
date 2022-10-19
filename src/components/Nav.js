@@ -112,13 +112,8 @@ function MoonIcon(props) {
 
 function Nav({ handlePageChange }) {
   // handle dark/light mode toggle
-  // let localStorageColorTheme = window.localStorage.colortheme;
-  // console.log(localStorageColorTheme);
-  // let startingDarkMode;
-  // localStorageColorTheme === "dark"
-  //   ? (startingDarkMode = true)
-  //   : (startingDarkMode = false);
-  // const [darkMode, setDarkMode] = React.useState(startingDarkMode);
+  let localStorageColorTheme = window.localStorage.colortheme;
+  console.log(localStorageColorTheme);
 
   function toggleMode() {
     let darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -127,12 +122,9 @@ function Nav({ handlePageChange }) {
 
     if (isDarkMode === isSystemDarkMode) {
       delete window.localStorage.colortheme;
-      // setDarkMode(false);
     } else {
       window.localStorage.colortheme = "dark";
-      // setDarkMode(true);
     }
-    // console.log(darkMode);
   }
 
   return (

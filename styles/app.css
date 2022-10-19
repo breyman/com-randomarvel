@@ -6,60 +6,98 @@
   min-width: 300px;
 }
 
-/* button loader spinner */
-button.is-loading::after {
-  -webkit-animation: spinAround 500ms infinite linear;
-  animation: spinAround 500ms infinite linear;
-  border: 2px solid #dbdbdb;
-  border-radius: 9999px;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  content: "";
-  display: block;
-  height: 1em;
-  width: 1em;
-  position: absolute;
-  left: calc(50% - (1em * 0.5));
-  top: calc(50% - (1em * 0.5));
-}
-
-button.is-loading {
-  color: transparent !important;
-  pointer-events: none;
-  opacity: 0.6;
-}
-
-@-webkit-keyframes spinAround {
-  from {
-    transform: rotate(0deg);
+@layer base {
+  html {
+    @apply font-librefranklin;
   }
-  to {
-    transform: rotate(359deg);
+  p a {
+    @apply border-b-[1px] border-b-marvel-500 pb-[2px] text-slate-700;
   }
-}
 
-@keyframes spinAround {
-  from {
-    transform: rotate(0deg);
+  p a:hover {
+    @apply border-b-2;
   }
-  to {
-    transform: rotate(359deg);
+
+  .dark p a {
+    @apply text-slate-100 !important;
+  }
+
+  .is-white {
+    @apply text-white !important;
+  }
+
+  footer button {
+    @apply text-sm text-slate-800;
+  }
+
+  footer button:hover {
+    @apply text-sm text-slate-500;
+  }
+
+  .dark footer button {
+    @apply text-slate-400 !important;
+  }
+  .dark footer button:hover {
+    @apply text-slate-200 !important;
   }
 }
 
-/* end button loader spinner */
-
-/* fade text in */
-#media-title.is-fade-in {
-  animation: fadeIn 0.65s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+@layer utilities {
+  /* button loader spinner */
+  button.is-loading::after {
+    -webkit-animation: spinAround 500ms infinite linear;
+    animation: spinAround 500ms infinite linear;
+    border: 2px solid #dbdbdb;
+    border-radius: 9999px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    left: calc(50% - (1em * 0.5));
+    top: calc(50% - (1em * 0.5));
   }
-  100% {
-    opacity: 1;
+
+  button.is-loading {
+    color: transparent !important;
+    pointer-events: none;
+    opacity: 0.6;
   }
+
+  @-webkit-keyframes spinAround {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  @keyframes spinAround {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  /* end button loader spinner */
+
+  /* fade text in */
+  #media-title.is-fade-in {
+    animation: fadeIn 0.65s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* end fade text in */
 }
-/* end fade text in */

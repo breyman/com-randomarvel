@@ -19,6 +19,7 @@ function WatchMedia({ streaming, link, color }) {
     <span className="mx-2">
       <a
         href={link}
+        className="dark:is-white"
         style={{ color: color }}
         data-testid="media-icon-link"
         target="_blank"
