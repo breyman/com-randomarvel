@@ -116,16 +116,21 @@ function Nav({ handlePageChange }) {
     let isSystemDarkMode = darkModeMediaQuery.matches;
     let isDarkMode = document.documentElement.classList.toggle("dark");
 
-    if (isDarkMode === isSystemDarkMode) {
-      delete window.localStorage.colortheme;
+    // determine dark mode status and set iphone notch color accordingly
+    if (document.documentElement.classList.contains("dark")) {
       document
         .querySelector('meta[name="theme-color"]')
         .setAttribute("content", "#1e293b");
     } else {
-      window.localStorage.colortheme = "dark";
       document
         .querySelector('meta[name="theme-color"]')
         .setAttribute("content", "#CC0300");
+    }
+
+    if (isDarkMode === isSystemDarkMode) {
+      delete window.localStorage.colortheme;
+    } else {
+      window.localStorage.colortheme = "dark";
     }
   }
 
