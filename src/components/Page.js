@@ -69,9 +69,9 @@ function Page() {
 
   return (
     <>
-      <div className="flex min-w-[300px] flex-col">
-        <Nav handlePageChange={(event) => setPage(event.target.title)} />
-        <div className="dark:bg-marvel-100">{displayPage}</div>
+      <div className="flex h-screen min-w-[300px] flex-col dark:bg-slate-800">
+        <Nav handlePageChange={() => setPage("media")} />
+        <div className="flex-grow pb-14 dark:bg-slate-800">{displayPage}</div>
         <Footer
           handlePageChange={(event) => setPage(event.target.title)}
           usingLocalDataFile={usingDataFile.current}

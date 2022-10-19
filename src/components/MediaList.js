@@ -76,7 +76,7 @@ function MediaList({ media = [] }) {
   return (
     <>
       <div className="flex flex-col">
-        <h2 className="mb-10 self-center font-librefranklin text-3xl font-bold text-marvel-500">
+        <h2 className="mb-10 self-center font-librefranklin text-3xl font-bold text-marvel-500 dark:text-white">
           Marvel Movies and TV Shows
         </h2>
 
@@ -117,19 +117,19 @@ function MediaList({ media = [] }) {
                       <th
                         title="title"
                         scope="col"
-                        className="py-3.5 pl-4 pr-3 text-left font-librefranklin text-sm font-semibold text-gray-900 sm:pl-6 md:pl-0"
+                        className="py-3.5 pl-4 pr-3 text-left font-librefranklin text-sm font-semibold text-gray-900 dark:text-white sm:pl-6 md:pl-0"
                       ></th>
                       <th
                         scope="col"
                         title="chrono"
-                        className="py-3.5 px-3 text-left font-librefranklin text-sm font-semibold text-gray-900"
+                        className="py-3.5 px-3 text-left font-librefranklin text-sm font-semibold text-gray-900 dark:text-white"
                       >
                         Timeline
                       </th>
                       <th
                         scope="col"
                         title="release"
-                        className="py-3.5 px-3 text-left font-librefranklin text-sm font-semibold text-gray-900"
+                        className="py-3.5 px-3 text-left font-librefranklin text-sm font-semibold text-gray-900 dark:text-white"
                       >
                         Release
                       </th>

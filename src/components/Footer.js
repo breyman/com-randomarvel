@@ -10,7 +10,7 @@ function Footer({ handlePageChange, usingLocalDataFile = false }) {
           <div className="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
             <div className="flex flex-wrap items-center justify-between">
               <div className="flex w-0 flex-1 items-center">
-                <p className="ml-3 truncate font-medium text-white">
+                <p className="ml-3 truncate font-medium text-marvel-100">
                   <span className="md:hidden">Using local data.</span>
                   <span className="hidden md:inline">
                     The site is currently using a local version of the data file
@@ -27,10 +27,10 @@ function Footer({ handlePageChange, usingLocalDataFile = false }) {
   }
 
   return (
-    <footer className="mt-10 bg-slate-100 pt-9 pb-12 text-center">
+    <footer className=" bg-slate-100 pt-9 pb-12 text-center dark:bg-slate-900">
       <div className="px-6">
         <button
-          className=" font-librefranklin text-sm text-marvel-500 hover:text-marvel-700"
+          className=" font-librefranklin text-sm text-marvel-500 hover:text-marvel-700 hover:underline dark:text-marvel-100 dark:hover:text-gray-300"
           title="media"
           onClick={handlePageChange}
         >
@@ -40,7 +40,7 @@ function Footer({ handlePageChange, usingLocalDataFile = false }) {
         <span className=" mx-3 text-gray-400">|</span>
 
         <button
-          className=" font-librefranklin text-sm text-marvel-500 hover:text-marvel-700"
+          className=" font-librefranklin text-sm text-marvel-500 hover:text-marvel-700 hover:underline dark:text-marvel-100 dark:hover:text-gray-300"
           title="list"
           onClick={handlePageChange}
         >
@@ -50,7 +50,7 @@ function Footer({ handlePageChange, usingLocalDataFile = false }) {
         <span className="mx-3 text-gray-400">|</span>
 
         <button
-          className=" font-librefranklin text-sm text-marvel-500 hover:text-marvel-700"
+          className=" font-librefranklin text-sm text-marvel-500 hover:text-marvel-700 hover:underline dark:text-marvel-100 dark:hover:text-gray-300"
           title="about"
           onClick={handlePageChange}
         >
