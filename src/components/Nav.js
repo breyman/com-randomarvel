@@ -130,7 +130,7 @@ function Nav({ handlePageChange }) {
         {isReady && treatment === "on" ? (
           <DarkModeButton showhidedark={toggleMode} />
         ) : (
-          <div className="flex-1 self-center md:ml-auto md:text-right lg:px-32"></div>
+          <div className="flex-1 lg:px-32"></div>
         )}
       </div>
     </>
