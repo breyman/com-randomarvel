@@ -1,5 +1,7 @@
 import React from "react";
 import DarkModeButton from "./DarkModeButton.js";
+import { useTreatments, SplitContext } from "@splitsoftware/splitio-react";
+// import { SplitContext } from "@splitsoftware/splitio-react";
 
 function SiteLogo(props) {
   return (
@@ -78,6 +80,14 @@ function SiteLogo(props) {
 }
 
 function Nav({ handlePageChange }) {
+  // split io
+  // access status properties via the SplitContext
+  const featureName = "darkmode_split";
+  const { isReady } = React.useContext(SplitContext); // eslint-disable-line
+
+  const treatments = useTreatments([featureName]);
+  const { treatment, config } = treatments[featureName]; // eslint-disable-line
+
   function toggleMode() {
     let darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     let isSystemDarkMode = darkModeMediaQuery.matches;
@@ -117,7 +127,11 @@ function Nav({ handlePageChange }) {
             </button>
           </nav>
         </div>
-        <DarkModeButton showhidedark={toggleMode} />
+        {isReady && treatment === "on" ? (
+          <DarkModeButton showhidedark={toggleMode} />
+        ) : (
+          <div className="flex-1 self-center md:ml-auto md:text-right lg:px-32"></div>
+        )}
       </div>
     </>
   );
