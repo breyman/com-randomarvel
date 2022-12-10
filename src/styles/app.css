@@ -727,16 +727,16 @@ footer button:hover {
   width: 10rem !important;
 }
 
+.w-4 {
+  width: 1rem !important;
+}
+
 .w-0 {
   width: 0px !important;
 }
 
 .w-64 {
   width: 16rem !important;
-}
-
-.w-4 {
-  width: 1rem !important;
 }
 
 .min-w-\[300px\] {
@@ -861,6 +861,10 @@ footer button:hover {
   border-color: rgb(209 213 219 / var(--tw-border-opacity)) !important;
 }
 
+.bg-white\/90 {
+  background-color: rgb(255 255 255 / 0.9) !important;
+}
+
 .bg-marvel-500 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(204 3 0 / var(--tw-bg-opacity)) !important;
@@ -881,20 +885,16 @@ footer button:hover {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-white\/90 {
-  background-color: rgb(255 255 255 / 0.9) !important;
-}
-
-.fill-marvel-500 {
-  fill: #CC0300 !important;
-}
-
 .fill-zinc-100 {
   fill: #f4f4f5 !important;
 }
 
 .fill-zinc-700 {
   fill: #3f3f46 !important;
+}
+
+.fill-marvel-500 {
+  fill: #CC0300 !important;
 }
 
 .stroke-zinc-500 {
@@ -904,6 +904,16 @@ footer button:hover {
 .px-20 {
   padding-left: 5rem !important;
   padding-right: 5rem !important;
+}
+
+.px-2 {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
 .py-3 {
@@ -926,11 +936,6 @@ footer button:hover {
   padding-right: 1rem !important;
 }
 
-.py-2 {
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
-}
-
 .px-7 {
   padding-left: 1.75rem !important;
   padding-right: 1.75rem !important;
@@ -944,11 +949,6 @@ footer button:hover {
 .px-1 {
   padding-left: 0.25rem !important;
   padding-right: 0.25rem !important;
-}
-
-.px-2 {
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
 }
 
 .px-9 {
@@ -1116,6 +1116,12 @@ footer button:hover {
   transition-duration: 150ms !important;
 }
 
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
@@ -1173,26 +1179,51 @@ button.is-loading {
 /* fade text in */
 
 #media-title.is-fade-in {
-  -webkit-animation: fadeIn 0.65s !important;
-          animation: fadeIn 0.65s !important;
+  -webkit-animation: fadeIn 0.5s !important;
+          animation: fadeIn 0.5s !important;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
+.streaming-list-fade-in {
+  -webkit-animation: fadeIn2 450ms !important;
+          animation: fadeIn2 450ms !important;
+}
+
+@-webkit-keyframes fadeIn2 {
+  from {
     opacity: 0;
   }
 
-  100% {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
-  0% {
+  from {
     opacity: 0;
   }
 
-  100% {
+  to {
     opacity: 1;
   }
 }
@@ -1264,13 +1295,13 @@ button.is-loading {
   display: none !important;
 }
 
+.dark .dark\:bg-zinc-800\/90 {
+  background-color: rgb(39 39 42 / 0.9) !important;
+}
+
 .dark .dark\:bg-slate-900 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity)) !important;
-}
-
-.dark .dark\:bg-zinc-800\/90 {
-  background-color: rgb(39 39 42 / 0.9) !important;
 }
 
 .dark .dark\:bg-slate-800 {
@@ -1360,14 +1391,14 @@ button.is-loading {
     margin-top: 9rem !important;
   }
 
-  .lg\:px-8 {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-  }
-
   .lg\:px-32 {
     padding-left: 8rem !important;
     padding-right: 8rem !important;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
   }
 
   .lg\:pt-0 {

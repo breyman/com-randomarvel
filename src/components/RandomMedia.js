@@ -4,11 +4,14 @@ import WatchMedia from "./../components/WatchMedia";
 function RandomMedia({ media, dataLoading }) {
   const [listType, setListType] = React.useState("any");
   const [myMedia, setMyMedia] = React.useState(null);
+  const [streamingListClasses, setStreamingListClasses] =
+    React.useState("mt-5 text-center");
 
   const allMedia = media;
   let mediaList = [];
   let streaming = [];
   let title, color, watchText;
+  let fadeInTimings = "450";
 
   function handleShowMedia(e) {
     e.target.disabled = true;
@@ -36,7 +39,15 @@ function RandomMedia({ media, dataLoading }) {
 
       e.target.disabled = false;
       e.target.classList.remove("is-loading");
-    }, "450");
+
+      // reset the streaming list classes so animation will start over next time
+      setTimeout(() => {
+        setStreamingListClasses("mt-5 text-center");
+      }, fadeInTimings);
+
+      // start animating the streaming list
+      setStreamingListClasses("streaming-list-fade-in mt-5 text-center");
+    }, fadeInTimings);
   }
 
   // if a category is changed, update things and reset to not display any media
@@ -59,7 +70,7 @@ function RandomMedia({ media, dataLoading }) {
   if (dataLoading) {
     generateMarvelButton = (
       <button
-        className=" is-loading absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 font-librefranklin text-white hover:bg-marvel-600"
+        className="is-loading absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 font-librefranklin text-white"
         type="button"
         value="Reload Page"
         onClick={handleShowMedia}
@@ -72,7 +83,7 @@ function RandomMedia({ media, dataLoading }) {
   } else {
     generateMarvelButton = (
       <button
-        className="absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 font-librefranklin text-white hover:bg-marvel-600"
+        className="absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 font-librefranklin text-white transition-colors hover:bg-marvel-600"
         type="button"
         value="Reload Page"
         onClick={handleShowMedia}
@@ -154,7 +165,7 @@ function RandomMedia({ media, dataLoading }) {
   return (
     <>
       <h2
-        className=" text-xxl is-fade-in dark:is-white my-4 px-9 text-center font-librefranklin text-4xl font-bold"
+        className="is-fade-in text-xxl dark:is-white my-4 px-9 text-center font-librefranklin text-4xl font-bold"
         key={title}
         data-testid="title-display"
         id="media-title"
@@ -162,7 +173,7 @@ function RandomMedia({ media, dataLoading }) {
       >
         {title}
       </h2>
-      <div className="mt-5 text-center">
+      <div className={streamingListClasses}>
         <span>{watchText}</span>
         {streaming.map((listOfStreams) => (
           <WatchMedia
