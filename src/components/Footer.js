@@ -27,7 +27,7 @@ function Footer({ handlePageChange, usingLocalDataFile = false }) {
   }
 
   return (
-    <footer className=" bg-slate-100 pt-9 pb-12 text-center dark:bg-slate-900">
+    <footer className=" bump-up-in bg-slate-100 pt-9 pb-12 text-center dark:bg-slate-900">
       <div className="px-6">
         <button title="media" onClick={handlePageChange}>
           Generate Random Marvel

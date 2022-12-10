@@ -43,11 +43,6 @@ function MediaList({ media = [] }) {
     "font-medium",
     order === "chrono" ? "text-white" : "text-gray-700",
     order === "chrono" ? "hover:bg-gray-600" : "hover:bg-gray-50",
-    "focus:z-10",
-    "focus:border-marvel-500",
-    "focus:outline-none",
-    "focus:ring-1",
-    "focus:ring-marvel-500",
   ].join(" ");
 
   const rightButtonClasses = [
@@ -66,11 +61,6 @@ function MediaList({ media = [] }) {
     "font-medium",
     order === "release" ? "text-white" : "text-gray-700",
     order === "release" ? "hover:bg-gray-600" : "hover:bg-gray-50",
-    "focus:z-10",
-    "focus:border-marvel-500",
-    "focus:outline-none",
-    "focus:ring-1",
-    "focus:ring-marvel-500",
   ].join(" ");
 
   return (

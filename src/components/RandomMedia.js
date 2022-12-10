@@ -70,7 +70,7 @@ function RandomMedia({ media, dataLoading }) {
   if (dataLoading) {
     generateMarvelButton = (
       <button
-        className="is-loading absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 font-librefranklin text-white"
+        className="is-loading bump-up-in absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 font-librefranklin text-white"
         type="button"
         value="Reload Page"
         onClick={handleShowMedia}
@@ -83,7 +83,7 @@ function RandomMedia({ media, dataLoading }) {
   } else {
     generateMarvelButton = (
       <button
-        className="absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 font-librefranklin text-white transition-colors hover:bg-marvel-600"
+        className="bump-up-in absolute mb-3 min-w-[225px] rounded-md border-none bg-marvel-500 px-4 py-2 font-librefranklin text-white transition-colors hover:bg-marvel-600"
         type="button"
         value="Reload Page"
         onClick={handleShowMedia}
@@ -110,11 +110,6 @@ function RandomMedia({ media, dataLoading }) {
     "font-medium",
     listType === "any" ? "text-white" : "text-gray-700",
     listType === "any" ? "hover:bg-gray-600" : "hover:bg-gray-50",
-    "focus:z-10",
-    "focus:border-marvel-500",
-    "focus:outline-none",
-    "focus:ring-1",
-    "focus:ring-marvel-500",
   ].join(" ");
 
   const middleButtonClasses = [
@@ -132,11 +127,6 @@ function RandomMedia({ media, dataLoading }) {
     "font-medium",
     listType === "movie" ? "text-white" : "text-gray-700",
     listType === "movie" ? "hover:bg-gray-600" : "hover:bg-gray-50",
-    "focus:z-10",
-    "focus:border-marvel-500",
-    "focus:outline-none",
-    "focus:ring-1",
-    "focus:ring-marvel-500",
   ].join(" ");
 
   const rightButtonClasses = [
@@ -155,11 +145,6 @@ function RandomMedia({ media, dataLoading }) {
     "font-medium",
     listType === "tv" ? "text-white" : "text-gray-700",
     listType === "tv" ? "hover:bg-gray-600" : "hover:bg-gray-50",
-    "focus:z-10",
-    "focus:border-marvel-500",
-    "focus:outline-none",
-    "focus:ring-1",
-    "focus:ring-marvel-500",
   ].join(" ");
 
   return (
@@ -187,7 +172,7 @@ function RandomMedia({ media, dataLoading }) {
       <div className="mt-16 mb-28 flex justify-center lg:mt-36">
         {generateMarvelButton}
       </div>
-      <div className="flex justify-center pt-7 lg:pt-16">
+      <div className="bump-up-in flex justify-center pt-7 lg:pt-16">
         <span className="isolate inline-flex rounded-md shadow-sm">
           <button
             type="button"

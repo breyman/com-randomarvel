@@ -113,7 +113,7 @@ function Nav({ handlePageChange }) {
 
   return (
     <>
-      <div className="flex flex-col-reverse items-center pt-6 md:flex-row md:pt-0">
+      <div className="bump-down-in flex flex-col-reverse items-center pt-6 md:flex-row md:pt-0">
         <div className="flex-1 lg:px-32"></div>
         <div className="flex-3 self-center pt-11 pb-2 md:pb-8">
           <nav data-testid="logo">
