@@ -92,14 +92,27 @@
 
   /* fade text in */
   #media-title.is-fade-in {
-    animation: fadeIn 0.65s;
+    animation: fadeIn 0.5s;
+  }
+
+  .streaming-list-fade-in {
+    animation: fadeIn2 450ms;
+  }
+
+  @keyframes fadeIn2 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   @keyframes fadeIn {
-    0% {
+    from {
       opacity: 0;
     }
-    100% {
+    to {
       opacity: 1;
     }
   }

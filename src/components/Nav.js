@@ -119,7 +119,7 @@ function Nav({ handlePageChange }) {
           <nav data-testid="logo">
             <button
               type="button"
-              name="media"
+              name="Logo"
               className="w-64 cursor-pointer"
               onClick={handlePageChange}
             >
