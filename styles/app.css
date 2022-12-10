@@ -91,6 +91,36 @@
   /* end button loader spinner */
 
   /* fade text in */
+  .bump-up-in {
+    animation: bumpUpIn 0.25s;
+  }
+
+  @keyframes bumpUpIn {
+    from {
+      transform: translateY(25vh);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  .bump-down-in {
+    animation: bumpDownIn 0.25s;
+  }
+
+  @keyframes bumpDownIn {
+    from {
+      transform: translateY(-25vh);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
   #media-title.is-fade-in {
     animation: fadeIn 0.5s;
   }
